@@ -1,0 +1,13 @@
+
+ripple.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ring
+  rotate: false
+  xy: 2, 2
+  size: 207, 207
+  orig: 207, 207
+  offset: 0, 0
+  index: -1
