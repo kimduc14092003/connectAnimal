@@ -98,6 +98,8 @@ public class HomePanel : MonoBehaviour
     }
     public void CloseMoreGamePanel()
     {
+        ChangeBackgroundToBackgroundName("bgHome");
+
         homePanel.SetActive(true);
         moreGamePanel.SetActive(false);
     }
