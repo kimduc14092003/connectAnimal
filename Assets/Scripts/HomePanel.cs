@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,7 @@ public class HomePanel : MonoBehaviour
     public int defaultShuffle;
     public Image backgroundSprite;
 
-    public Sprite[] listSpriteBg;
+    public List<BackgroundSprite> listSpriteBg;
 
     public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel;
     [SerializeField]
@@ -60,11 +61,22 @@ public class HomePanel : MonoBehaviour
 
     private void Start()
     {
-        bgSpriteIndex = PlayerPrefs.GetInt("bgSpriteIndex", 0);
-        backgroundSprite.sprite = listSpriteBg[bgSpriteIndex];
+        //bgSpriteIndex = PlayerPrefs.GetInt("bgSpriteIndex", 0);
+        ChangeBackgroundToBackgroundName("bgHome");
         AudioManager.Instance.PlayMusic("HomeTheme");
         AudioManager.Instance.GetRandomMusicToList();
+    }
 
+    private void ChangeBackgroundToBackgroundName(string bgName)
+    {
+        for (int i = 0; i < listSpriteBg.Count; i++)
+        {
+            if (listSpriteBg[i].name == bgName)
+            {
+                backgroundSprite.sprite = listSpriteBg[i].sprite;
+                break;
+            }
+        }
     }
 
     public void OpenSettingPanel()
@@ -80,6 +92,7 @@ public class HomePanel : MonoBehaviour
     }
     public void OpenMoreGamePanel()
     {
+        ChangeBackgroundToBackgroundName("bgOtherGame");
         homePanel.SetActive(false);
         moreGamePanel.SetActive(true);
     }
@@ -93,11 +106,11 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         bgSpriteIndex++;
-        if (bgSpriteIndex >= listSpriteBg.Length)
+        if (bgSpriteIndex >= listSpriteBg.Count)
         {
             bgSpriteIndex = 0;
         }
-        backgroundSprite.sprite = listSpriteBg[bgSpriteIndex];
+        backgroundSprite.sprite = listSpriteBg[bgSpriteIndex].sprite;
         PlayerPrefs.SetInt("bgSpriteIndex", bgSpriteIndex);
         StaticData.SetDefaultValueThemeColor();
     }
@@ -190,4 +203,10 @@ public class HomePanel : MonoBehaviour
         AudioManager.Instance.PlaySFX("click_button");
         Debug.Log("No Ads!");
     }
+}
+[System.Serializable]
+public class BackgroundSprite
+{
+    public string name;
+    public Sprite sprite;
 }

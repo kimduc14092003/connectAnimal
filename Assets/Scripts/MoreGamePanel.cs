@@ -1,74 +1,126 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MoreGamePanel : MonoBehaviour
 {
-    public GameObject pinWheel;
-    public GameObject[] star;
-    public ScrollRect scrollRect;
-    public float scrollSpeed;
-    public Ease ease;
-    private bool isScrollingToBegin, isScrollingToEnd;
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartRotationPinWheel();
-        for(int i = 0; i < star.Length; i++)
-        {
-            StartAnimStar(star[i]);
+    public Transform leftTransform, rightTransform;
+    public GameObject cameraGO;
+    private bool isRotate;
 
+    private Vector3 leftPosition, leftRotation;
+    private Vector3 rightPosition, rightRotation;
+
+    public List<GameObject> listItemMoreGame;
+
+    public int currentChooseIndex;
+
+    private void Start()
+    {
+        leftPosition = leftTransform.position;
+        leftRotation = leftTransform.rotation.eulerAngles;
+
+        rightPosition = rightTransform.position;
+        rightRotation = rightTransform.rotation.eulerAngles;
+
+        leftTransform = null; rightTransform=null;
+        isRotate = false;
+        transform.position = new Vector3(cameraGO.transform.position.x, transform.position.y, cameraGO.transform.position.z);
+        SetDefaultItem();
+        currentChooseIndex = 2;
+    }
+
+    private void SetDefaultItem()
+    {
+        int count = transform.childCount;
+        for (int i = 0; i < count; i++)
+        {
+            Transform child = transform.GetChild(i);
+            GameObject item = Instantiate(listItemMoreGame[i],transform);
+            item.transform.position = child.position;
+            item.transform.rotation = child.rotation;
+            item.transform.SetAsLastSibling();
+        }
+        for( int i = 0; i < count; ++i)
+        {
+            Destroy(transform.GetChild(i).gameObject);
         }
     }
-    private void FixedUpdate()
+
+    public void NextButton()
     {
-        if (isScrollingToBegin)
+        if (!isRotate)
         {
-            scrollRect.normalizedPosition -= Vector2.right * Time.deltaTime * scrollSpeed;
-            if (scrollRect.normalizedPosition.x <= 0)
+            isRotate = true;
+            transform.DORotate(new Vector3(0, transform.rotation.eulerAngles.y - 30, 0), 1f).OnComplete(() =>
             {
-                isScrollingToBegin = false;
-            }
-        } else
-        if (isScrollingToEnd)
-        {
-            scrollRect.normalizedPosition += Vector2.right * Time.deltaTime * scrollSpeed;
-            if (scrollRect.normalizedPosition.x >= 1)
-            {
-                isScrollingToEnd = false;
-            }
+                currentChooseIndex++;
+                if (currentChooseIndex >= listItemMoreGame.Count)
+                {
+                    currentChooseIndex = 0;
+                }
+                isRotate = false;
+                ChangeLastButton();
+            });
         }
     }
-
-
-    void StartRotationPinWheel()
+    public void BackButton()
     {
-        // Xoay chong chóng đi
-        pinWheel.transform.DORotate(new Vector3(0,0,360f), 10f, RotateMode.WorldAxisAdd)
-            .SetEase(Ease.Linear)
-            .SetLoops(-1, LoopType.Incremental)
-            .SetUpdate(true);
+        if (!isRotate)
+        {
+            isRotate = true;
+            transform.DORotate(new Vector3(0, transform.rotation.eulerAngles.y + 30, 0), 1f).OnComplete(() =>
+            {
+                currentChooseIndex--;
+                if(currentChooseIndex < 0)
+                {
+                    currentChooseIndex=listItemMoreGame.Count - 1;
+                }
+                isRotate = false;
+                ChangeLastButton();
+            });
+        }
+
     }
 
-    private void StartAnimStar(GameObject target)
+    private void ChangeLastButton()
     {
-        float delay = Random.Range(0f,0.5f);
-        target.transform.DOScale(new Vector3(1, 1, 1), 1f)
-            .SetLoops(-1, LoopType.Yoyo)
-            .SetEase(ease).SetDelay(delay); ;
-        target.transform.DORotate(new Vector3(0, 0, 60f), 1f)
-            .SetLoops(-1, LoopType.Yoyo)
-            .SetEase(ease).SetDelay(delay); ;
-    }
+        // Tìm gameobject Child cần thay đổi
+        Transform childNeedToChange = transform.GetChild(0); ;
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (childNeedToChange.position.z > transform.GetChild(i).position.z)
+            {
+                childNeedToChange = transform.GetChild(i);
+            }
+        }
+        // Sinh ra GO mới trong List
 
-    public void ScrollToBeginButtonOnClick()
-    {
-        isScrollingToBegin = true;
-    }
-    public void ScrollToEndButtonOnClick()
-    {
-        isScrollingToEnd = true;
+        if (childNeedToChange.transform.position.x < 0)
+        {
+            int index = (currentChooseIndex + 2) % listItemMoreGame.Count;
+            GameObject item = Instantiate(listItemMoreGame[index],transform);
+
+            item.transform.position = rightPosition;
+            item.transform.rotation = Quaternion.Euler(rightRotation);
+            Destroy(childNeedToChange.gameObject);
+        }
+        else
+        {
+            int index = (currentChooseIndex - 2);
+            if (index < 0)
+            {
+                index = listItemMoreGame.Count +index;
+            }
+            GameObject item = Instantiate(listItemMoreGame[index], transform);
+
+            item.transform.position = leftPosition;
+            item.transform.rotation = Quaternion.Euler(leftRotation);
+            Destroy(childNeedToChange.gameObject);
+
+        }
     }
 }
