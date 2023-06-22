@@ -192,12 +192,14 @@ public class HomePanel : MonoBehaviour
         AudioManager.Instance.PlaySFX("click_button");
         themePanel.SetActive(true);
         homePanel.SetActive(false);
+        ChangeBackgroundToBackgroundName("bgOtherGame");
     }
     public void CloseThemePanel()
     {
         AudioManager.Instance.PlaySFX("click_button");
         homePanel.SetActive(true);
         themePanel.SetActive(false);
+        ChangeBackgroundToBackgroundName("bgHome");
     }
 
     public void NoAdsButton()

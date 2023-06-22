@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     public Slider timeSlider;
     public float limitTimeOfLevel;
     public int currentLevel;
-    public GameObject PausePanel,TimePanel,FunctionPanel;
+    public GameObject PausePanel,DetailPanel;
     public GameObject winLevelPanel,loseGamePanel,winGamePanel;
     public GameObject notifyMinusHearth;
     public GameObject TutorialPanel;
@@ -37,10 +37,12 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         Application.targetFrameRate = 60;
+        string playerMode = PlayerPrefs.GetString("PlayeMode");
+        if (playerMode != "ClassicMode" && playerMode!= "RelaxRandomMode")
+        {
+            GetComponent<LevelManager>().enabled = false;
+        }
         currentDifficultLevel = PlayerPrefs.GetString("currentDifficultLevel");
-        HandleLevelStart();
-        HandlePlayeMode();
-       
     }
 
     private void HandlePlayeMode()
@@ -79,11 +81,12 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        TimePanel.SetActive(true);
-        if (FunctionPanel)
+        HandleLevelStart();
+        HandlePlayeMode();
+        if (DetailPanel)
         {
-            FunctionPanel.SetActive(true);
-            levelTitle.text = "Màn " + currentLevel;
+            DetailPanel.SetActive(true);
+            levelTitle.text = "Level " + currentLevel;
         }
 
         currentScore = 0;
@@ -101,14 +104,20 @@ public class LevelManager : MonoBehaviour
         {
             SetRemainingOfFuncional();
         }
-
-        AudioManager.Instance.PlayRandomMusic();
+        try
+        {
+            AudioManager.Instance.PlayRandomMusic();
+        }
+        catch
+        {
+            Debug.Log("Audio Manager is null!");
+        }
     }
 
     public void AddCurrentScore(int amount)
     {
         currentScore += amount;
-        currentScoreTxt.text = "Điểm: "+ currentScore;
+        currentScoreTxt.text = currentScore+"";
     }
 
     private void SetRemainingOfFuncional()
@@ -134,20 +143,18 @@ public class LevelManager : MonoBehaviour
     {
         if(isPauseGame)
         {
-            TimePanel.SetActive(false);
             listCellController.gameObject.SetActive(false);
-            if (FunctionPanel)
+            if (DetailPanel)
             {
-                FunctionPanel.SetActive(false);
+                DetailPanel.SetActive(false);
             }
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
-            if (FunctionPanel)
+            if (DetailPanel)
             {
-                FunctionPanel.SetActive(true);
+                DetailPanel.SetActive(true);
             }
             listCellController.gameObject.SetActive(true);
 
@@ -258,6 +265,7 @@ public class LevelManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PausePanel.SetActive(true);
+        DetailPanel.SetActive(false);
         SetDefaultSlider();
         isPauseGame = true;
     }
@@ -305,6 +313,7 @@ public class LevelManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PausePanel.SetActive(false);
+        DetailPanel.SetActive(true);   
         isPauseGame = false;
     }
 
@@ -314,13 +323,13 @@ public class LevelManager : MonoBehaviour
         AudioManager.Instance.StopMusic();
         isPauseGame = true;
         int levelScore = currentScore + (int)timeRemaining;
-        levelScoreTxt.text ="Điểm "+ levelScore;
+        levelScoreTxt.text ="Score : "+ levelScore;
         
         //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
         int highScore = PlayerPrefs.GetInt("highScoreLevel" + currentLevel + currentDifficultLevel, levelScore);
         if (levelScore >= highScore){
             PlayerPrefs.SetInt("highScoreLevel" + currentLevel + currentDifficultLevel, levelScore);
-            highScoreTxt.text = "Kỷ lục " + levelScore;
+            highScoreTxt.text = "Record : " + levelScore;
         }
         else
         {
@@ -331,7 +340,7 @@ public class LevelManager : MonoBehaviour
         int totalScore = PlayerPrefs.GetInt("totalScore" + currentDifficultLevel,0)+ levelScore;
         PlayerPrefs.SetInt("totalScore"+ currentDifficultLevel,totalScore);
 
-        totalScoreTxt.text = "Tổng điểm "+ totalScore;
+        totalScoreTxt.text = "Total score : "+ totalScore;
 
         //Người chơi chiến thắng game khi chơi thắng level 9
      /*   if (currentLevel >= 9)
@@ -391,17 +400,17 @@ public class LevelManager : MonoBehaviour
         // Số điểm khi thua = tổng số điểm đã tích trước đó + số điểm hiện tại
         int totalScore = PlayerPrefs.GetInt("totalScore" + currentDifficultLevel, 0) + currentScore;
 
-        loseTotalScoreTxt.text = "Tổng điểm " + totalScore;
+        loseTotalScoreTxt.text = "Total score " + totalScore;
 
         int highScoreTotal = PlayerPrefs.GetInt("highScoreTotal" + currentDifficultLevel, totalScore);
         if (totalScore >= highScoreTotal)
         {
             PlayerPrefs.SetInt("highScoreTotal" + currentDifficultLevel, highScoreTotal);
-            loseHighScoreTxt.text = "Kỷ lục " + totalScore;
+            loseHighScoreTxt.text = "Record : " + totalScore;
         }
         else
         {
-            loseHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
+            loseHighScoreTxt.text = "Record : " + highScoreTotal;
         }
 
         SetNewGameFuncionalRemaining();
@@ -413,23 +422,12 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void OpenTutorial()
-    {
-        AudioManager.Instance.PlaySFX("click_button");
-        PausePanel.SetActive(false);
-        TutorialPanel.SetActive(true);
-    }
-
-    public void CloseTutorial()
-    {
-        AudioManager.Instance.PlaySFX("click_button");
-        PausePanel.SetActive(true);
-        TutorialPanel.SetActive(false);
-    }
     private void SetDefaultSlider()
     {
-        musicSlider.value = AudioManager.Instance.musicSource.volume;
-        sfxSlider.value = AudioManager.Instance.sfxSource.volume;
+        musicSlider.value = 
+            AudioManager.Instance.musicSource.volume;
+        sfxSlider.value = 
+            AudioManager.Instance.sfxSource.volume;
     }
 
     public void MusicVolume()

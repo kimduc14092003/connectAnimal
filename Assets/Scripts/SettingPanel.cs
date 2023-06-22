@@ -8,12 +8,12 @@ using UnityEngine.UI;
 
 public class SettingPanel : MonoBehaviour
 {
-    [Header("Change Theme")]
+    /*[Header("Change Theme")]
     public Sprite[] listBgContent;
     public Sprite[] listBgTicker;
     public TMP_Text[] labelTextNeedChangeColor;
     public Image[] listImgNeedChangeColor;
-    public Image[] listImgChangeBg;
+    public Image[] listImgChangeBg;*/
 
     public ToggleGroup toggleGroup;
     public Slider musicSlider, sfxSlider;
@@ -24,10 +24,10 @@ public class SettingPanel : MonoBehaviour
         difficultLevel = PlayerPrefs.GetString("currentDifficultLevel");
         SetDefaultToggle();
         SetDefaultSlider();
-        SetDefaultTheme();
+       // SetDefaultTheme();
     }
 
-    private void SetDefaultTheme()
+/*    private void SetDefaultTheme()
     {
         int currentIndexBg = PlayerPrefs.GetInt("bgSpriteIndex", 0);
         for (int i = 0; i < labelTextNeedChangeColor.Length; i++)
@@ -43,7 +43,7 @@ public class SettingPanel : MonoBehaviour
             listImgChangeBg[i].sprite = listBgTicker[currentIndexBg];
         }
         transform.GetChild(0).GetComponent<Image>().sprite = listBgContent[currentIndexBg];
-    }
+    }*/
 
     private void SetDefaultToggle()
     {

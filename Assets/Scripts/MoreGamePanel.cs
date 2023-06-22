@@ -4,6 +4,7 @@ using DG.Tweening;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class MoreGamePanel : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class MoreGamePanel : MonoBehaviour
     private Vector3 rightPosition, rightRotation;
 
     public List<GameObject> listItemMoreGame;
+    public List<Transform> listPos;
 
     public int currentChooseIndex;
 
@@ -42,6 +44,7 @@ public class MoreGamePanel : MonoBehaviour
             GameObject item = Instantiate(listItemMoreGame[i],transform);
             item.transform.position = child.position;
             item.transform.rotation = child.rotation;
+
             item.transform.SetAsLastSibling();
         }
         for( int i = 0; i < count; ++i)
@@ -107,6 +110,7 @@ public class MoreGamePanel : MonoBehaviour
             item.transform.position = rightPosition;
             item.transform.rotation = Quaternion.Euler(rightRotation);
             Destroy(childNeedToChange.gameObject);
+
         }
         else
         {
@@ -119,6 +123,8 @@ public class MoreGamePanel : MonoBehaviour
 
             item.transform.position = leftPosition;
             item.transform.rotation = Quaternion.Euler(leftRotation);
+            item.transform.SetAsFirstSibling();
+            
             Destroy(childNeedToChange.gameObject);
 
         }

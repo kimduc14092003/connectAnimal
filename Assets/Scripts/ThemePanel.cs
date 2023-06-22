@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,17 +8,28 @@ using UnityEngine.UIElements;
 
 public class ThemePanel : MonoBehaviour
 {
-    public ScrollRect scrollRect;
     public GameObject listThemeContent;
-    public float scrollSpeed;
     private GameObject canvasHome;
-    private bool isScrollingToBegin,isScrollingToEnd;
-
+    public List<Vector3> listPosItem;
+    public List<GameObject> itemThemes;
+    public GameObject listTheme;
+    public int index=0;
+    public float moveTime;
     private void Awake()
     {
-        canvasHome = transform.parent.gameObject;
+        canvasHome = transform.parent.root.gameObject;
+
+        //Thay đổi listSpite default
         string currentListSprite= PlayerPrefs.GetString("currentListSprite", "Animal");
-        GameObject target = GameObject.Find(currentListSprite);
+        GameObject target= itemThemes[0];
+        for (int i = 0; i < itemThemes.Count; i++)
+        {
+            if (itemThemes[i].name == currentListSprite)
+            {
+                target = itemThemes[i];
+                break;
+            }
+        }
         if(target != null)
         {
             HandleTickOnButton(target);
@@ -26,27 +38,70 @@ public class ThemePanel : MonoBehaviour
         {
             print("Awake in theme error");
         }
+
+        // Lấy vị trí tất cả các gameobject Item
+        for(int i = 0;i<listTheme.transform.childCount;i++)
+        {
+            listPosItem.Add(listTheme.transform.GetChild(i).position);
+        }
+        
     }
 
-    private void FixedUpdate()
+    public void NextButton()
     {
-        if (isScrollingToBegin)
+        if (index >= 1)
         {
-            scrollRect.normalizedPosition-= Vector2.right*Time.deltaTime* scrollSpeed;
-            if (scrollRect.normalizedPosition.x <= 0)
+            index = 1;
+            Debug.Log("?");
+            return;
+        }
+        for (int i = 0;i<listTheme.transform.childCount; i++)
+        {
+            int pos = (i - index - 1);
+            try
             {
-                isScrollingToBegin = false;
+                if(pos < 0)
+                {
+                   pos= listPosItem.Count + pos;
+                }
+                listTheme.transform.GetChild(i).DOMove(listPosItem[pos], moveTime);
+            }
+            catch
+            {
+                Debug.Log(i - 1 +" | "+pos);
             }
         }
-        if (isScrollingToEnd)
-        {
-            scrollRect.normalizedPosition += Vector2.right * Time.deltaTime* scrollSpeed;
-            if (scrollRect.normalizedPosition.x >= 1)
-            {
-                isScrollingToEnd = false;
-            }
-        }
+        index++;
     }
+    public void BackButton()
+    {
+        if (index <= 0)
+        {
+            index = 0;
+            return;
+        }
+        for (int i = 0; i < listTheme.transform.childCount; i++)
+        {
+            int pos = (i - index + 1);
+
+            try
+            {
+                if (pos >= listPosItem.Count)
+                {
+                    pos = pos % listPosItem.Count;
+                }
+                listTheme.transform.GetChild(i).DOMove(listPosItem[pos], moveTime);
+            }
+            catch
+            {
+                Debug.Log(i + 1);
+            }
+        }
+        index--;
+
+    }
+
+    
 
     public void GetSelected()
     {
@@ -54,23 +109,23 @@ public class ThemePanel : MonoBehaviour
         PlayerPrefs.SetString("currentListSprite", clickedObject.name);
         HandleTickOnButton(clickedObject);
         canvasHome.GetComponent<PrefabController>().ChangePrefabToCurrentTheme();
+        //Tắt ThemePanel sau khi chọn chủ đề
+        Invoke("ClosePanel", 0.15f);
+    }
+
+    private void ClosePanel()
+    {
+        canvasHome.GetComponent<HomePanel>().CloseThemePanel();
     }
 
     private void HandleTickOnButton(GameObject target)
     {
-        for(int i = 0; i < listThemeContent.transform.childCount; i++)
+        for(int i = 0; i < itemThemes.Count; i++)
         {
-            listThemeContent.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
+            itemThemes[i].transform.Find("Selected").gameObject.SetActive(false);
         }
 
-        target.transform.GetChild(1).gameObject.SetActive(true);
+        target.transform.GetChild(0).gameObject.SetActive(true);
     }
-    public void ScrollToBeginButtonOnClick()
-    {
-        isScrollingToBegin=true;
-    }
-    public void ScrollToEndButtonOnClick()
-    {
-        isScrollingToEnd = true;
-    }
+    
 }

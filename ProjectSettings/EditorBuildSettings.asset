@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MoreGameScene.unity
     guid: 6383976127e2c6242815ef5d10c55605
   - enabled: 1
-    path: Assets/Scenes/RelaxPuzzleScene.unity
-    guid: d39347edfe732ca4bb2d22cffd354947
+    path: Assets/Scenes/ThreeMatchModeScene.unity
+    guid: dae87eb00ce4a714bbd22d05284e2108
   - enabled: 1
     path: Assets/Scenes/ShadowModeScene.unity
     guid: fdbcf96e2d32ef2488ee563cf210d8f8
   - enabled: 1
-    path: Assets/Scenes/ThreeMatchModeScene.unity
-    guid: dae87eb00ce4a714bbd22d05284e2108
+    path: Assets/Scenes/RelaxPuzzleScene.unity
+    guid: d39347edfe732ca4bb2d22cffd354947
   - enabled: 1
     path: Assets/Scenes/EscapeMode.unity
     guid: 2751de6c685f1324491430000218c839

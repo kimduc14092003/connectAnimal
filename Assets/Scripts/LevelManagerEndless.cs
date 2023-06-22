@@ -13,12 +13,10 @@ public class LevelManagerEndless : MonoBehaviour
     public Slider musicSlider, sfxSlider;
     public TMP_Text 
          currentScoreTxt, highScoreTxt, loseTotalScoreTxt, loseHighScoreTxt;
-    public Image bg;
-    public Sprite[] listSpriteBg;
     public Slider timeSlider;
     public float limitTimeOfLevel;
     public int currentLevel;
-    public GameObject PausePanel,TimePanel;
+    public GameObject PausePanel,DetailPanel;
     public GameObject loseGamePanel;
     public GameObject[] listMatrix;
     public LineController lineController;
@@ -28,23 +26,34 @@ public class LevelManagerEndless : MonoBehaviour
     private int currentScore;
     private bool isPauseGame;
 
+    public List<GameObject> listGameObjectDeActive;
     private void Awake()
     {
+        if(PlayerPrefs.GetString("PlayeMode")!= "EndlessMode")
+        {
+            GetComponent<LevelManagerEndless>().enabled = false;
+        }
         Application.targetFrameRate = 60;
         float coefficient= Mathf.Pow(0.667f, currentLevel/9);
         limitTimeOfLevel = StaticData.limitTimeInEndless*coefficient ;
+        DeActiveListGameObject();
+    }
+    private void DeActiveListGameObject()
+    {
+        for(int i = 0; i < listGameObjectDeActive.Count; i++)
+        {
+            listGameObjectDeActive[i].SetActive(false);
+        }
     }
     private void Start()
     {
-        TimePanel.SetActive(true);
-
         currentScore = 0;
+        highScoreTxt.transform.parent.gameObject.SetActive(true);
         highScoreTxt.text = PlayerPrefs.GetInt("highScoreTotalEndlessMode", 0)+"";
         isPauseGame = false;
         timeSlider.maxValue = limitTimeOfLevel;
         timeRemaining = limitTimeOfLevel;
         timeSlider.value = timeRemaining;
-        bg.sprite = listSpriteBg[PlayerPrefs.GetInt("bgSpriteIndex",0)];
         SpawnMatrix();
         AudioManager.Instance.PlayRandomMusic();
     }
@@ -75,13 +84,13 @@ public class LevelManagerEndless : MonoBehaviour
     {
         if(isPauseGame)
         {
-            TimePanel.SetActive(false);
+            DetailPanel.SetActive(false);
             endlessModeController.gameObject.SetActive(false);
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
+            DetailPanel.SetActive(true);
             endlessModeController.gameObject.SetActive(true);
         }
 
