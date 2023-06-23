@@ -16,7 +16,7 @@ public class LineController : MonoBehaviour
         delayTime = 0.15f;
         if (panel.GetComponent<ListCellController>())
         {
-            maxLengthX = panel.GetComponent<ListCellController>().colPlay+2;
+            maxLengthX = panel.GetComponent<ListCellController>().col;
         }
         else if(panel.GetComponent<EndlessModeController>())
         {

@@ -53,7 +53,13 @@ public class AudioManager : MonoBehaviour
 
     public void PlayRandomMusic()
     {
-        PlayMusic(currentMusicSounds[currentIndex].name);
+        try
+        {
+            PlayMusic(currentMusicSounds[currentIndex].name);
+        }
+        catch {
+            Debug.Log("Audio not Found!");
+        }
         currentIndex++;
         if(currentIndex==currentMusicSounds.Count)
         {

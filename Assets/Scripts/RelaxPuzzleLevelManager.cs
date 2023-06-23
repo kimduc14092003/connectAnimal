@@ -30,10 +30,15 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     private int remainingShuffle;
     private int currentScore;
     private bool isPauseGame;
+    public List<GameObject> listGameObjectDeActive;
 
     private void Awake()
     {
-
+        if (PlayerPrefs.GetString("PlayeMode") != "RelaxPuzzleMode")
+        {
+            GetComponent<RelaxPuzzleLevelManager>().enabled = false;
+            return;
+        }
         Application.targetFrameRate = 60;
         currentLevel = PlayerPrefs.GetInt("currentLevelRelaxPuzzleMode", 1);
        puzzleModeController = listMatrixPuzzleModeController[currentLevel-1];
@@ -46,8 +51,17 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         lineController.panel= panel;
     }
 
+    private void DeActiveListGameObject()
+    {
+        for (int i = 0; i < listGameObjectDeActive.Count; i++)
+        {
+            listGameObjectDeActive[i].SetActive(false);
+        }
+    }
+
     private void Start()
     {
+        DeActiveListGameObject();
         if (DetailPanel)
         {
             DetailPanel.SetActive(true);
@@ -73,7 +87,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     public void AddCurrentScore(int amount)
     {
         currentScore += amount;
-        currentScoreTxt.text = "Điểm: "+ currentScore;
+        currentScoreTxt.text = ""+ currentScore;
     }
 
     private void SetRemainingOfFuncional()
@@ -199,44 +213,45 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();
-        currentLevel++;
-
+        puzzleModeController.gameObject.SetActive(false);
         isPauseGame = true;
         int levelScore = currentScore ;
-        levelScoreTxt.text ="Điểm "+ levelScore;
+        levelScoreTxt.text =""+ levelScore;
         
         //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
         int highScore = PlayerPrefs.GetInt("highScoreLevelRelaxPuzzleMode" + currentLevel + currentDifficultLevel, levelScore);
         if (levelScore >= highScore){
             PlayerPrefs.SetInt("highScoreLevelRelaxPuzzleMode" + currentLevel + currentDifficultLevel, levelScore);
-            highScoreTxt.text = "Kỷ lục " + levelScore;
+            highScoreTxt.text = "Record " + levelScore;
         }
         else
         {
-            highScoreTxt.text = "Kỷ lục " + highScore;
+            highScoreTxt.text = "Record " + highScore;
         }
 
         //Set tổng điểm qua các level của player
         int totalScore = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode",0)+ levelScore;
         PlayerPrefs.SetInt("totalScoreRelaxPuzzleMode",totalScore);
 
-        totalScoreTxt.text = "Tổng điểm "+ totalScore;
+        totalScoreTxt.text = "Total score "+ totalScore;
+
+        currentLevel++;
 
         if (currentLevel > listMatrixPuzzleModeController.Length)
         {
             winGamePanel.SetActive(true);
 
-            victoryTotalScoreTxt.text = "Tổng điểm " + totalScore;
+            victoryTotalScoreTxt.text = "Total score " + totalScore;
 
             int highScoreTotal = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode", totalScore);
             if (totalScore >= highScoreTotal)
             {
                 PlayerPrefs.SetInt("totalScoreRelaxPuzzleMode", highScoreTotal);
-                victoryHighScoreTxt.text = "Kỷ lục " + totalScore;
+                victoryHighScoreTxt.text = "Record " + totalScore;
             }
             else
             {
-                victoryHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
+                victoryHighScoreTxt.text = "Record " + highScoreTotal;
             }
 
             SetNewGameFuncionalRemaining();
@@ -263,17 +278,17 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         // Số điểm khi thua = tổng số điểm đã tích trước đó + số điểm hiện tại
         int totalScore = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode", 0) + currentScore;
 
-        loseTotalScoreTxt.text = "Tổng điểm " + totalScore;
+        loseTotalScoreTxt.text = "Total score " + totalScore;
 
         int highScoreTotal = PlayerPrefs.GetInt("highScoreRelaxPuzzleMode" + currentDifficultLevel, totalScore);
         if (totalScore >= highScoreTotal)
         {
             PlayerPrefs.SetInt("highScoreRelaxPuzzleMode" + currentDifficultLevel, highScoreTotal);
-            loseHighScoreTxt.text = "Kỷ lục " + totalScore;
+            loseHighScoreTxt.text = "Record " + totalScore;
         }
         else
         {
-            loseHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
+            loseHighScoreTxt.text = "Record " + highScoreTotal;
         }
 
         SetNewGameFuncionalRemaining();

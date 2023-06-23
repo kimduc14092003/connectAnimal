@@ -92,12 +92,14 @@ public class HomePanel : MonoBehaviour
     }
     public void OpenMoreGamePanel()
     {
+        AudioManager.Instance.PlaySFX("click_button");
         ChangeBackgroundToBackgroundName("bgOtherGame");
         homePanel.SetActive(false);
         moreGamePanel.SetActive(true);
     }
     public void CloseMoreGamePanel()
     {
+        AudioManager.Instance.PlaySFX("click_button");
         ChangeBackgroundToBackgroundName("bgHome");
 
         homePanel.SetActive(true);
@@ -147,7 +149,7 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "RelaxPuzzleMode");
-        SceneManager.LoadScene("RelaxPuzzleScene");
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRelaxModePanel()

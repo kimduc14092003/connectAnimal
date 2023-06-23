@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         string playerMode = PlayerPrefs.GetString("PlayeMode");
-        if (playerMode != "ClassicMode" && playerMode!= "RelaxRandomMode")
+        if (playerMode != "ClassicMode" && playerMode!= "RelaxRandomMode" && playerMode != "ChallengeMode")
         {
             GetComponent<LevelManager>().enabled = false;
         }
@@ -61,6 +61,8 @@ public class LevelManager : MonoBehaviour
 
                     listCellController.colPlay = 18;
                     listCellController.rowPlay = 8;
+                    listCellController.col = 20;
+                    listCellController.rowPlay = 10;
                     listCellController.numOfDifferentCell = 26;
                     listCellController.limitCellAdjacent = 8;
                     GridLayoutGroup gridLayoutGroup = listCellController.gameObject.GetComponent<GridLayoutGroup>();
@@ -331,7 +333,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            highScoreTxt.text = "Kỷ lục " + highScore;
+            highScoreTxt.text = "Record " + highScore;
         }
 
         //Set tổng điểm qua các level của player

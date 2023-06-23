@@ -35,18 +35,18 @@ public class DevModeScript : MonoBehaviour
             LevelManagerThreeMatch levelManagerThreeMatch = GameObject.Find("Canvas").GetComponent<LevelManagerThreeMatch>();
             LevelManagerEscapeMode levelManagerEscapeMode = GameObject.Find("Canvas").GetComponent<LevelManagerEscapeMode>();
 
-            if (levelManager != null)
+            if (levelManager != null && levelManager.enabled)
             {
                 levelManager.timeRemaining= levelManager.limitTimeOfLevel;
-            }else if(shadowModeLevelManager!= null)
+            }else if(shadowModeLevelManager != null && shadowModeLevelManager.enabled)
             {
                 shadowModeLevelManager.timeRemaining= shadowModeLevelManager.limitTimeOfLevel;
             }
-            else if (levelManagerThreeMatch != null)
+            else if (levelManagerThreeMatch != null && levelManagerThreeMatch.enabled)
             {
                 levelManagerThreeMatch.timeRemaining=levelManagerThreeMatch.limitTimeOfLevel;
             }
-            else if(levelManagerEscapeMode!= null)
+            else if(levelManagerEscapeMode != null && levelManagerEscapeMode.enabled)
             {
                 levelManagerEscapeMode.timeRemaining = levelManagerEscapeMode.limitTimeOfLevel;
             }
@@ -58,23 +58,23 @@ public class DevModeScript : MonoBehaviour
             ShadowModeLevelManager shadowModeLevelManager = GameObject.Find("Canvas").GetComponent<ShadowModeLevelManager>();
             LevelManagerThreeMatch levelManagerThreeMatch = GameObject.Find("Canvas").GetComponent< LevelManagerThreeMatch>();
 
-            if (levelManager != null)
+            if (levelManager != null && levelManager.enabled)
             {
                  PlayerPrefs.SetInt("remainingHP",10);
                  PlayerPrefs.SetInt("remainingFind",10);
                  PlayerPrefs.SetInt("remainingShuffle",10);
-            }else if(relaxPuzzleLevelManager != null)
+            }else if(relaxPuzzleLevelManager != null && relaxPuzzleLevelManager.enabled)
             {
                 PlayerPrefs.SetInt("remainingHPRelaxPuzzleMode", 10);
                 PlayerPrefs.SetInt("remainingFindRelaxPuzzleMode", 10);
                 PlayerPrefs.SetInt("remainingShuffleRelaxPuzzleMode", 10);
-            }else if(shadowModeLevelManager != null)
+            }else if(shadowModeLevelManager != null && shadowModeLevelManager.enabled)
             {
                 PlayerPrefs.SetInt("remainingHPShadowMode", 10);
                 PlayerPrefs.SetInt("remainingFindShadowMode", 10);
                 PlayerPrefs.SetInt("remainingShuffleShadowMode", 10);
             }
-            else if(levelManagerThreeMatch != null) 
+            else if(levelManagerThreeMatch != null && levelManagerThreeMatch.enabled) 
             {
                 PlayerPrefs.SetInt("bombRemainingThreeMatchMode", 5);
                 PlayerPrefs.SetInt("findRemainingThreeMatchMode", 5);
@@ -134,24 +134,26 @@ public class DevModeScript : MonoBehaviour
         ShadowModeLevelManager shadowModeLevelManager = GameObject.Find("Canvas").GetComponent<ShadowModeLevelManager>();
         LevelManagerThreeMatch levelManagerThreeMatch = GameObject.Find("Canvas").GetComponent<LevelManagerThreeMatch>();
         LevelManagerEscapeMode levelManagerEscapeMode = GameObject.Find("Canvas").GetComponent<LevelManagerEscapeMode>();
+        
 
-        if (levelManager != null)
+        if (levelManager != null&&levelManager.enabled)
         {
             levelManager.WinLevelNotification();
+
         }
-        else if(relaxPuzzleLevelManager!=null)
+        else if(relaxPuzzleLevelManager!=null&& relaxPuzzleLevelManager.enabled)
         {
             relaxPuzzleLevelManager.WinLevelNotification();
         }
-        else if (shadowModeLevelManager)
+        else if (shadowModeLevelManager && shadowModeLevelManager.enabled)
         {
             shadowModeLevelManager.WinLevelNotification();
         }
-        else if (levelManagerThreeMatch != null)
+        else if (levelManagerThreeMatch != null && levelManagerThreeMatch.enabled)
         {
             levelManagerThreeMatch.WinLevelNotification();
         }
-        else if (levelManagerEscapeMode != null)
+        else if (levelManagerEscapeMode != null && levelManagerEscapeMode.enabled)
         {
             levelManagerEscapeMode.WinLevelNotification();
         }
@@ -169,27 +171,27 @@ public class DevModeScript : MonoBehaviour
         LevelManagerThreeMatch levelManagerThreeMatch = GameObject.Find("Canvas").GetComponent<LevelManagerThreeMatch>();
         LevelManagerEscapeMode levelManagerEscapeMode = GameObject.Find("Canvas").GetComponent<LevelManagerEscapeMode>();
 
-        if (levelManager != null)
+        if (levelManager != null && levelManager.enabled)
         {
             levelManager.LoseGameNotification();
         }
-        else if (relaxPuzzleLevelManager != null)
+        else if (relaxPuzzleLevelManager != null && relaxPuzzleLevelManager.enabled)
         {
             relaxPuzzleLevelManager.LoseGameNotification();
         }
-        else if (shadowModeLevelManager)
+        else if (shadowModeLevelManager && shadowModeLevelManager.enabled)
         {
             shadowModeLevelManager.LoseGameNotification();
         }
-        else if (levelManagerEndless)
+        else if (levelManagerEndless && levelManagerEndless.enabled)
         {
             levelManagerEndless.LoseGameNotification();
         }
-        else if (levelManagerThreeMatch != null)
+        else if (levelManagerThreeMatch != null && levelManagerThreeMatch.enabled)
         {
             levelManagerThreeMatch.LoseGame();
         }
-        else if (levelManagerEscapeMode != null)
+        else if (levelManagerEscapeMode != null && levelManagerEscapeMode.enabled)
         {
             levelManagerEscapeMode.LoseGameNotification();
         }

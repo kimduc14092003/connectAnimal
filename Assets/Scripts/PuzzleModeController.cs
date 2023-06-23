@@ -53,8 +53,8 @@ public class PuzzleModeController : MonoBehaviour
 
     private void Start()
     {
-        float panelWidth = GetComponent<RectTransform>().rect.width;
-        float panelHeight = GetComponent<RectTransform>().rect.height;
+        float panelWidth = GetComponent<RectTransform>().rect.width*0.9f;
+        float panelHeight = GetComponent<RectTransform>().rect.height * 0.9f;
         layoutGroup.cellSize = new Vector2(panelWidth / colPlay, (panelWidth / colPlay) * 1.25f);
         if((panelWidth / colPlay) * 1.25f * row >= panelHeight)
         {

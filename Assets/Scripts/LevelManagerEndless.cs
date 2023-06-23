@@ -32,6 +32,7 @@ public class LevelManagerEndless : MonoBehaviour
         if(PlayerPrefs.GetString("PlayeMode")!= "EndlessMode")
         {
             GetComponent<LevelManagerEndless>().enabled = false;
+            return;
         }
         Application.targetFrameRate = 60;
         float coefficient= Mathf.Pow(0.667f, currentLevel/9);

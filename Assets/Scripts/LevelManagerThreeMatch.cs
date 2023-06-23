@@ -17,12 +17,10 @@ public class LevelManagerThreeMatch : MonoBehaviour
     private Vector3[] listChooseCellPos;
     public GameObject nothingCell;
 
-    public EndlessModeController endlessModeController;
     public Slider musicSlider, sfxSlider;
     public TMP_Text
-         currentScoreTxt, highScoreTxt, loseTitleLevel;
-    public Image bg;
-    public Sprite[] listSpriteBg;
+         loseTitleLevel;
+
     public Slider timeSlider;
     public float limitTimeOfLevel;
     public GameObject PausePanel, TimePanel;
@@ -161,19 +159,19 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             case 2:
                 {
-                    pointGameObject.transform.position=txtBomb.transform.position+Vector3.right*1;
+                    pointGameObject.transform.position=txtBomb.transform.position;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
             case 3:
                 {
-                    pointGameObject.transform.position = txtFind.transform.position + Vector3.right * 1;
+                    pointGameObject.transform.position = txtFind.transform.position ;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
             case 4:
                 {
-                    pointGameObject.transform.position = txtShuffle.transform.position + Vector3.right * 1;
+                    pointGameObject.transform.position = txtShuffle.transform.position ;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
@@ -293,7 +291,14 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             helpPanel.SetActive(false);
         }
-        AudioManager.Instance.PlayRandomMusic();
+        try
+        {
+            AudioManager.Instance.PlayRandomMusic();
+        }
+        catch
+        {
+            Debug.Log("Audio Not Found!");
+        }
     }
 
     //Lấy vị trí của được chọn sẽ đến 
@@ -489,7 +494,14 @@ public class LevelManagerThreeMatch : MonoBehaviour
     {
         if (bombRemaining > 0&&!isBomb)
         {
-            AudioManager.Instance.PlaySFX("bomb");
+            try
+            {
+                AudioManager.Instance.PlaySFX("bomb");
+            }
+            catch
+            {
+                Debug.Log("Audio Not Found!");
+            }
 
             isBomb = true;
             Invoke("BombDone", 0.75f);

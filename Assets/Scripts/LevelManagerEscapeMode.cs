@@ -12,8 +12,6 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public ListCellEscapeController listCellEscapeController;
     public Slider musicSlider, sfxSlider;
 
-    public Image bg;
-    public Sprite[] listSpriteBg;
     public Slider timeSlider;
     public float limitTimeOfLevel;
     public int currentLevel;

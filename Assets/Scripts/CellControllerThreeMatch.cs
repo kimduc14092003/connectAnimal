@@ -52,7 +52,16 @@ public class CellControllerThreeMatch : MonoBehaviour
 
     public void GetPosOfCell()
     {
-        AudioManager.Instance.PlaySFX("click");
+        try
+        {
+            AudioManager.Instance.PlaySFX("click");
+        }
+        catch
+        {
+            Debug.Log("Audio Not Found!");
+        }
+
+        
         Button buttonCell = GetComponent<Button>();
         buttonCell.interactable = false;
         BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();

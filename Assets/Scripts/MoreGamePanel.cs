@@ -57,6 +57,8 @@ public class MoreGamePanel : MonoBehaviour
     {
         if (!isRotate)
         {
+            AudioManager.Instance.PlaySFX("click_button");
+
             isRotate = true;
             transform.DORotate(new Vector3(0, transform.rotation.eulerAngles.y - 30, 0), 1f).OnComplete(() =>
             {
@@ -74,6 +76,8 @@ public class MoreGamePanel : MonoBehaviour
     {
         if (!isRotate)
         {
+            AudioManager.Instance.PlaySFX("click_button");
+
             isRotate = true;
             transform.DORotate(new Vector3(0, transform.rotation.eulerAngles.y + 30, 0), 1f).OnComplete(() =>
             {

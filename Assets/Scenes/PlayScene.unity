@@ -2403,6 +2403,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2000068347}
+        m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000068348}
+        m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &362149941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15009,90 +15033,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959493492}
   m_CullTransparentMesh: 1
---- !u!1 &997178877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 997178879}
-  - component: {fileID: 997178878}
-  m_Layer: 0
-  m_Name: game over
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &997178878
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997178877}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1109225945
-  m_SortingLayer: 2
-  m_SortingOrder: 58
-  m_Sprite: {fileID: 21300000, guid: bb4337030130f7c4cbe7dcb9d25b4c07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.36078432}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &997178879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997178877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.17, y: -0.39, z: 0}
-  m_LocalScale: {x: 0.9236147, y: 0.9251319, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031897809
 GameObject:
   m_ObjectHideFlags: 0
@@ -20405,6 +20345,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2000068344}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000068347}
+        m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
@@ -29233,6 +29185,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2000068347}
+        m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000068348}
+        m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815979712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30895,6 +30871,7 @@ GameObject:
   - component: {fileID: 2000068345}
   - component: {fileID: 2000068346}
   - component: {fileID: 2000068347}
+  - component: {fileID: 2000068348}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -30978,7 +30955,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1540657169}
-  - {fileID: 209812499}
   - {fileID: 1851040057}
   - {fileID: 1279105834}
   - {fileID: 9453525}
@@ -30986,6 +30962,7 @@ RectTransform:
   - {fileID: 1770011545}
   - {fileID: 1462780678}
   - {fileID: 1277641423}
+  - {fileID: 209812499}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31127,6 +31104,65 @@ MonoBehaviour:
   lineController: {fileID: 1279105835}
   btnFind: {fileID: 1154233286}
   btnShuffle: {fileID: 75025830}
+  listGameObjectDeActive:
+  - {fileID: 1152632344}
+--- !u!114 &2000068348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000068339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f206d245c1386da42a7190760a1b2c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listMatrixShadowModeController:
+  - {fileID: 2038572691271759312, guid: 10db57281f96c6649a5ae66fda6dbc3b, type: 3}
+  - {fileID: 868185948318335505, guid: 7b6762434a8371f4694b7a66667ee582, type: 3}
+  - {fileID: 6432115902529048575, guid: a8bc8feb55595d44f869c27a60b800bd, type: 3}
+  - {fileID: 2355043334283233323, guid: 9f6b7112eb63ff44a9a03100a2f9e5cc, type: 3}
+  - {fileID: 579460110469823093, guid: e7c4377bf655ea44aa3826e821351c11, type: 3}
+  - {fileID: 7275057885950991129, guid: d42fdac5f687b4e46ae5843becd7454b, type: 3}
+  listMatrixButterflyController:
+  - {fileID: 802587272147305378, guid: 2f05862e9527525498eb7bfb09b3fdce, type: 3}
+  - {fileID: 5588702869886886465, guid: 84fe80999a87cbe4b8891a682bb0495f, type: 3}
+  - {fileID: 1919523867019899810, guid: 3040d1d8562ea394cb34bdc2de11b793, type: 3}
+  - {fileID: 4766833894334439072, guid: 860cde2ac51b8e749ac7a9cec4ed38f5, type: 3}
+  - {fileID: 6600189978707782376, guid: af54181bdc72c2d44824c551427c6ff4, type: 3}
+  - {fileID: 5102363820027881550, guid: 790e66977d5359242b1cd10976badb72, type: 3}
+  shadowModeController: {fileID: 0}
+  musicSlider: {fileID: 1117916127}
+  sfxSlider: {fileID: 1200199597}
+  numberShuffle: {fileID: 1236558090}
+  numberFind: {fileID: 566707059}
+  numberHP: {fileID: 1711357466}
+  levelTitle: {fileID: 586235689}
+  currentScoreTxt: {fileID: 697513140}
+  levelScoreTxt: {fileID: 362909}
+  totalScoreTxt: {fileID: 1581327411}
+  highScoreTxt: {fileID: 1436260511}
+  victoryTotalScoreTxt: {fileID: 1263060994}
+  victoryHighScoreTxt: {fileID: 417646428}
+  loseTotalScoreTxt: {fileID: 438082723}
+  loseHighScoreTxt: {fileID: 503958814}
+  currentLevel: 0
+  PausePanel: {fileID: 9453524}
+  DetailPanel: {fileID: 209812498}
+  winLevelPanel: {fileID: 624620228}
+  loseGamePanel: {fileID: 1770011544}
+  winGamePanel: {fileID: 1462780677}
+  notifyMinusHearth: {fileID: 1277641422}
+  TutorialPanel: {fileID: 0}
+  isShuffle: 0
+  isFinded: 0
+  lineController: {fileID: 1279105835}
+  btnFind: {fileID: 1154233286}
+  btnShuffle: {fileID: 75025830}
+  limitTimeOfLevel: 200
+  timeSlider: {fileID: 1152632346}
+  timeRemaining: 0
 --- !u!1 &2001806410
 GameObject:
   m_ObjectHideFlags: 0

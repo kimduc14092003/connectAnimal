@@ -37,7 +37,7 @@ public class MoreGameItemController : MonoBehaviour
         if (nameSceneToLoad != null)
         {
             PlayerPrefs.SetString("PlayeMode", modeName);
-            SceneManager.LoadScene("PlayScene");
+            SceneManager.LoadScene(nameSceneToLoad);
         }
     }
 

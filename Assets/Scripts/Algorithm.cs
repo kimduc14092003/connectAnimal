@@ -14,6 +14,7 @@ public class Algorithm : MonoBehaviour
         if (gameObject.GetComponent<ListCellController>())
         {
             Matrix=gameObject.GetComponent<ListCellController>().Matrix;
+
         }
         else if(gameObject.GetComponent<PuzzleModeController>())
         {
@@ -25,6 +26,9 @@ public class Algorithm : MonoBehaviour
         else if (gameObject.GetComponent<ListCellEscapeController>())
         {
             Matrix = gameObject.GetComponent<ListCellEscapeController>().Matrix;
+        }
+        if (Matrix == null)
+        {
         }
     }
 

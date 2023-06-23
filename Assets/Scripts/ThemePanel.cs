@@ -49,6 +49,8 @@ public class ThemePanel : MonoBehaviour
 
     public void NextButton()
     {
+        AudioManager.Instance.PlaySFX("click_button");
+
         if (index >= 1)
         {
             index = 1;
@@ -75,6 +77,8 @@ public class ThemePanel : MonoBehaviour
     }
     public void BackButton()
     {
+        AudioManager.Instance.PlaySFX("click_button");
+
         if (index <= 0)
         {
             index = 0;

@@ -17,10 +17,9 @@ public class ShadowModeLevelManager : MonoBehaviour
     public TMP_Text numberShuffle, numberFind, numberHP,
         levelTitle, currentScoreTxt, levelScoreTxt, totalScoreTxt, highScoreTxt,
         victoryTotalScoreTxt, victoryHighScoreTxt, loseTotalScoreTxt, loseHighScoreTxt;
-    public Image bg;
-    public Sprite[] listSpriteBg;
+
     public int currentLevel;
-    public GameObject PausePanel,TimePanel,FunctionPanel;
+    public GameObject PausePanel,DetailPanel;
     public GameObject winLevelPanel,loseGamePanel,winGamePanel;
     public GameObject notifyMinusHearth;
     public GameObject TutorialPanel;
@@ -43,6 +42,13 @@ public class ShadowModeLevelManager : MonoBehaviour
     private void Awake()
     {
         Application.targetFrameRate = 60;
+
+        if (PlayerPrefs.GetString("PlayeMode") != "ShadowMode"&& PlayerPrefs.GetString("PlayeMode") != "ButterflyMode")
+        {
+            GetComponent<ShadowModeLevelManager>().enabled = false;
+            return;
+        }
+
         currentMode = PlayerPrefs.GetString("PlayeMode");
         if (currentMode == "ShadowMode")
         {
@@ -65,10 +71,10 @@ public class ShadowModeLevelManager : MonoBehaviour
 
     private void Start()
     {
-        if (FunctionPanel)
+        if (DetailPanel)
         {
-            FunctionPanel.SetActive(true);
-            levelTitle.text = "Màn " + currentLevel;
+            DetailPanel.SetActive(true);
+            levelTitle.text = "Level " + currentLevel;
         }
 
         currentScore = 0;
@@ -88,7 +94,6 @@ public class ShadowModeLevelManager : MonoBehaviour
             remainingFind = PlayerPrefs.GetInt("remainingFindButterflyMode", 10);
             remainingShuffle = PlayerPrefs.GetInt("remainingShuffleButterflyMode", 10);
         }
-        bg.sprite = listSpriteBg[PlayerPrefs.GetInt("bgSpriteIndex",0)];
         if (numberShuffle)
         {
             SetRemainingOfFuncional();
@@ -140,21 +145,15 @@ public class ShadowModeLevelManager : MonoBehaviour
     {
         if (isPauseGame)
         {
-            TimePanel.SetActive(false);
+            DetailPanel.SetActive(false);
             shadowModeController.gameObject.SetActive(false);
-            if (FunctionPanel)
-            {
-                FunctionPanel.SetActive(false);
-            }
+
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
-            if (FunctionPanel)
-            {
-                FunctionPanel.SetActive(true);
-            }
+            DetailPanel.SetActive(true);
+            
             shadowModeController.gameObject.SetActive(true);
 
         }

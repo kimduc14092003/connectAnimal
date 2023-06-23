@@ -41,19 +41,27 @@ public class ListCellController : MonoBehaviour
 
     private void Awake()
     {
-        algorithm=GetComponent<Algorithm>();
-        layoutGroup = GetComponent<GridLayoutGroup>();
-        col = colPlay + 2;
-        row = rowPlay + 2;
-        Matrix = new string[col,row];
-        listPos = new Vector3[col, row];
-        cellRemain = colPlay*rowPlay;
-        //set level cho random mode
-        randomLevel = Random.Range(0, 8);
+        if (!levelManager.enabled)
+        {
+            GetComponent<ListCellController>().enabled = false;
+            return;
+        }
+
     }
 
     private void Start()
     {
+        layoutGroup = GetComponent<GridLayoutGroup>();
+        col = colPlay + 2;
+        row = rowPlay + 2;
+        Matrix = new string[col, row];
+        listPos = new Vector3[col, row];
+        cellRemain = colPlay * rowPlay;
+        algorithm = GetComponent<Algorithm>();
+
+        //set level cho random mode
+        randomLevel = Random.Range(0, 8);
+
         float panelWidth = GetComponent<RectTransform>().rect.width;
         float panelHeight = GetComponent<RectTransform>().rect.height;
         layoutGroup.cellSize = new Vector2(panelWidth / colPlay, (panelWidth / colPlay) * 1.25f);
@@ -65,11 +73,16 @@ public class ListCellController : MonoBehaviour
         listCell = new List<GameObject>();
         currentLevel = levelManager.currentLevel;
         SpawnDefaultCell();
+        Invoke("ShuffleAllIfNothingDefault", Time.deltaTime);
+        print(countCellAdjacent);
+    }
+
+    private void ShuffleAllIfNothingDefault()
+    {
         if (!FindCellToScore())
         {
             ShuffleAllCell(0);
         }
-        print(countCellAdjacent);
     }
 
 
