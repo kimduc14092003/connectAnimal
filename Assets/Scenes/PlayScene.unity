@@ -30894,6 +30894,7 @@ GameObject:
   - component: {fileID: 2000068344}
   - component: {fileID: 2000068345}
   - component: {fileID: 2000068346}
+  - component: {fileID: 2000068347}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -31020,10 +31021,6 @@ MonoBehaviour:
   victoryHighScoreTxt: {fileID: 417646428}
   loseTotalScoreTxt: {fileID: 438082723}
   loseHighScoreTxt: {fileID: 503958814}
-  bg: {fileID: 1540657170}
-  listSpriteBg:
-  - {fileID: 21300000, guid: 006718012b656ac45ba4ec5df58a6624, type: 3}
-  - {fileID: 21300000, guid: 006718012b656ac45ba4ec5df58a6624, type: 3}
   timeSlider: {fileID: 1152632346}
   limitTimeOfLevel: 600
   currentLevel: 0
@@ -31085,6 +31082,51 @@ MonoBehaviour:
   - {fileID: 1878834153}
   - {fileID: 2125689169}
   - {fileID: 1851040056}
+--- !u!114 &2000068347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000068339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d6819393663ed4c84dc6837d3008d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listMatrixPuzzleModeController:
+  - {fileID: 762163009688616866, guid: d81d0c9a9f2c2214594a10e50a7748aa, type: 3}
+  - {fileID: 7585416036729767071, guid: fcebdecaa085f4b4097e8e31b2fa5618, type: 3}
+  - {fileID: 7628802756186458171, guid: 987d72a877d2ba94780323c15ad90d38, type: 3}
+  - {fileID: 4624171794560978899, guid: 6c55d3837e2240e48b756ee3f44791a7, type: 3}
+  - {fileID: 5894791755969964637, guid: fc884348de3fbd74688274a41e4aecb9, type: 3}
+  puzzleModeController: {fileID: 0}
+  musicSlider: {fileID: 1117916127}
+  sfxSlider: {fileID: 1200199597}
+  numberShuffle: {fileID: 1236558090}
+  numberFind: {fileID: 566707059}
+  numberHP: {fileID: 1711357466}
+  levelTitle: {fileID: 586235689}
+  currentScoreTxt: {fileID: 697513140}
+  levelScoreTxt: {fileID: 362909}
+  totalScoreTxt: {fileID: 1581327411}
+  highScoreTxt: {fileID: 1436260511}
+  victoryTotalScoreTxt: {fileID: 1263060994}
+  victoryHighScoreTxt: {fileID: 503958814}
+  loseTotalScoreTxt: {fileID: 438082723}
+  loseHighScoreTxt: {fileID: 503958814}
+  currentLevel: 0
+  PausePanel: {fileID: 9453524}
+  DetailPanel: {fileID: 209812498}
+  winLevelPanel: {fileID: 624620228}
+  loseGamePanel: {fileID: 1770011544}
+  winGamePanel: {fileID: 1462780677}
+  notifyMinusHearth: {fileID: 1277641422}
+  isShuffle: 0
+  isFinded: 0
+  lineController: {fileID: 1279105835}
+  btnFind: {fileID: 1154233286}
+  btnShuffle: {fileID: 75025830}
 --- !u!1 &2001806410
 GameObject:
   m_ObjectHideFlags: 0

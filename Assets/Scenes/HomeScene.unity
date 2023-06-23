@@ -560,7 +560,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1791137260}
         m_TargetAssemblyTypeName: HomePanel, Assembly-CSharp
-        m_MethodName: OpenRelaxModePanel
+        m_MethodName: OpenRelaxPuzzleMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2203,7 +2203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &676012310
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10593,7 +10593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -77, y: -266}
+  m_AnchoredPosition: {x: -77, y: -194}
   m_SizeDelta: {x: 156.08, y: 110.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2851269571824703901

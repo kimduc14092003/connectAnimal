@@ -15,14 +15,10 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     public TMP_Text numberShuffle, numberFind, numberHP,
         levelTitle, currentScoreTxt, levelScoreTxt, totalScoreTxt, highScoreTxt,
         victoryTotalScoreTxt, victoryHighScoreTxt, loseTotalScoreTxt, loseHighScoreTxt;
-    public Image bg;
-    public Sprite[] listSpriteBg;
-    public float limitTimeOfLevel;
     public int currentLevel;
-    public GameObject PausePanel,TimePanel,FunctionPanel;
+    public GameObject PausePanel,DetailPanel;
     public GameObject winLevelPanel,loseGamePanel,winGamePanel;
     public GameObject notifyMinusHearth;
-    public GameObject TutorialPanel;
     public bool isShuffle;
     public bool isFinded;
     public LineController lineController;
@@ -52,10 +48,10 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
 
     private void Start()
     {
-        if (FunctionPanel)
+        if (DetailPanel)
         {
-            FunctionPanel.SetActive(true);
-            levelTitle.text = "Màn " + currentLevel;
+            DetailPanel.SetActive(true);
+            levelTitle.text = "Level " + currentLevel;
         }
 
         currentScore = 0;
@@ -65,7 +61,6 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         remainingHP = PlayerPrefs.GetInt("remainingHPRelaxPuzzleMode",10);
         remainingFind = PlayerPrefs.GetInt("remainingFindRelaxPuzzleMode",10);
         remainingShuffle = PlayerPrefs.GetInt("remainingShuffleRelaxPuzzleMode", 10);
-        bg.sprite = listSpriteBg[PlayerPrefs.GetInt("bgSpriteIndex",0)];
         if (numberShuffle)
         {
             SetRemainingOfFuncional();
@@ -104,21 +99,13 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     {
         if (isPauseGame)
         {
-            TimePanel.SetActive(false);
+            DetailPanel.SetActive(false);
             puzzleModeController.gameObject.SetActive(false);
-            if (FunctionPanel)
-            {
-                FunctionPanel.SetActive(false);
-            }
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
-            if (FunctionPanel)
-            {
-                FunctionPanel.SetActive(true);
-            }
+            DetailPanel.SetActive(true);
             puzzleModeController.gameObject.SetActive(true);
 
         }

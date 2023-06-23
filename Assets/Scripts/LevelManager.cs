@@ -14,8 +14,7 @@ public class LevelManager : MonoBehaviour
     public TMP_Text numberShuffle, numberFind, numberHP,
         levelTitle, currentScoreTxt, levelScoreTxt, totalScoreTxt, highScoreTxt,
         victoryTotalScoreTxt, victoryHighScoreTxt, loseTotalScoreTxt, loseHighScoreTxt;
-    public Image bg;
-    public Sprite[] listSpriteBg;
+
     public Slider timeSlider;
     public float limitTimeOfLevel;
     public int currentLevel;
@@ -99,7 +98,6 @@ public class LevelManager : MonoBehaviour
         remainingHP = PlayerPrefs.GetInt("remainingHP");
         remainingFind = PlayerPrefs.GetInt("remainingFind");
         remainingShuffle = PlayerPrefs.GetInt("remainingShuffle");
-        bg.sprite = listSpriteBg[PlayerPrefs.GetInt("bgSpriteIndex",0)];
         if (numberShuffle)
         {
             SetRemainingOfFuncional();
