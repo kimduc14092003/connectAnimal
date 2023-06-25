@@ -175,17 +175,17 @@ public class LevelManagerEndless : MonoBehaviour
 
         int totalScore = currentScore;
 
-        loseTotalScoreTxt.text = "Tổng điểm " + totalScore;
+        loseTotalScoreTxt.text = "Total score : " + totalScore;
 
         int highScoreTotal = PlayerPrefs.GetInt("highScoreTotalEndlessMode" , totalScore);
         if (totalScore >= highScoreTotal)
         {
             PlayerPrefs.SetInt("highScoreTotalEndlessMode", highScoreTotal);
-            loseHighScoreTxt.text = "Kỷ lục " + totalScore;
+            loseHighScoreTxt.text = "Record : " + totalScore;
         }
         else
         {
-            loseHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
+            loseHighScoreTxt.text = "Record : " + highScoreTotal;
         }
 
     }

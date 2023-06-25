@@ -216,7 +216,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         puzzleModeController.gameObject.SetActive(false);
         isPauseGame = true;
         int levelScore = currentScore ;
-        levelScoreTxt.text =""+ levelScore;
+        levelScoreTxt.text ="Score"+ levelScore;
         
         //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
         int highScore = PlayerPrefs.GetInt("highScoreLevelRelaxPuzzleMode" + currentLevel + currentDifficultLevel, levelScore);
