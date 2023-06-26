@@ -23,7 +23,8 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public LineController lineController;
     public float timeRemaining;
     public int limitMoveTurn;
-    public TMP_Text limitMoveTurnTxt, levelTitle;
+    public TMP_Text limitMoveTurnTxt, levelTitle, scoreTxt, recordScoreTxt, totalScoreTxt,loseTotalScoreTxt,loseTotalScoreRecordTxt;
+
     private bool isPauseGame;
 
     private void Awake()
@@ -61,7 +62,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
         if (FunctionPanel)
         {
             FunctionPanel.SetActive(true);
-            levelTitle.text = "Màn " + currentLevel;
+            levelTitle.text = "Level " + currentLevel;
         }
         timeSlider.maxValue = limitTimeOfLevel;
         timeRemaining = limitTimeOfLevel;
@@ -175,7 +176,28 @@ public class LevelManagerEscapeMode : MonoBehaviour
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX("win");
         isPauseGame = true;
+
+        //Lưu điểm số player
+        scoreTxt.text ="Score : "+ (int)timeRemaining + "";
+
+        int recordScoreEscapeMode = PlayerPrefs.GetInt("recordScoreEscapeMode"+currentLevel, 0);
+        if(timeRemaining> recordScoreEscapeMode)
+        {
+            PlayerPrefs.SetInt("recordScoreEscapeMode" + currentLevel, (int) timeRemaining);
+            recordScoreTxt.text= "Record : " + (int)timeRemaining + "";
+        }
+        else
+        {
+            recordScoreTxt.text = "Record : " + recordScoreEscapeMode +"";
+        }
         
+        int totalScoreEscapeMode = PlayerPrefs.GetInt("totalScoreEscapeMode", 0);
+        totalScoreEscapeMode += (int)timeRemaining;
+        totalScoreTxt.text = "Total score : " + totalScoreEscapeMode + "";
+
+        PlayerPrefs.SetInt("totalScoreEscapeMode", totalScoreEscapeMode);
+
+
         TimePanel.SetActive(false);
         FunctionPanel.SetActive(false);
         currentMap.SetActive(false);
@@ -191,6 +213,21 @@ public class LevelManagerEscapeMode : MonoBehaviour
         AudioManager.Instance.PlaySFX("lose");
         PlayerPrefs.SetInt("currentLevelEscapeMode", 1);
 
+        int totalScore = PlayerPrefs.GetInt("totalScoreEscapeMode", 0);
+        loseTotalScoreTxt.text = "Total score : "+ totalScore;
+
+        int totalScoreRecord = PlayerPrefs.GetInt("totalScoreRecordEscapeMode", 0);
+
+        if(totalScore> totalScoreRecord)
+        {
+            loseTotalScoreRecordTxt.text = "Record : " + totalScore;
+            PlayerPrefs.SetInt("totalScoreRecordEscapeMode", totalScore);
+        }
+        else
+        {
+            loseTotalScoreRecordTxt.text = "Record : " + totalScoreRecord;
+        }
+        PlayerPrefs.SetInt("totalScoreEscapeMode", 0);
         isPauseGame = true;
         loseGamePanel.SetActive(true);
         rabbit.SetActive(false);

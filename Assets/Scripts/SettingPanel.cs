@@ -79,7 +79,7 @@ public class SettingPanel : MonoBehaviour
     public void PlayGame()
     {
         SetDifficultLevel();
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadSceneAsync("PlayScene");
     }
 
     private void SetDifficultLevel()
@@ -115,5 +115,6 @@ public class SettingPanel : MonoBehaviour
     public void EffectClickChangeDifficult()
     {
         AudioManager.Instance.PlaySFX("click_button");
+        SetDifficultLevel();
     }
 }
