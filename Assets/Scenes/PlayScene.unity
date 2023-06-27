@@ -355,7 +355,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -367,7 +367,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -379,7 +379,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -1889,15 +1889,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1151947094, guid: 288e4a3a4b0afc0478f5c1fd4c640acb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2275,7 +2275,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -2287,7 +2287,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -2299,7 +2299,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -9227,7 +9227,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -9239,7 +9239,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -9251,7 +9251,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -9397,7 +9397,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -9409,7 +9409,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -9421,7 +9421,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: PlayNewGame
         m_Mode: 1
@@ -14955,7 +14955,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -14967,7 +14967,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -14979,7 +14979,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -20388,7 +20388,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -20400,7 +20400,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -28894,7 +28894,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -28906,7 +28906,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -28918,7 +28918,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -30535,7 +30535,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068346}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManagerEndless, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -30547,7 +30547,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068347}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RelaxPuzzleLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -30559,7 +30559,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000068348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShadowModeLevelManager, Assembly-CSharp
         m_MethodName: ReturnHomeScene
         m_Mode: 1
@@ -30705,9 +30705,6 @@ GameObject:
   - component: {fileID: 2000068340}
   - component: {fileID: 2000068344}
   - component: {fileID: 2000068345}
-  - component: {fileID: 2000068346}
-  - component: {fileID: 2000068347}
-  - component: {fileID: 2000068348}
   - component: {fileID: 2000068349}
   m_Layer: 5
   m_Name: Canvas
@@ -30860,146 +30857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961200a0b349d1e448c890e55a7c7d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2000068346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000068339}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84e077a27776bd34d92e37fbd2690586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endlessModeController: {fileID: 0}
-  musicSlider: {fileID: 1117916127}
-  sfxSlider: {fileID: 1200199597}
-  currentScoreTxt: {fileID: 697513140}
-  highScoreTxt: {fileID: 61923046}
-  loseTotalScoreTxt: {fileID: 438082723}
-  loseHighScoreTxt: {fileID: 503958814}
-  timeSlider: {fileID: 1152632346}
-  limitTimeOfLevel: 15
-  currentLevel: 0
-  PausePanel: {fileID: 9453524}
-  DetailPanel: {fileID: 209812498}
-  loseGamePanel: {fileID: 1770011544}
-  listMatrix:
-  - {fileID: 1091552282713234457, guid: bce49236c8a0fc14a860286eb0162cee, type: 3}
-  - {fileID: 1091552282713234457, guid: 4e1c75ac1b8a3284a9248481602327d2, type: 3}
-  - {fileID: 2238572314334669062, guid: 5b060ce27a3064d49ba6d2639fccb3f3, type: 3}
-  - {fileID: 1091552282713234457, guid: 1a36556f2cfe06946ae68f72652be455, type: 3}
-  lineController: {fileID: 1279105835}
-  timeRemaining: 0
-  listGameObjectDeActive:
-  - {fileID: 1878834153}
-  - {fileID: 2125689169}
-  - {fileID: 1851040056}
---- !u!114 &2000068347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000068339}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17d6819393663ed4c84dc6837d3008d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listMatrixPuzzleModeController:
-  - {fileID: 762163009688616866, guid: d81d0c9a9f2c2214594a10e50a7748aa, type: 3}
-  - {fileID: 7585416036729767071, guid: fcebdecaa085f4b4097e8e31b2fa5618, type: 3}
-  - {fileID: 7628802756186458171, guid: 987d72a877d2ba94780323c15ad90d38, type: 3}
-  - {fileID: 4624171794560978899, guid: 6c55d3837e2240e48b756ee3f44791a7, type: 3}
-  - {fileID: 5894791755969964637, guid: fc884348de3fbd74688274a41e4aecb9, type: 3}
-  puzzleModeController: {fileID: 0}
-  musicSlider: {fileID: 1117916127}
-  sfxSlider: {fileID: 1200199597}
-  numberShuffle: {fileID: 1236558090}
-  numberFind: {fileID: 566707059}
-  numberHP: {fileID: 1711357466}
-  levelTitle: {fileID: 586235689}
-  currentScoreTxt: {fileID: 697513140}
-  levelScoreTxt: {fileID: 362909}
-  totalScoreTxt: {fileID: 1581327411}
-  highScoreTxt: {fileID: 1436260511}
-  victoryTotalScoreTxt: {fileID: 2090954213}
-  victoryHighScoreTxt: {fileID: 1198704844}
-  loseTotalScoreTxt: {fileID: 438082723}
-  loseHighScoreTxt: {fileID: 503958814}
-  currentLevel: 0
-  PausePanel: {fileID: 9453524}
-  DetailPanel: {fileID: 209812498}
-  winLevelPanel: {fileID: 624620228}
-  loseGamePanel: {fileID: 1770011544}
-  winGamePanel: {fileID: 1462780677}
-  notifyMinusHearth: {fileID: 1277641422}
-  isShuffle: 0
-  isFinded: 0
-  lineController: {fileID: 1279105835}
-  btnFind: {fileID: 1154233286}
-  btnShuffle: {fileID: 75025830}
-  listGameObjectDeActive:
-  - {fileID: 1152632344}
---- !u!114 &2000068348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000068339}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f206d245c1386da42a7190760a1b2c15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listMatrixShadowModeController:
-  - {fileID: 2038572691271759312, guid: 10db57281f96c6649a5ae66fda6dbc3b, type: 3}
-  - {fileID: 868185948318335505, guid: 7b6762434a8371f4694b7a66667ee582, type: 3}
-  - {fileID: 6432115902529048575, guid: a8bc8feb55595d44f869c27a60b800bd, type: 3}
-  - {fileID: 2355043334283233323, guid: 9f6b7112eb63ff44a9a03100a2f9e5cc, type: 3}
-  - {fileID: 579460110469823093, guid: e7c4377bf655ea44aa3826e821351c11, type: 3}
-  - {fileID: 7275057885950991129, guid: d42fdac5f687b4e46ae5843becd7454b, type: 3}
-  listMatrixButterflyController:
-  - {fileID: 802587272147305378, guid: 2f05862e9527525498eb7bfb09b3fdce, type: 3}
-  - {fileID: 5588702869886886465, guid: 84fe80999a87cbe4b8891a682bb0495f, type: 3}
-  - {fileID: 1919523867019899810, guid: 3040d1d8562ea394cb34bdc2de11b793, type: 3}
-  - {fileID: 4766833894334439072, guid: 860cde2ac51b8e749ac7a9cec4ed38f5, type: 3}
-  - {fileID: 6600189978707782376, guid: af54181bdc72c2d44824c551427c6ff4, type: 3}
-  - {fileID: 5102363820027881550, guid: 790e66977d5359242b1cd10976badb72, type: 3}
-  shadowModeController: {fileID: 0}
-  musicSlider: {fileID: 1117916127}
-  sfxSlider: {fileID: 1200199597}
-  numberShuffle: {fileID: 1236558090}
-  numberFind: {fileID: 566707059}
-  numberHP: {fileID: 1711357466}
-  levelTitle: {fileID: 586235689}
-  currentScoreTxt: {fileID: 697513140}
-  levelScoreTxt: {fileID: 362909}
-  totalScoreTxt: {fileID: 1581327411}
-  highScoreTxt: {fileID: 1436260511}
-  victoryTotalScoreTxt: {fileID: 2090954213}
-  victoryHighScoreTxt: {fileID: 1198704844}
-  loseTotalScoreTxt: {fileID: 438082723}
-  loseHighScoreTxt: {fileID: 503958814}
-  currentLevel: 0
-  PausePanel: {fileID: 9453524}
-  DetailPanel: {fileID: 209812498}
-  winLevelPanel: {fileID: 624620228}
-  loseGamePanel: {fileID: 1770011544}
-  winGamePanel: {fileID: 1462780677}
-  notifyMinusHearth: {fileID: 1277641422}
-  TutorialPanel: {fileID: 0}
-  isShuffle: 0
-  isFinded: 0
-  lineController: {fileID: 1279105835}
-  btnFind: {fileID: 1154233286}
-  btnShuffle: {fileID: 75025830}
-  limitTimeOfLevel: 200
-  timeSlider: {fileID: 1152632346}
-  timeRemaining: 0
 --- !u!114 &2000068349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31014,9 +30871,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listComponent:
   - {fileID: 2000068344}
-  - {fileID: 2000068346}
-  - {fileID: 2000068347}
-  - {fileID: 2000068348}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2001806410
 GameObject:
   m_ObjectHideFlags: 0

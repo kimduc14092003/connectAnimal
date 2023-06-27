@@ -122,7 +122,7 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ClassicMode");
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadScene("PlayScene",LoadSceneMode.Additive);
     }
 
     public void OpenEndlessMode()
