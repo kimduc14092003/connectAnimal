@@ -122,34 +122,34 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ClassicMode");
-        SceneManager.LoadSceneAsync("PlayScene");
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenEndlessMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadSceneAsync("MoreGameScene");
+        SceneManager.LoadScene("MoreGameScene");
     }
 
     public void OpenChallengeMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ChallengeMode");
-        SceneManager.LoadSceneAsync("PlayScene");
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRandomMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "RelaxRandomMode");
-        SceneManager.LoadSceneAsync("PlayScene");
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRelaxPuzzleMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "RelaxPuzzleMode");
-        SceneManager.LoadSceneAsync("PlayScene");
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRelaxModePanel()
@@ -168,26 +168,26 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ShadowMode");
-        SceneManager.LoadSceneAsync("ShadowModeScene");
+        SceneManager.LoadScene("ShadowModeScene");
     }
     public void OpenButterflyMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ButterflyMode");
-        SceneManager.LoadSceneAsync("ShadowModeScene");
+        SceneManager.LoadScene("ShadowModeScene");
     }
     public void OpenThreeMatchMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ThreeMatchMode");
-        SceneManager.LoadSceneAsync("ThreeMatchModeScene");
+        SceneManager.LoadScene("ThreeMatchModeScene");
     }
 
     public void OpenEscapeMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "EscapeMode");
-        SceneManager.LoadSceneAsync("EscapeMode");
+        SceneManager.LoadScene("EscapeMode");
     }
     public void OpenThemePanel()
     {

@@ -65,7 +65,7 @@ public class Treasure : MonoBehaviour
     {
         switch (id)
         {
-            case "icon_item_bom":
+            case "bom":
                 {
                     int current = PlayerPrefs.GetInt("bombRemainingThreeMatchMode", 5);
                     PlayerPrefs.SetInt("bombRemainingThreeMatchMode", ++current);

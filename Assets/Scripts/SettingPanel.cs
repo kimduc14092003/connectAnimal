@@ -85,6 +85,10 @@ public class SettingPanel : MonoBehaviour
     private void SetDifficultLevel()
     {
         Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
+        if(toggle == null)
+        {
+            return;
+        }
         switch (toggle.name)
         {
             case "Easy":

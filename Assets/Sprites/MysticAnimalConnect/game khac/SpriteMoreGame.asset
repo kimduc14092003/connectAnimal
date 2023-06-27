@@ -33,8 +33,14 @@ MonoBehaviour:
     targetSprite: {fileID: -1699182764, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
   - source: {fileID: 21300000, guid: aeaae88073adc3349b3e76a9bafec3ee, type: 3}
     targetSprite: {fileID: 1558300607, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
+  - source: {fileID: 21300000, guid: ca6b87b0d15b4cd4e9ea393c155ef156, type: 3}
+    targetSprite: {fileID: 864987439, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
+  - source: {fileID: 21300000, guid: 16a57fee831c6e84daffbc0299f917b5, type: 3}
+    targetSprite: {fileID: 1671342706, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
   - source: {fileID: 21300000, guid: 3bc4ba8a995c6fb4ebf5d6eb21c5cb2b, type: 3}
     targetSprite: {fileID: 1961113868, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
   - source: {fileID: 21300000, guid: c09d9b29c8fecf9429c180e84142e13b, type: 3}
     targetSprite: {fileID: -845428726, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
+  - source: {fileID: 21300000, guid: fee34eaa5f3167f41b565e41591844dd, type: 3}
+    targetSprite: {fileID: 1227032022, guid: 822eaa3af26ceea42aaa7a676daa0fdb, type: 3}
   m_PendingActions: []

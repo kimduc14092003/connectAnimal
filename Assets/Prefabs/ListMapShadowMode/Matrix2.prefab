@@ -152,6 +152,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &97313718859417543
 GameObject:
@@ -305,6 +306,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &127641431472861505
 GameObject:
@@ -458,6 +460,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &132056488798535976
 GameObject:
@@ -611,6 +614,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &162683449637904491
 GameObject:
@@ -764,6 +768,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &206456637611317146
 GameObject:
@@ -917,6 +922,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &291060781172022596
 GameObject:
@@ -1070,6 +1076,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &292610922469031537
 GameObject:
@@ -1223,6 +1230,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &295354733159981180
 GameObject:
@@ -1458,7 +1466,7 @@ RectTransform:
   - {fileID: 900433755452203966}
   - {fileID: 6199536194452281227}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1788,6 +1796,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &438365609021626193
 GameObject:
@@ -1941,6 +1950,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &453093266042960697
 GameObject:
@@ -2094,6 +2104,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &526904375904986395
 GameObject:
@@ -2247,6 +2258,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &568400048335969798
 GameObject:
@@ -2400,6 +2412,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &580357242337244153
 GameObject:
@@ -2553,6 +2566,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &605972677751137306
 GameObject:
@@ -2706,6 +2720,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &704974984711555481
 GameObject:
@@ -2859,6 +2874,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &715869928185355685
 GameObject:
@@ -3012,6 +3028,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &772096307999026277
 GameObject:
@@ -3165,6 +3182,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &809443472248689223
 GameObject:
@@ -3318,6 +3336,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &858739662101033328
 GameObject:
@@ -3471,6 +3490,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &896964395851917902
 GameObject:
@@ -3624,6 +3644,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &911564897985733448
 GameObject:
@@ -3777,6 +3798,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1019759409901823753
 GameObject:
@@ -3930,6 +3952,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1035942827463764148
 GameObject:
@@ -4083,6 +4106,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1056392433195139523
 GameObject:
@@ -4236,6 +4260,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1230964395543088230
 GameObject:
@@ -4389,6 +4414,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1273560737561221959
 GameObject:
@@ -4542,6 +4568,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1301371687559139625
 GameObject:
@@ -4695,6 +4722,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1342143700583222307
 GameObject:
@@ -4848,6 +4876,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1404564875296094796
 GameObject:
@@ -5001,6 +5030,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1414448626338768011
 GameObject:
@@ -5154,6 +5184,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1418406647395382373
 GameObject:
@@ -5307,6 +5338,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1425639075605840650
 GameObject:
@@ -5460,6 +5492,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1448593082284913071
 GameObject:
@@ -5613,6 +5646,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1495587816698518293
 GameObject:
@@ -5766,6 +5800,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1533083269042263931
 GameObject:
@@ -5919,6 +5954,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1541288543022874642
 GameObject:
@@ -6072,6 +6108,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1563326235916791759
 GameObject:
@@ -6225,6 +6262,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1636316209086429476
 GameObject:
@@ -6378,6 +6416,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1755589675479113818
 GameObject:
@@ -6531,6 +6570,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1793077268671559603
 GameObject:
@@ -6684,6 +6724,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1837394320058504281
 GameObject:
@@ -6837,6 +6878,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1848838754154481793
 GameObject:
@@ -6990,6 +7032,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1877875395764621423
 GameObject:
@@ -7143,6 +7186,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1891726536035516403
 GameObject:
@@ -7296,6 +7340,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1892639275455059198
 GameObject:
@@ -7449,6 +7494,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2005365533140108436
 GameObject:
@@ -7602,6 +7648,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2019362838405727820
 GameObject:
@@ -7755,6 +7802,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2103400770765209262
 GameObject:
@@ -7908,6 +7956,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2110979770746139504
 GameObject:
@@ -8061,6 +8110,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2159944478684286490
 GameObject:
@@ -8214,6 +8264,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2162709560656789989
 GameObject:
@@ -8367,6 +8418,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2193007539952639966
 GameObject:
@@ -8520,6 +8572,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2209400240127523392
 GameObject:
@@ -8673,6 +8726,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2242521709865459591
 GameObject:
@@ -8826,6 +8880,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2354791776855706752
 GameObject:
@@ -8979,6 +9034,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2371521267878681168
 GameObject:
@@ -9132,6 +9188,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2379690797752166986
 GameObject:
@@ -9285,6 +9342,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2430741455684912829
 GameObject:
@@ -9438,6 +9496,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2500757181505653697
 GameObject:
@@ -9591,6 +9650,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2587836709004720426
 GameObject:
@@ -9744,6 +9804,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2604904435587693811
 GameObject:
@@ -9897,6 +9958,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2679555004836905926
 GameObject:
@@ -10050,6 +10112,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2718864211748758503
 GameObject:
@@ -10203,6 +10266,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2865977612113242254
 GameObject:
@@ -10356,6 +10420,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2908287329753548423
 GameObject:
@@ -10509,6 +10574,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2916180315187343686
 GameObject:
@@ -10662,6 +10728,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2943661150718757170
 GameObject:
@@ -10815,6 +10882,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3025537087800543862
 GameObject:
@@ -10968,6 +11036,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3065060132265540282
 GameObject:
@@ -11121,6 +11190,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3091197653987207653
 GameObject:
@@ -11274,6 +11344,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3097252122111780106
 GameObject:
@@ -11427,6 +11498,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3138674638731583205
 GameObject:
@@ -11580,6 +11652,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3194748963648650013
 GameObject:
@@ -11733,6 +11806,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3210267684712264713
 GameObject:
@@ -11886,6 +11960,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3245064100978794592
 GameObject:
@@ -12039,6 +12114,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3283397070496944185
 GameObject:
@@ -12192,6 +12268,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3298661007355798094
 GameObject:
@@ -12345,6 +12422,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3332150500588321788
 GameObject:
@@ -12498,6 +12576,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3335395003895690285
 GameObject:
@@ -12651,6 +12730,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3420464534966794788
 GameObject:
@@ -12804,6 +12884,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3475491222957021358
 GameObject:
@@ -12957,6 +13038,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3483771166640097364
 GameObject:
@@ -13110,6 +13192,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3519822093485202355
 GameObject:
@@ -13263,6 +13346,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3652293547767375763
 GameObject:
@@ -13416,6 +13500,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3717152797162083932
 GameObject:
@@ -13569,6 +13654,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3775826562053549561
 GameObject:
@@ -13722,6 +13808,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3803266929379280903
 GameObject:
@@ -13875,6 +13962,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3816919006124111205
 GameObject:
@@ -14028,6 +14116,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3832012543417021140
 GameObject:
@@ -14181,6 +14270,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3861238068730233367
 GameObject:
@@ -14334,6 +14424,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3889286011565874679
 GameObject:
@@ -14487,6 +14578,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3897541890584714633
 GameObject:
@@ -14640,6 +14732,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3963378476451957347
 GameObject:
@@ -14793,6 +14886,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4050283309036961218
 GameObject:
@@ -14946,6 +15040,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4077345616236012441
 GameObject:
@@ -15099,6 +15194,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4143651796689998964
 GameObject:
@@ -15252,6 +15348,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4156911052129526245
 GameObject:
@@ -15405,6 +15502,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4331067897142087553
 GameObject:
@@ -15558,6 +15656,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4536121705307156801
 GameObject:
@@ -15711,6 +15810,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4549879320150169142
 GameObject:
@@ -15864,6 +15964,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4578605231310068526
 GameObject:
@@ -16017,6 +16118,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4579279936966196146
 GameObject:
@@ -16170,6 +16272,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4602462037900787866
 GameObject:
@@ -16323,6 +16426,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4695979539909081085
 GameObject:
@@ -16476,6 +16580,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4703250618329919987
 GameObject:
@@ -16629,6 +16734,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4758584560460178046
 GameObject:
@@ -16782,6 +16888,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4771523080978009703
 GameObject:
@@ -16935,6 +17042,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4773687522171423238
 GameObject:
@@ -17088,6 +17196,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4830175888854502344
 GameObject:
@@ -17241,6 +17350,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4836665788242973191
 GameObject:
@@ -17394,6 +17504,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4882795999200958459
 GameObject:
@@ -17547,6 +17658,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4976005244158114321
 GameObject:
@@ -17700,6 +17812,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5043251376606861722
 GameObject:
@@ -17853,6 +17966,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5082631688017971338
 GameObject:
@@ -18006,6 +18120,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5117538221584086176
 GameObject:
@@ -18159,6 +18274,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5330670862842375718
 GameObject:
@@ -18312,6 +18428,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5403080631755897161
 GameObject:
@@ -18465,6 +18582,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5435695922446218954
 GameObject:
@@ -18618,6 +18736,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5453743720840221667
 GameObject:
@@ -18771,6 +18890,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5456349565936700301
 GameObject:
@@ -18924,6 +19044,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5495316049790747373
 GameObject:
@@ -19077,6 +19198,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5504481530346753858
 GameObject:
@@ -19230,6 +19352,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5522145204227202239
 GameObject:
@@ -19383,6 +19506,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5569604529714411304
 GameObject:
@@ -19536,6 +19660,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5580133769038470037
 GameObject:
@@ -19689,6 +19814,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5671050045453644614
 GameObject:
@@ -19842,6 +19968,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5738110875280037841
 GameObject:
@@ -19995,6 +20122,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5902458495057220385
 GameObject:
@@ -20148,6 +20276,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6050375511199391856
 GameObject:
@@ -20301,6 +20430,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6084080459304037996
 GameObject:
@@ -20454,6 +20584,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6088171972907968483
 GameObject:
@@ -20607,6 +20738,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6133961892809307114
 GameObject:
@@ -20760,6 +20892,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6314489983652074931
 GameObject:
@@ -20913,6 +21046,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6319153314531335675
 GameObject:
@@ -21066,6 +21200,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6384634391193235056
 GameObject:
@@ -21219,6 +21354,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6424483039158486450
 GameObject:
@@ -21372,6 +21508,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6489295204585126502
 GameObject:
@@ -21525,6 +21662,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6501337706334557722
 GameObject:
@@ -21678,6 +21816,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6551037383826372454
 GameObject:
@@ -21831,6 +21970,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6558122961144218099
 GameObject:
@@ -21984,6 +22124,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6585085702821164413
 GameObject:
@@ -22137,6 +22278,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6602835643013100624
 GameObject:
@@ -22290,6 +22432,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6627579406490823153
 GameObject:
@@ -22443,6 +22586,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6693401538961852081
 GameObject:
@@ -22596,6 +22740,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6730415327252196872
 GameObject:
@@ -22749,6 +22894,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6746032497579017009
 GameObject:
@@ -22902,6 +23048,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6752391819479140671
 GameObject:
@@ -23055,6 +23202,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6756161855546334338
 GameObject:
@@ -23208,6 +23356,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6757373204755802974
 GameObject:
@@ -23361,6 +23510,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6759552032177562488
 GameObject:
@@ -23514,6 +23664,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6833146536916593270
 GameObject:
@@ -23667,6 +23818,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6932811689544707645
 GameObject:
@@ -23820,6 +23972,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6986366441549750075
 GameObject:
@@ -23973,6 +24126,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7091924439633343949
 GameObject:
@@ -24126,6 +24280,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7097164763464475786
 GameObject:
@@ -24279,6 +24434,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7137610505987252793
 GameObject:
@@ -24432,6 +24588,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7201764416779026205
 GameObject:
@@ -24585,6 +24742,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7232565908846903841
 GameObject:
@@ -24738,6 +24896,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7263077018170574983
 GameObject:
@@ -24891,6 +25050,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7375523639263145197
 GameObject:
@@ -25044,6 +25204,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7404905774069535987
 GameObject:
@@ -25197,6 +25358,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7493758824946949446
 GameObject:
@@ -25350,6 +25512,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7534714215399573548
 GameObject:
@@ -25503,6 +25666,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7536648922216966231
 GameObject:
@@ -25656,6 +25820,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7554998189505952221
 GameObject:
@@ -25809,6 +25974,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7601310614973826652
 GameObject:
@@ -25962,6 +26128,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7722033374309002545
 GameObject:
@@ -26115,6 +26282,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7733929900756644264
 GameObject:
@@ -26268,6 +26436,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7743922968969147507
 GameObject:
@@ -26421,6 +26590,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7801792742680872153
 GameObject:
@@ -26574,6 +26744,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7835623259553913397
 GameObject:
@@ -26727,6 +26898,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7851064978975277382
 GameObject:
@@ -26880,6 +27052,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7891551697621549570
 GameObject:
@@ -27033,6 +27206,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7905270185454700870
 GameObject:
@@ -27186,6 +27360,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7931920686677269248
 GameObject:
@@ -27339,6 +27514,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7932157336570764556
 GameObject:
@@ -27492,6 +27668,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7942823533656451388
 GameObject:
@@ -27645,6 +27822,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8037345025425321645
 GameObject:
@@ -27798,6 +27976,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8126077933896195151
 GameObject:
@@ -27951,6 +28130,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8177539590729979140
 GameObject:
@@ -28104,6 +28284,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8268229177235506380
 GameObject:
@@ -28257,6 +28438,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8300652619975944076
 GameObject:
@@ -28410,6 +28592,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8323719462267221906
 GameObject:
@@ -28563,6 +28746,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8507387697794933013
 GameObject:
@@ -28716,6 +28900,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8567384531011612301
 GameObject:
@@ -28869,6 +29054,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8647785109314279572
 GameObject:
@@ -29022,6 +29208,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8730072712187986537
 GameObject:
@@ -29175,6 +29362,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8846667044541651616
 GameObject:
@@ -29328,6 +29516,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8994445298193513985
 GameObject:
@@ -29481,6 +29670,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9035353824117838135
 GameObject:
@@ -29634,6 +29824,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9062596037572704152
 GameObject:
@@ -29787,6 +29978,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9078208950568551098
 GameObject:
@@ -29940,6 +30132,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9099619641022929534
 GameObject:
@@ -30093,6 +30286,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9162839400601050485
 GameObject:
@@ -30246,6 +30440,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &9210013971234525260
 GameObject:
@@ -30399,12 +30594,14 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1001 &3202132134606901473
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 295354733159981126}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -30498,8 +30695,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d393305ebf9c13647a50a09d360282ac, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &3172812406809775157 stripped
 RectTransform:
@@ -30511,6 +30723,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 295354733159981126}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -30604,8 +30817,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d393305ebf9c13647a50a09d360282ac, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &3638425729069141951 stripped
 RectTransform:
@@ -30617,6 +30845,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 295354733159981126}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -30710,8 +30939,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d393305ebf9c13647a50a09d360282ac, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &3866087335374443930 stripped
 RectTransform:
@@ -30723,6 +30967,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 295354733159981126}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -30816,8 +31061,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d393305ebf9c13647a50a09d360282ac, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &7931915817158919033 stripped
 RectTransform:

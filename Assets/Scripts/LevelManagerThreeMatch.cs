@@ -153,7 +153,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             currentMap = Instantiate(listMap[listMap.Length-1], transform);
         }
-        currentMap.transform.SetSiblingIndex(7);
+        currentMap.transform.SetSiblingIndex(5);
 
         switch (currentLevel)
         {
@@ -418,7 +418,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         AudioManager.Instance.StopMusic();
 
         AudioManager.Instance.PlaySFX("lose");
-        loseTitleLevel.text = "Level " + currentLevel;
+        loseTitleLevel.text = "Level : " + currentLevel;
         PlayerPrefs.SetInt("currentLevelThreeMatchMode", 1);
         PlayerPrefs.SetInt("currentStarThreeMatchMode", 0);
         TurnOffToNotifyEndGame();

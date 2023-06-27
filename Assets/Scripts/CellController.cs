@@ -30,6 +30,10 @@ public class CellController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(CellID == "wall")
+        {
+            return;
+        }
         if(listCellController == null )
         {
             return;

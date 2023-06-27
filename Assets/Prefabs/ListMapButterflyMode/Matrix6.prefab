@@ -152,6 +152,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &120522954787462293
 GameObject:
@@ -305,6 +306,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &459876885338781408
 GameObject:
@@ -458,6 +460,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &468407954389264562
 GameObject:
@@ -611,6 +614,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &477538312950998301
 GameObject:
@@ -764,6 +768,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &647636379449106521
 GameObject:
@@ -917,6 +922,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042020983820
 GameObject:
@@ -1070,6 +1076,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042041158114
 GameObject:
@@ -1223,6 +1230,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042080119719
 GameObject:
@@ -1376,6 +1384,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042127976305
 GameObject:
@@ -1529,6 +1538,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042153340205
 GameObject:
@@ -1682,6 +1692,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042155468489
 GameObject:
@@ -1835,6 +1846,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042202043703
 GameObject:
@@ -1988,6 +2000,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042224776963
 GameObject:
@@ -2141,6 +2154,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042243975294
 GameObject:
@@ -2294,6 +2308,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042251766861
 GameObject:
@@ -2447,6 +2462,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042331089681
 GameObject:
@@ -2600,6 +2616,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042365997135
 GameObject:
@@ -2753,6 +2770,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042381798101
 GameObject:
@@ -2906,6 +2924,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042387319117
 GameObject:
@@ -3059,6 +3078,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042430636371
 GameObject:
@@ -3212,6 +3232,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042430805688
 GameObject:
@@ -3365,6 +3386,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042439919834
 GameObject:
@@ -3518,6 +3540,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042528872360
 GameObject:
@@ -3671,6 +3694,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042614120320
 GameObject:
@@ -3824,6 +3848,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042617636565
 GameObject:
@@ -3977,6 +4002,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042728091427
 GameObject:
@@ -4130,6 +4156,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042767376609
 GameObject:
@@ -4283,6 +4310,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042768025934
 GameObject:
@@ -4436,6 +4464,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042792082119
 GameObject:
@@ -4589,6 +4618,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042811022270
 GameObject:
@@ -4742,6 +4772,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042827452147
 GameObject:
@@ -4895,6 +4926,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042842233423
 GameObject:
@@ -5048,6 +5080,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042850413166
 GameObject:
@@ -5201,6 +5234,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042874830986
 GameObject:
@@ -5354,6 +5388,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042896470412
 GameObject:
@@ -5507,6 +5542,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042897729935
 GameObject:
@@ -5660,6 +5696,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042907290133
 GameObject:
@@ -5813,6 +5850,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825042975233579
 GameObject:
@@ -5966,6 +6004,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043020959967
 GameObject:
@@ -6119,6 +6158,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043033180223
 GameObject:
@@ -6272,6 +6312,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043041123134
 GameObject:
@@ -6425,6 +6466,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043044103988
 GameObject:
@@ -6578,6 +6620,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043110209239
 GameObject:
@@ -6731,6 +6774,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043111378771
 GameObject:
@@ -6884,6 +6928,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043189195694
 GameObject:
@@ -7037,6 +7082,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043220317370
 GameObject:
@@ -7190,6 +7236,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043241342447
 GameObject:
@@ -7343,6 +7390,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043261106319
 GameObject:
@@ -7496,6 +7544,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043305421789
 GameObject:
@@ -7649,6 +7698,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043316402265
 GameObject:
@@ -7802,6 +7852,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043349704018
 GameObject:
@@ -7955,6 +8006,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043353285603
 GameObject:
@@ -8108,6 +8160,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043395673225
 GameObject:
@@ -8261,6 +8314,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043422631335
 GameObject:
@@ -8414,6 +8468,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043427003218
 GameObject:
@@ -8567,6 +8622,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043473437540
 GameObject:
@@ -8720,6 +8776,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043474588282
 GameObject:
@@ -8873,6 +8930,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043504768050
 GameObject:
@@ -9026,6 +9084,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043535790899
 GameObject:
@@ -9179,6 +9238,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043556654985
 GameObject:
@@ -9332,6 +9392,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043623712952
 GameObject:
@@ -9485,6 +9546,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043627505443
 GameObject:
@@ -9638,6 +9700,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043643935369
 GameObject:
@@ -9791,6 +9854,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043683834651
 GameObject:
@@ -9944,6 +10008,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043685482480
 GameObject:
@@ -10097,6 +10162,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043699510077
 GameObject:
@@ -10250,6 +10316,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043755280815
 GameObject:
@@ -10403,6 +10470,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043815569564
 GameObject:
@@ -10556,6 +10624,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043830692172
 GameObject:
@@ -10709,6 +10778,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043857642460
 GameObject:
@@ -10862,6 +10932,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043916991570
 GameObject:
@@ -11015,6 +11086,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043958679691
 GameObject:
@@ -11168,6 +11240,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825043991662688
 GameObject:
@@ -11321,6 +11394,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825044026358963
 GameObject:
@@ -11474,6 +11548,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825044072239109
 GameObject:
@@ -11627,6 +11702,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &995825044082859180
 GameObject:
@@ -11780,6 +11856,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1241500370623349678
 GameObject:
@@ -11933,6 +12010,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1270502005751258914
 GameObject:
@@ -12086,6 +12164,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &1957633053934123390
 GameObject:
@@ -12239,6 +12318,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2457813701922231170
 GameObject:
@@ -12392,6 +12472,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2473839705716916744
 GameObject:
@@ -12545,6 +12626,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2773917820188029034
 GameObject:
@@ -12698,6 +12780,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &2843599856978797337
 GameObject:
@@ -12851,6 +12934,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3095413138727486562
 GameObject:
@@ -13004,6 +13088,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3317169717701862104
 GameObject:
@@ -13157,6 +13242,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &3885383521410643754
 GameObject:
@@ -13310,6 +13396,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4010262194470255464
 GameObject:
@@ -13463,6 +13550,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4175542522908888531
 GameObject:
@@ -13616,6 +13704,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4840263152795809786
 GameObject:
@@ -13769,6 +13858,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &4964584852534742358
 GameObject:
@@ -13922,6 +14012,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5094131950591672337
 GameObject:
@@ -14075,6 +14166,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5338829093887217145
 GameObject:
@@ -14228,6 +14320,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5410651589810482039
 GameObject:
@@ -14381,6 +14474,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5515471063209578854
 GameObject:
@@ -14534,6 +14628,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5536671527999274254
 GameObject:
@@ -14687,6 +14782,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5588024742477778756
 GameObject:
@@ -14840,6 +14936,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5681882234578668067
 GameObject:
@@ -15015,7 +15112,7 @@ RectTransform:
   - {fileID: 4107132262406302174}
   - {fileID: 4278663755051289117}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15309,6 +15406,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &5843186366182190795
 GameObject:
@@ -15462,6 +15560,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6033955158557818374
 GameObject:
@@ -15615,6 +15714,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6398543041600666486
 GameObject:
@@ -15768,6 +15868,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6440842158284410580
 GameObject:
@@ -15921,6 +16022,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6443638476051897914
 GameObject:
@@ -16074,6 +16176,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6466414896817016851
 GameObject:
@@ -16227,6 +16330,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &6890674121589598797
 GameObject:
@@ -16380,6 +16484,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7445486354510019174
 GameObject:
@@ -16533,6 +16638,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7479246162829478463
 GameObject:
@@ -16686,6 +16792,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7649927322012774415
 GameObject:
@@ -16839,6 +16946,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &7669261813521835743
 GameObject:
@@ -16992,6 +17100,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8305309529802604075
 GameObject:
@@ -17145,6 +17254,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8438739166885128901
 GameObject:
@@ -17298,6 +17408,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8451338310163001713
 GameObject:
@@ -17451,6 +17562,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8495826824295840873
 GameObject:
@@ -17604,6 +17716,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8677552444482325964
 GameObject:
@@ -17757,6 +17870,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8743365526117628931
 GameObject:
@@ -17910,6 +18024,7 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1 &8798835010494853612
 GameObject:
@@ -18063,12 +18178,14 @@ MonoBehaviour:
   isSelected: 0
   posX: 0
   posY: 0
+  starEffect: {fileID: 0}
   listCellController: {fileID: 0}
 --- !u!1001 &995825042097240636
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18174,8 +18291,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421184497384 stripped
 RectTransform:
@@ -18187,6 +18319,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18292,8 +18425,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421011392328 stripped
 RectTransform:
@@ -18305,6 +18453,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18398,8 +18547,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421064023483 stripped
 RectTransform:
@@ -18411,6 +18575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18504,8 +18669,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421417686243 stripped
 RectTransform:
@@ -18517,6 +18697,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18622,8 +18803,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421399120769 stripped
 RectTransform:
@@ -18635,6 +18831,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18728,8 +18925,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421313246947 stripped
 RectTransform:
@@ -18741,6 +18953,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18834,8 +19047,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421310083734 stripped
 RectTransform:
@@ -18847,6 +19075,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -18952,8 +19181,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420444498614 stripped
 RectTransform:
@@ -18965,6 +19209,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19058,8 +19303,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420436367518 stripped
 RectTransform:
@@ -19071,6 +19331,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19176,8 +19437,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420501499745 stripped
 RectTransform:
@@ -19189,6 +19465,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19294,8 +19571,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420494913890 stripped
 RectTransform:
@@ -19307,6 +19599,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19400,8 +19693,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420885588258 stripped
 RectTransform:
@@ -19413,6 +19721,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19506,8 +19815,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420732338111 stripped
 RectTransform:
@@ -19519,6 +19843,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19612,8 +19937,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524420813928573 stripped
 RectTransform:
@@ -19625,6 +19965,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19718,8 +20059,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422107632944 stripped
 RectTransform:
@@ -19731,6 +20087,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19824,8 +20181,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422441591442 stripped
 RectTransform:
@@ -19837,6 +20209,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -19930,8 +20303,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422498807645 stripped
 RectTransform:
@@ -19943,6 +20331,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20036,8 +20425,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422313209488 stripped
 RectTransform:
@@ -20049,6 +20453,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20142,8 +20547,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422352355104 stripped
 RectTransform:
@@ -20155,6 +20575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20248,8 +20669,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524422383049904 stripped
 RectTransform:
@@ -20261,6 +20697,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20366,8 +20803,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421539029911 stripped
 RectTransform:
@@ -20379,6 +20831,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20484,8 +20937,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421572445346 stripped
 RectTransform:
@@ -20497,6 +20965,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20590,8 +21059,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421570000947 stripped
 RectTransform:
@@ -20603,6 +21087,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5681882234578668057}
     m_Modifications:
     - target: {fileID: 33876121456139476, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
@@ -20696,8 +21181,23 @@ PrefabInstance:
     - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1d77a56be352f54a9ec87ebc8daa967, type: 3}
+      objectReference: {fileID: 2010118436, guid: 8820e81b795f034478767cb4ca0140d7, type: 3}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087430885706555143, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.34901962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dfe5e8aed7eef4fa01347487ae9ce2, type: 3}
 --- !u!224 &984524421784476147 stripped
 RectTransform:

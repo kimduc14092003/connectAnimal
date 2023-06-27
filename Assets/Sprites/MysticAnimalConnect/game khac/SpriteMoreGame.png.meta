@@ -139,10 +139,10 @@ TextureImporter:
       name: endless 1
       rect:
         serializedVersion: 2
-        x: 105
+        x: 0
         y: 0
-        width: 453
-        height: 619
+        width: 640
+        height: 640
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,11 +283,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Random move
+      name: endless
       rect:
         serializedVersion: 2
         x: 933
         y: 613
+        width: 446
+        height: 612
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29ae833000000000800000000000000
+      internalID: 864987439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: endless 2
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1226
+        width: 409
+        height: 411
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27aae936000000000800000000000000
+      internalID: 1671342706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Random move
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1638
         width: 294
         height: 400
       alignment: 9
@@ -307,8 +349,8 @@ TextureImporter:
       name: Relax puzzle
       rect:
         serializedVersion: 2
-        x: 1088
-        y: 0
+        x: 1648
+        y: 1638
         width: 294
         height: 396
       alignment: 9
@@ -320,6 +362,27 @@ TextureImporter:
       bones: []
       spriteID: a08cb9dcffffffff0800000000000000
       internalID: -845428726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: endless 3
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 0
+        width: 17
+        height: 198
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d503294000000000800000000000000
+      internalID: 1227032022
       vertices: []
       indices: 
       edges: []
@@ -343,7 +406,10 @@ TextureImporter:
       Relax puzzle: -845428726
       Triangle: -753439084
       canh buom (1): -607060335
+      endless: 864987439
       endless 1: 1440859490
+      endless 2: 1671342706
+      endless 3: 1227032022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
