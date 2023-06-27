@@ -25,8 +25,8 @@ public class ListCellController : MonoBehaviour
     private int countCellAdjacent=0;
 
     [SerializeField]
-    private List<GameObject> cells;
-
+    private List<Sprite> cellImages;
+    public GameObject cellDefault;
     [SerializeField]
     private GameObject wallCell;
     private GridLayoutGroup layoutGroup;
@@ -88,42 +88,45 @@ public class ListCellController : MonoBehaviour
 
     private void SpawnDefaultCell()
     {
-        List<GameObject> tempCells = new List<GameObject>();
+        List<Sprite> tempCellImages = new List<Sprite>();
         for(int i = 0; i < numOfDifferentCell; i++)
         {
-            int randomValue = Random.Range(0, cells.Count);
-            tempCells.Add(cells[randomValue]);
-            cells.Remove(cells[randomValue]);
+            int randomValue = Random.Range(0, cellImages.Count);
+            tempCellImages.Add(cellImages[randomValue]);
+            cellImages.Remove(cellImages[randomValue]);
         }
 
 
         //Tạo một danh sách tạm để lấy random từ danh sách này ra 
-        List<GameObject> tempListCell = new List<GameObject>();
-        tempListCell.AddRange(tempCells);
+        List<Sprite> tempListCellImages = new List<Sprite>();
+        tempListCellImages.AddRange(tempCellImages);
 
         for(int i = 0; i < rowPlay; i++)
         {
             for(int j = 0; j < colPlay/2; j++)
             {
-                int randomValue = Random.Range(0, tempListCell.Count);
-                GameObject spawnCell = tempListCell[randomValue];
-                tempListCell.Remove(spawnCell);
+                int randomValue = Random.Range(0, tempListCellImages.Count);
+                GameObject spawnCell = Instantiate(cellDefault,transform);
+                spawnCell.transform.GetChild(0).GetComponent<Image>().sprite= tempListCellImages[randomValue];
+                spawnCell.GetComponent<CellController>().CellID = tempListCellImages[randomValue].name;
+                // Tạo ô thứ 2 để không bị lẻ
+                GameObject spawnCell2 = Instantiate(spawnCell, transform);
 
+                tempListCellImages.RemoveAt(randomValue);
                 // Nếu danh sách rỗng thì lại sao chép từ mảng ban đầu
-                if(tempListCell.Count <= 0)
+                if (tempListCellImages.Count <= 0)
                 {
-                    tempListCell.AddRange(tempCells);
+                    tempListCellImages.AddRange(tempCellImages);
                 }
-
+                // Thêm 1 cặp ô vào danh sách 
                 listCell.Add( spawnCell);
+                listCell.Add( spawnCell2);
             }
         }
-        //Nhân đôi danh sách để số ô không bị lẻ
-        listCell= listCell.Concat(listCell).ToList();
 
         //Tạo ra danh sách tạm để sinh ra các ô 
         List<GameObject> listCellTemp = new List<GameObject>(listCell);
-
+        
         //Xóa danh sách đi để xíu thêm phần tử tuần tự vào danh sách
         listCell.Clear();
         int listCellTempCount = listCellTemp.Count;
@@ -140,17 +143,18 @@ public class ListCellController : MonoBehaviour
                     cellController.listCellController = this.gameObject;
                     cellController.posX = j;
                     cellController.posY = i;
+                    spawnCellWall.transform.SetSiblingIndex(i * col + j);
                     Matrix[j, i] = cellController.CellID;
                     listCell.Add(spawnCellWall);
                 }
 
                 else
 
-                { 
+                {
                     //Lấy random vị trí trong danh sách phụ để sinh ra cũng như thêm vào ma trận, danh sách chính
                     int randomValue = Random.Range(0, listCellTemp.Count);
-                    GameObject spawnCell = Instantiate(listCellTemp[randomValue], this.transform);
-                    CellController cellController=spawnCell.GetComponent<CellController>();
+                    GameObject spawnCell = listCellTemp[randomValue];
+                    CellController cellController = spawnCell.GetComponent<CellController>();
 
                     // Set giá trị ban đầu cho gameObject vừa sinh ra
                     cellController.listCellController = this.gameObject;
@@ -161,7 +165,6 @@ public class ListCellController : MonoBehaviour
                         if (countCellAdjacent >= limitCellAdjacent)
                         {
                             j--;
-                            Destroy(spawnCell);
                             continue;
                         }
                         else
@@ -169,8 +172,9 @@ public class ListCellController : MonoBehaviour
                             countCellAdjacent++;
                         }
                     }
+                    spawnCell.transform.SetSiblingIndex(i * col + j);
 
-                    Matrix[j,i] = cellController.CellID;
+                    Matrix[j, i] = cellController.CellID;
                     listCellTemp.RemoveAt(randomValue);
                     listCell.Add(spawnCell);
 

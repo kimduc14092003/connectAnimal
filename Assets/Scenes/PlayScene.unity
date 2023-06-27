@@ -29636,43 +29636,44 @@ MonoBehaviour:
   delayTimeToDeleteCell: 0.35
   levelManager: {fileID: 2000068344}
   limitCellAdjacent: 0
-  cells:
-  - {fileID: 33876121456139477, guid: eb4cc845ac3b3454faec52df9cb7366a, type: 3}
-  - {fileID: 33876121456139477, guid: e158043086f25bc4a819d25107972e87, type: 3}
-  - {fileID: 33876121456139477, guid: d9cf1faa26543f746a6bcd2dfeabf5fb, type: 3}
-  - {fileID: 33876121456139477, guid: 0798da401a308d74dbd0abb3d40ed756, type: 3}
-  - {fileID: 1974503976966962399, guid: 2634a8c6bf9827446a1902d133512de6, type: 3}
-  - {fileID: 33876121456139477, guid: ed0b395c64891034f88f230bbab2dd68, type: 3}
-  - {fileID: 6179425672727978358, guid: 728a1cee2ccd429429b8956202f321d8, type: 3}
-  - {fileID: 33876121456139477, guid: 444083e45d6754b44a2dcd810614c8d9, type: 3}
-  - {fileID: 33876121456139477, guid: fbcb361bb568e4f4d9e7e2136f3cac66, type: 3}
-  - {fileID: 5741675578700318967, guid: a1f67948d4005cd40a2abf888bf34ee5, type: 3}
-  - {fileID: 33876121456139477, guid: f8dcb9e9000ca18498376bfcaf1b60b4, type: 3}
-  - {fileID: 33876121456139477, guid: 115be35d6c2d6244293343b8910cbfe0, type: 3}
-  - {fileID: 773519720928819833, guid: bf26376663bcdb842868155373b0036e, type: 3}
-  - {fileID: 33876121456139477, guid: 11c0d0ade991d78419ecf6c15fa72428, type: 3}
-  - {fileID: 33876121456139477, guid: 304491157024b5d498cc581e741a7b9a, type: 3}
-  - {fileID: 7311218893325373274, guid: bc54fdecdbd612749aa3c72ca718e926, type: 3}
-  - {fileID: 33876121456139477, guid: 20d55a19fd2a2464fa5272c6d2bab0c3, type: 3}
-  - {fileID: 33876121456139477, guid: eaa3cac199382004a86f5a678ae42fb6, type: 3}
-  - {fileID: 8211527696809403923, guid: 1d73c2af84a52904b80fd148702d3841, type: 3}
-  - {fileID: 33876121456139477, guid: 26c919b402bdf974588c7f9c71627669, type: 3}
-  - {fileID: 33876121456139477, guid: 72e00432ffb1beb49b20f5d9b6730508, type: 3}
-  - {fileID: 33876121456139477, guid: 7c04e192989f5ba4da33b951844b91c2, type: 3}
-  - {fileID: 33876121456139477, guid: d0afb7da1f590184ab5319f0442a0456, type: 3}
-  - {fileID: 33876121456139477, guid: b00a9bb342e8bdc4fb2a9d8ebf078d0d, type: 3}
-  - {fileID: 4788492563276908861, guid: 02f83abf4663d594087f7fc88013a606, type: 3}
-  - {fileID: 3532372051481987090, guid: 60e6143a8bbe3e14c956acab0fb5a6f7, type: 3}
-  - {fileID: 33876121456139477, guid: 7e863bf5ab0de4f4d914d7eda613e313, type: 3}
-  - {fileID: 33876121456139477, guid: f655bca184546bb409cc5e690f8b08ae, type: 3}
-  - {fileID: 33876121456139477, guid: 0e36feb58d76b6d478718ec08b1bbd4c, type: 3}
-  - {fileID: 33876121456139477, guid: d181e0e079b667d4e9577a9298ddaddb, type: 3}
-  - {fileID: 33876121456139477, guid: bdb30cd4a6fe04f429e6dbc2944ac534, type: 3}
-  - {fileID: 33876121456139477, guid: 454ccd489fb09144086a2a11cfe5ccfe, type: 3}
-  - {fileID: 3579706836694087969, guid: ce3704fea74ce7c48b57d26b66bd7af0, type: 3}
-  - {fileID: 1454869159659021273, guid: 9f6be6080ede9714aa91362a6ace89ef, type: 3}
-  - {fileID: 33876121456139477, guid: 08c28a3cc45fe1d4fa06ec7c21d4b0d1, type: 3}
-  - {fileID: 33876121456139477, guid: 47b812ef2bf0d514db096e8794883eaa, type: 3}
+  cellImages:
+  - {fileID: 1227731138, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -871614174, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -23384164, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -388279084, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1748403350, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1444971623, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1773194631, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1243381594, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1356480628, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -168991238, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1663458430, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 804855179, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -936819326, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1069473283, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1815699055, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1774752753, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -479751350, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1537729394, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 847324080, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1278621627, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -663250903, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1834731933, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1846254361, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1266317433, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -2025423872, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 158091391, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -944432688, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 1107789798, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1271215699, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1216625492, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -2037865829, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -2020863013, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -882393434, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 734562096, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: 106781801, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  - {fileID: -1979736230, guid: e789b943812d4f042b9b4bdae6303e92, type: 3}
+  cellDefault: {fileID: 33876121456139477, guid: 97eb554f9db79184487194888de64479, type: 3}
   wallCell: {fileID: 33876121456139477, guid: 1fe2a3b1078ef484b8ca2c90385f3020, type: 3}
 --- !u!114 &1851040059
 MonoBehaviour:
