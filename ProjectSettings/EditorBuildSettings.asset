@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/ThreeMatchModeScene.unity
-    guid: dae87eb00ce4a714bbd22d05284e2108
+    path: Assets/Scenes/ThreeMatchModeScene1.unity
+    guid: 159914878afe5cf4794d0cf36fed3d56
   - enabled: 1
     path: Assets/Scenes/EscapeMode.unity
-    guid: 2751de6c685f1324491430000218c839
+    guid: 596ef2b80dd62144ab60b0b3a0dd9159
   m_configObjects: {}

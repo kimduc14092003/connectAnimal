@@ -59,8 +59,8 @@ public class LevelManagerThreeMatch : MonoBehaviour
     public TMP_Text txtShuffle;
 
     private bool isShuffle;
-    private bool isBomb=false;
-    private bool isFind=false;
+    private bool isBomb = false;
+    private bool isFind = false;
 
     private List<Vector3> listPos;
 
@@ -151,27 +151,27 @@ public class LevelManagerThreeMatch : MonoBehaviour
         }
         else
         {
-            currentMap = Instantiate(listMap[listMap.Length-1], transform);
+            currentMap = Instantiate(listMap[listMap.Length - 1], transform);
         }
-        currentMap.transform.SetSiblingIndex(7);
+        currentMap.transform.SetSiblingIndex(5);
 
         switch (currentLevel)
         {
             case 2:
                 {
-                    pointGameObject.transform.position=txtBomb.transform.position;
+                    pointGameObject.transform.position = txtBomb.transform.position;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
             case 3:
                 {
-                    pointGameObject.transform.position = txtFind.transform.position ;
+                    pointGameObject.transform.position = txtFind.transform.position;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
             case 4:
                 {
-                    pointGameObject.transform.position = txtShuffle.transform.position ;
+                    pointGameObject.transform.position = txtShuffle.transform.position;
                     pointGameObject.transform.DOScale(1.2f, 0.3f).SetLoops(-1, LoopType.Yoyo);
                     break;
                 }
@@ -194,15 +194,15 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void GetListChooseCell()
     {
-        listChooseCellID= new List<GameObject>();
-        for(int i = 0; i < listChooseCellGameObject.transform.childCount; i++)
+        listChooseCellID = new List<GameObject>();
+        for (int i = 0; i < listChooseCellGameObject.transform.childCount; i++)
         {
             listChooseCellID.Add(listChooseCellGameObject.transform.GetChild(i).gameObject);
         }
-        listChooseCellPos=new Vector3[7];
-        for(int i=0;i<7; i++)
+        listChooseCellPos = new Vector3[7];
+        for (int i = 0; i < 7; i++)
         {
-            listChooseCellPos[i]= listChooseCellGameObject.transform.GetChild(i).transform.position;
+            listChooseCellPos[i] = listChooseCellGameObject.transform.GetChild(i).transform.position;
         }
     }
 
@@ -220,10 +220,10 @@ public class LevelManagerThreeMatch : MonoBehaviour
     private void GetListCell()
     {
         listCell = new List<GameObject>();
-        remainingCell = 0 ;
-        for(int i = 0; i < currentMap.transform.childCount; i++)
+        remainingCell = 0;
+        for (int i = 0; i < currentMap.transform.childCount; i++)
         {
-            if(currentMap.transform.GetChild(i).name!= "PanelTutorial")
+            if (currentMap.transform.GetChild(i).name != "PanelTutorial")
             {
                 remainingCell += currentMap.transform.GetChild(i).childCount;
             }
@@ -237,16 +237,16 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             remainingCell -= 3;
         }
-        for (int i = 0; i < remainingCell; i+=3)
+        for (int i = 0; i < remainingCell; i += 3)
         {
             int randomNumber = Random.Range(0, tempListCell.Count);
             GameObject cell = Instantiate(tempListCell[randomNumber], transform);
 
             //Thay đổi component cellcontroller cho nó
             CellControllerThreeMatch cellControllerThreeMatch = cell.GetComponent<CellControllerThreeMatch>();
-            cellControllerThreeMatch.levelManager =GetComponent<LevelManagerThreeMatch>();
+            cellControllerThreeMatch.levelManager = GetComponent<LevelManagerThreeMatch>();
             cellControllerThreeMatch.listChooseCell = GetComponent<LevelManagerThreeMatch>().listChooseCellGameObject;
-            
+
             GameObject cell2 = Instantiate(cell, transform);
             GameObject cell3 = Instantiate(cell, transform);
             listCell.Add(cell);
@@ -268,7 +268,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
     }
     private void GetListLayer()
     {
-        if (currentLevel == 1|| currentLevel == 2|| currentLevel == 3|| currentLevel == 4)
+        if (currentLevel == 1 || currentLevel == 2 || currentLevel == 3 || currentLevel == 4)
         {
             listLayer = new ThreeMatchSpawnCellInLayer[currentMap.transform.childCount - 1];
         }
@@ -277,7 +277,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             if (currentMap.transform.GetChild(i).GetComponent<ThreeMatchSpawnCellInLayer>())
             {
-                listLayer[i]=currentMap.transform.GetChild(i).GetComponent<ThreeMatchSpawnCellInLayer>();
+                listLayer[i] = currentMap.transform.GetChild(i).GetComponent<ThreeMatchSpawnCellInLayer>();
             }
         }
     }
@@ -308,8 +308,8 @@ public class LevelManagerThreeMatch : MonoBehaviour
         Vector3 lastChooseCellPos = listChooseCellPos[0];
         lastChooseCellPos.z = 0;
 
-        bool isGetLastPos =false;
-        for (int i = listChooseCellID.Count-1; i>= 0; i--)
+        bool isGetLastPos = false;
+        for (int i = listChooseCellID.Count - 1; i >= 0; i--)
         {
 
             if (cellID == listChooseCellID[i].GetComponent<CellControllerThreeMatch>().CellID)
@@ -318,12 +318,12 @@ public class LevelManagerThreeMatch : MonoBehaviour
                 result.z = i;
                 return result;
             }
-            else if (listChooseCellID[i].GetComponent<CellControllerThreeMatch>().CellID != "0"&&!isGetLastPos)
+            else if (listChooseCellID[i].GetComponent<CellControllerThreeMatch>().CellID != "0" && !isGetLastPos)
             {
-                
+
                 isGetLastPos = true;
-                lastChooseCellPos= listChooseCellPos[i+1];
-                lastChooseCellPos.z = i+1; 
+                lastChooseCellPos = listChooseCellPos[i + 1];
+                lastChooseCellPos.z = i + 1;
             }
         }
         return lastChooseCellPos;
@@ -331,7 +331,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void ResetPosOfChosenCell()
     {
-        for(int i= 0; i < listChooseCellID.Count; i++)
+        for (int i = 0; i < listChooseCellID.Count; i++)
         {
             CellControllerThreeMatch cellControllerThreeMatch = listChooseCellID[i].GetComponent<CellControllerThreeMatch>();
             listChooseCellID[i].transform.SetSiblingIndex(i);
@@ -349,7 +349,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void CheckGetScore()
     {
-        string currentID= listChooseCellID[0].GetComponent<CellControllerThreeMatch>().CellID;
+        string currentID = listChooseCellID[0].GetComponent<CellControllerThreeMatch>().CellID;
         int count = 0;
         for (int i = 0; i < listChooseCellID.Count; i++)
         {
@@ -368,10 +368,17 @@ public class LevelManagerThreeMatch : MonoBehaviour
             }
             if (count == 3)
             {
-                AudioManager.Instance.PlaySFX("connect");
-                remainingCell -= 3;   
+                try
+                {
+                    AudioManager.Instance.PlaySFX("connect");
+                }
+                catch
+                {
+                    print("Audio Not Found!");
+                }
+                remainingCell -= 3;
                 CheckWinLevel();
-                for(int j = i; j > i - 3; j--)
+                for (int j = i; j > i - 3; j--)
                 {
                     StartAnimationScore(listChooseCellID[j]);
                     listChooseCellID.RemoveAt(j);
@@ -390,7 +397,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         }
 
         int countLength = 0;
-        for(int i = 0;i < listChooseCellID.Count; i++)
+        for (int i = 0; i < listChooseCellID.Count; i++)
         {
             if (listChooseCellID[i].GetComponent<CellControllerThreeMatch>().CellID != "0")
             {
@@ -415,10 +422,17 @@ public class LevelManagerThreeMatch : MonoBehaviour
     public void LoseGame()
     {
         print("Ban thua roi!");
-        AudioManager.Instance.StopMusic();
+        try
+        {
+            AudioManager.Instance.StopMusic();
 
-        AudioManager.Instance.PlaySFX("lose");
-        loseTitleLevel.text = "Level " + currentLevel;
+            AudioManager.Instance.PlaySFX("lose");
+        }
+        catch
+        {
+            print("Audio Not Found!");
+        }
+        loseTitleLevel.text = "Level : " + currentLevel;
         PlayerPrefs.SetInt("currentLevelThreeMatchMode", 1);
         PlayerPrefs.SetInt("currentStarThreeMatchMode", 0);
         TurnOffToNotifyEndGame();
@@ -456,8 +470,16 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void WinLevelNotification()
     {
-        AudioManager.Instance.PlaySFX("win");
-        AudioManager.Instance.StopMusic();
+        try
+        {
+            AudioManager.Instance.PlaySFX("win");
+            AudioManager.Instance.StopMusic();
+        }
+        catch
+        {
+            Debug.Log("Audio Not Found!");
+
+        }
 
         PlayerPrefs.SetInt("currentLevelThreeMatchMode", ++currentLevel);
         int currentStar = PlayerPrefs.GetInt("currentStarThreeMatchMode", 0);
@@ -468,7 +490,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         winGamePanel.SetActive(true);
         pointGameObject.SetActive(false);
         TurnOffToNotifyEndGame();
-        for(int i=0;i<countStar; i++)
+        for (int i = 0; i < countStar; i++)
         {
             listStarEndGame[i].SetActive(true);
         }
@@ -492,7 +514,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
     }
     public void BombFunction()
     {
-        if (bombRemaining > 0&&!isBomb)
+        if (bombRemaining > 0 && !isBomb)
         {
             try
             {
@@ -509,7 +531,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
             PlayerPrefs.SetInt("bombRemainingThreeMatchMode", bombRemaining);
             LoadDataCountHelp();
 
-            bool doneBombFunction=false;
+            bool doneBombFunction = false;
 
             List<string> listIDCantBomb = new List<string>();
 
@@ -588,7 +610,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
                 {
                     listIDCantBomb.Add(cellWillDestroy.GetComponent<CellControllerThreeMatch>().CellID);
                 }
-            } 
+            }
             while (!doneBombFunction);
 
 
@@ -602,7 +624,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
     }
     public void FindFunction()
     {
-        if (findRemaining > 0&&!isFind)
+        if (findRemaining > 0 && !isFind)
         {
             isFind = true;
             Invoke("FindDone", 0.5f);
@@ -711,12 +733,12 @@ public class LevelManagerThreeMatch : MonoBehaviour
         LoadDataCountHelp();
 
         listPos = new List<Vector3>();
-        for (int i = 0; i < listLayer.Length; i++) 
+        for (int i = 0; i < listLayer.Length; i++)
         {
             int lengthOfLayer = listLayer[i].transform.childCount;
             for (int j = 0; j < lengthOfLayer; j++)
             {
-                listPos.Add(new Vector3(listLayer[i].transform.GetChild(0).position.x, listLayer[i].transform.GetChild(0).position.y,i));
+                listPos.Add(new Vector3(listLayer[i].transform.GetChild(0).position.x, listLayer[i].transform.GetChild(0).position.y, i));
                 listCell.Add(listLayer[i].transform.GetChild(0).gameObject);
                 listLayer[i].transform.GetChild(0).SetParent(TimePanel.transform);
             }
@@ -745,7 +767,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
     private void StartCombo()
     {
         countCombo++;
-        if (countCombo > 1&&remainingCell>0)
+        if (countCombo > 1 && remainingCell > 0)
         {
             comboSlider.gameObject.SetActive(true);
             comboEffect.SetActive(true);
@@ -810,7 +832,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             pointGameObject.SetActive(false);
         }
-        else if(!isPauseGame)
+        else if (!isPauseGame)
         {
             pointGameObject.SetActive(true);
         }
@@ -854,7 +876,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
                 countCombo = 0;
                 comboSlider.gameObject.SetActive(false);
             }
-            if(remainingCell<=0)
+            if (remainingCell <= 0)
             {
                 comboSlider.gameObject.SetActive(false);
             }
@@ -862,12 +884,12 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
         if (isHandleStar)
         {
-            if(starSlider.value < PlayerPrefs.GetInt("currentStarThreeMatchMode", 0))
+            if (starSlider.value < PlayerPrefs.GetInt("currentStarThreeMatchMode", 0))
             {
                 starSlider.value += 0.05f;
                 if (starSlider.value >= 15)
                 {
-                    int currentStar= PlayerPrefs.GetInt("currentStarThreeMatchMode", 0) ;
+                    int currentStar = PlayerPrefs.GetInt("currentStarThreeMatchMode", 0);
                     currentStar -= 15;
                     PlayerPrefs.SetInt("currentStarThreeMatchMode", currentStar);
                     starSlider.value = currentStar;
@@ -899,7 +921,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         else
         {
             TimePanel.SetActive(true);
-           // endlessModeController.gameObject.SetActive(true);
+            // endlessModeController.gameObject.SetActive(true);
         }
 
         if (timeRemaining >= 0)
@@ -919,13 +941,13 @@ public class LevelManagerThreeMatch : MonoBehaviour
         if (timeRemaining >= 0.9f * limitTimeOfLevel)
         {
             countStar = 3;
-            for(int i = 0; i < listStars.Length; i++)
+            for (int i = 0; i < listStars.Length; i++)
             {
                 listStars[i].SetActive(true);
             }
         }
-        else 
-        if(timeRemaining >= 0.5f * limitTimeOfLevel)
+        else
+        if (timeRemaining >= 0.5f * limitTimeOfLevel)
         {
             countStar = 2;
             for (int i = 0; i < listStars.Length; i++)
@@ -940,7 +962,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
                 }
             }
         }
-        else if(timeRemaining >= 0.15f * limitTimeOfLevel)
+        else if (timeRemaining >= 0.15f * limitTimeOfLevel)
         {
             countStar = 1;
             for (int i = 0; i < listStars.Length; i++)
@@ -955,8 +977,8 @@ public class LevelManagerThreeMatch : MonoBehaviour
                 }
             }
         }
-        else 
-        { 
+        else
+        {
             countStar = 0;
             for (int i = 0; i < listStars.Length; i++)
             {

@@ -282,5 +282,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0978d7b9feaeb2f4bb7d46ad1ba41cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameSceneToLoad: ThreeMatchModeScene
+  nameSceneToLoad: ThreeMatchModeScene1
   modeName: ThreeMatchMode
