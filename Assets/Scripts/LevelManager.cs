@@ -263,17 +263,16 @@ public class LevelManager : MonoBehaviour
 
     public void PauseGame()
     {
-        //AudioManager.Instance.PlaySFX("click_button");
+        AudioManager.Instance.PlaySFX("click_button");
         PausePanel.SetActive(true);
         DetailPanel.SetActive(false);
-        //SetDefaultSlider();
+        SetDefaultSlider();
         isPauseGame = true;
     }
 
     public void ReturnHomeScene()
     {
-        //AudioManager.Instance.PlaySFX("click_button");
-        Application.backgroundLoadingPriority = ThreadPriority.Low;
+        AudioManager.Instance.PlaySFX("click_button");
         SceneManager.LoadScene("HomeScene");
     }
 

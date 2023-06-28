@@ -76,6 +76,11 @@ public class SettingPanel : MonoBehaviour
         AudioManager.Instance.SFXVolume(sfxSlider.value);
     }
 
+    public void PlayGame()
+    {
+        SetDifficultLevel();
+        SceneManager.LoadScene("PlayScene");
+    }
 
     private void SetDifficultLevel()
     {

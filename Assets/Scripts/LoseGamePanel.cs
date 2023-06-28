@@ -12,7 +12,7 @@ public class LoseGamePanel : MonoBehaviour
     {
         if (isRight)
         {
-            loseLight.transform.DOLocalRotate(new Vector3(0, 0, -360), 60, RotateMode.FastBeyond360)
+            loseLight.transform.DORotate(new Vector3(0, 0, -360), 60, RotateMode.FastBeyond360)
                                     .SetEase(Ease.Linear)
                                     .SetLoops(-1);
         }

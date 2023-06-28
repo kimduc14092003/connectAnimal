@@ -10,7 +10,7 @@ public class PauseGamePanel : MonoBehaviour
 
     private void OnEnable()
     {
-        //SetDefaultSlider();
+        SetDefaultSlider();
     }
 
     private void SetDefaultSlider()
