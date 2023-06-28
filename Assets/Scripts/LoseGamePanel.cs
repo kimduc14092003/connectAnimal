@@ -9,7 +9,7 @@ public class LoseGamePanel : MonoBehaviour
 
     private void Start()
     {
-        loseLight.transform.DORotate(new Vector3(0, 0, 360), 60, RotateMode.FastBeyond360)
+        loseLight.transform.DOLocalRotate(new Vector3(0, 0, 360), 60, RotateMode.FastBeyond360)
                                 .SetEase(Ease.Linear)
                                 .SetLoops(-1);
     }
