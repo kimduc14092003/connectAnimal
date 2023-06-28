@@ -9,6 +9,7 @@ public class MoreGameItemController : MonoBehaviour
     public string nameSceneToLoad;
     public string modeName;
     private GameObject rootGameObjectParent;
+    public LoadSceneManager loadSceneManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,8 @@ public class MoreGameItemController : MonoBehaviour
         if (nameSceneToLoad != null)
         {
             PlayerPrefs.SetString("PlayeMode", modeName);
-            SceneManager.LoadScene(nameSceneToLoad);
+            loadSceneManager =rootGameObjectParent.GetComponent<LoadSceneManager>();
+            loadSceneManager.LoadScene(nameSceneToLoad);
         }
     }
 
