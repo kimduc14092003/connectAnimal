@@ -14,7 +14,7 @@ public class HomePanel : MonoBehaviour
     public Image backgroundSprite;
 
     public List<BackgroundSprite> listSpriteBg;
-
+    public LoadSceneManager loadSceneManager;
     public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel;
     [SerializeField]
     private GameObject SettingPanel;
@@ -63,8 +63,8 @@ public class HomePanel : MonoBehaviour
     {
         //bgSpriteIndex = PlayerPrefs.GetInt("bgSpriteIndex", 0);
         ChangeBackgroundToBackgroundName("bgHome");
-        AudioManager.Instance.PlayMusic("HomeTheme");
-        AudioManager.Instance.GetRandomMusicToList();
+        /*AudioManager.Instance.PlayMusic("HomeTheme");
+        AudioManager.Instance.GetRandomMusicToList();*/
     }
 
     private void ChangeBackgroundToBackgroundName(string bgName)
@@ -120,36 +120,36 @@ public class HomePanel : MonoBehaviour
     }
     public void PlayGame()
     {
-        AudioManager.Instance.PlaySFX("click_button");
+        //AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ClassicMode");
-        SceneManager.LoadScene("PlayScene");
+        loadSceneManager.LoadScene("PlayScene");
     }
 
     public void OpenEndlessMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("MoreGameScene");
+        loadSceneManager.LoadScene("MoreGameScene");
     }
 
     public void OpenChallengeMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ChallengeMode");
-        SceneManager.LoadScene("PlayScene");
+        loadSceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRandomMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "RelaxRandomMode");
-        SceneManager.LoadScene("PlayScene");
+        loadSceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRelaxPuzzleMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "RelaxPuzzleMode");
-        SceneManager.LoadScene("PlayScene");
+        loadSceneManager.LoadScene("PlayScene");
     }
 
     public void OpenRelaxModePanel()
@@ -168,26 +168,26 @@ public class HomePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ShadowMode");
-        SceneManager.LoadScene("ShadowModeScene");
+        loadSceneManager.LoadScene("ShadowModeScene");
     }
     public void OpenButterflyMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ButterflyMode");
-        SceneManager.LoadScene("ShadowModeScene");
+        loadSceneManager.LoadScene("ShadowModeScene");
     }
     public void OpenThreeMatchMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ThreeMatchMode");
-        SceneManager.LoadScene("ThreeMatchModeScene");
+        loadSceneManager.LoadScene("ThreeMatchModeScene");
     }
 
     public void OpenEscapeMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "EscapeMode");
-        SceneManager.LoadScene("EscapeMode");
+        loadSceneManager.LoadScene("EscapeMode");
     }
     public void OpenThemePanel()
     {
