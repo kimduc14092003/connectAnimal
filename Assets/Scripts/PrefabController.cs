@@ -25,7 +25,7 @@ public class PrefabController : MonoBehaviour
     private Sprite[] currentListSprite;
     private void Awake()
     {
-        ChangePrefabToCurrentTheme();
+        //ChangePrefabToCurrentTheme();
     }
 
     public void ChangePrefabToCurrentTheme()

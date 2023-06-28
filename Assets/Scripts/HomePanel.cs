@@ -24,7 +24,6 @@ public class HomePanel : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         SetDefaulValuePlayerPrefs();
-        StaticData.SetDefaultValueThemeColor();
     }
 
     private void SetDefaulValuePlayerPrefs()
@@ -106,23 +105,11 @@ public class HomePanel : MonoBehaviour
         moreGamePanel.SetActive(false);
     }
 
-    public void ChangeBackground()
-    {
-        AudioManager.Instance.PlaySFX("click_button");
-        bgSpriteIndex++;
-        if (bgSpriteIndex >= listSpriteBg.Count)
-        {
-            bgSpriteIndex = 0;
-        }
-        backgroundSprite.sprite = listSpriteBg[bgSpriteIndex].sprite;
-        PlayerPrefs.SetInt("bgSpriteIndex", bgSpriteIndex);
-        StaticData.SetDefaultValueThemeColor();
-    }
     public void PlayGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ClassicMode");
-        SceneManager.LoadScene("PlayScene",LoadSceneMode.Additive);
+        SceneManager.LoadScene("PlayScene");
     }
 
     public void OpenEndlessMode()
