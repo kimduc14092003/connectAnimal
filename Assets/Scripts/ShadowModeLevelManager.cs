@@ -110,7 +110,7 @@ public class ShadowModeLevelManager : MonoBehaviour
     public void AddCurrentScore(int amount)
     {
         currentScore += amount;
-        currentScoreTxt.text = ""+ currentScore;
+        currentScoreTxt.text = "Điểm: "+ currentScore;
     }
 
     private void SetRemainingOfFuncional()
@@ -293,7 +293,7 @@ public class ShadowModeLevelManager : MonoBehaviour
 
         isPauseGame = true;
         int levelScore = currentScore ;
-        levelScoreTxt.text ="Score : "+ levelScore;
+        levelScoreTxt.text ="Điểm "+ levelScore;
 
         int highScore = PlayerPrefs.GetInt("highScoreLevelShadowMode" + currentLevel + currentDifficultLevel, levelScore);
         //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
@@ -311,11 +311,11 @@ public class ShadowModeLevelManager : MonoBehaviour
                 PlayerPrefs.SetInt("highScoreLevelButterflyMode" + currentLevel + currentDifficultLevel, levelScore);
 
             }
-            highScoreTxt.text = "Record : " + levelScore;
+            highScoreTxt.text = "Kỷ lục " + levelScore;
         }
         else
         {
-            highScoreTxt.text = "Record : " + highScore;
+            highScoreTxt.text = "Kỷ lục " + highScore;
         }
 
         //Set tổng điểm qua các level của player
@@ -335,13 +335,13 @@ public class ShadowModeLevelManager : MonoBehaviour
         }
 
 
-        totalScoreTxt.text = "Total score :"+ totalScore;
+        totalScoreTxt.text = "Tổng điểm "+ totalScore;
 
         if (currentLevel > listMatrixShadowModeController.Length)
         {
             winGamePanel.SetActive(true);
 
-            victoryTotalScoreTxt.text = "Total score :" + totalScore;
+            victoryTotalScoreTxt.text = "Tổng điểm " + totalScore;
 
             int highScoreTotal=0;
 
@@ -368,11 +368,11 @@ public class ShadowModeLevelManager : MonoBehaviour
                     PlayerPrefs.SetInt("highScoreButterflyMode", highScoreTotal);
 
                 }
-                victoryHighScoreTxt.text = "Record : " + totalScore;
+                victoryHighScoreTxt.text = "Kỷ lục " + totalScore;
             }
             else
             {
-                victoryHighScoreTxt.text = "Record : " + highScoreTotal;
+                victoryHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
             }
 
             SetNewGameFuncionalRemaining();
@@ -424,7 +424,7 @@ public class ShadowModeLevelManager : MonoBehaviour
             highScoreTotal = PlayerPrefs.GetInt("highScoreButterflyMode", totalScore);
         }
 
-        loseTotalScoreTxt.text = "Total score : " + totalScore;
+        loseTotalScoreTxt.text = "Tổng điểm " + totalScore;
 
         if (totalScore >= highScoreTotal)
         {
@@ -439,11 +439,11 @@ public class ShadowModeLevelManager : MonoBehaviour
                 PlayerPrefs.SetInt("highScoreButterflyMode" , highScoreTotal);
 
             }
-            loseHighScoreTxt.text = "Record : " + totalScore;
+            loseHighScoreTxt.text = "Kỷ lục " + totalScore;
         }
         else
         {
-            loseHighScoreTxt.text = "Record : " + highScoreTotal;
+            loseHighScoreTxt.text = "Kỷ lục " + highScoreTotal;
         }
 
         SetNewGameFuncionalRemaining();

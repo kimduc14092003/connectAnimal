@@ -216,24 +216,24 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         puzzleModeController.gameObject.SetActive(false);
         isPauseGame = true;
         int levelScore = currentScore ;
-        levelScoreTxt.text ="Score : "+ levelScore;
+        levelScoreTxt.text ="Score"+ levelScore;
         
         //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
         int highScore = PlayerPrefs.GetInt("highScoreLevelRelaxPuzzleMode" + currentLevel + currentDifficultLevel, levelScore);
         if (levelScore >= highScore){
             PlayerPrefs.SetInt("highScoreLevelRelaxPuzzleMode" + currentLevel + currentDifficultLevel, levelScore);
-            highScoreTxt.text = "Record : " + levelScore;
+            highScoreTxt.text = "Record " + levelScore;
         }
         else
         {
-            highScoreTxt.text = "Record : " + highScore;
+            highScoreTxt.text = "Record " + highScore;
         }
 
         //Set tổng điểm qua các level của player
         int totalScore = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode",0)+ levelScore;
         PlayerPrefs.SetInt("totalScoreRelaxPuzzleMode",totalScore);
 
-        totalScoreTxt.text = "Total score : "+ totalScore;
+        totalScoreTxt.text = "Total score "+ totalScore;
 
         currentLevel++;
 
@@ -241,17 +241,17 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         {
             winGamePanel.SetActive(true);
 
-            victoryTotalScoreTxt.text = "Total score : " + totalScore;
+            victoryTotalScoreTxt.text = "Total score " + totalScore;
 
             int highScoreTotal = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode", totalScore);
             if (totalScore >= highScoreTotal)
             {
                 PlayerPrefs.SetInt("totalScoreRelaxPuzzleMode", highScoreTotal);
-                victoryHighScoreTxt.text = "Record : " + totalScore;
+                victoryHighScoreTxt.text = "Record " + totalScore;
             }
             else
             {
-                victoryHighScoreTxt.text = "Record : " + highScoreTotal;
+                victoryHighScoreTxt.text = "Record " + highScoreTotal;
             }
 
             SetNewGameFuncionalRemaining();
@@ -278,17 +278,17 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         // Số điểm khi thua = tổng số điểm đã tích trước đó + số điểm hiện tại
         int totalScore = PlayerPrefs.GetInt("totalScoreRelaxPuzzleMode", 0) + currentScore;
 
-        loseTotalScoreTxt.text = "Total score : " + totalScore;
+        loseTotalScoreTxt.text = "Total score " + totalScore;
 
         int highScoreTotal = PlayerPrefs.GetInt("highScoreRelaxPuzzleMode" + currentDifficultLevel, totalScore);
         if (totalScore >= highScoreTotal)
         {
             PlayerPrefs.SetInt("highScoreRelaxPuzzleMode" + currentDifficultLevel, highScoreTotal);
-            loseHighScoreTxt.text = "Record : " + totalScore;
+            loseHighScoreTxt.text = "Record " + totalScore;
         }
         else
         {
-            loseHighScoreTxt.text = "Record : " + highScoreTotal;
+            loseHighScoreTxt.text = "Record " + highScoreTotal;
         }
 
         SetNewGameFuncionalRemaining();

@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour
                     listCellController.colPlay = 18;
                     listCellController.rowPlay = 8;
                     listCellController.col = 20;
-                    listCellController.row = 10;
+                    listCellController.rowPlay = 10;
                     listCellController.numOfDifferentCell = 26;
                     listCellController.limitCellAdjacent = 8;
                     GridLayoutGroup gridLayoutGroup = listCellController.gameObject.GetComponent<GridLayoutGroup>();

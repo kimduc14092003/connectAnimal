@@ -6,21 +6,11 @@ using UnityEngine;
 public class LoseGamePanel : MonoBehaviour
 {
     public GameObject loseLight;
-    public bool isRight = false;
 
     private void Start()
     {
-        if (isRight)
-        {
-            loseLight.transform.DORotate(new Vector3(0, 0, -360), 60, RotateMode.FastBeyond360)
-                                    .SetEase(Ease.Linear)
-                                    .SetLoops(-1);
-        }
-        else
-        {
-            loseLight.transform.DORotate(new Vector3(0, 0, 360), 60, RotateMode.FastBeyond360)
-                                   .SetEase(Ease.Linear)
-                                   .SetLoops(-1);
-        }
+        loseLight.transform.DORotate(new Vector3(0, 0, 360), 60, RotateMode.FastBeyond360)
+                                .SetEase(Ease.Linear)
+                                .SetLoops(-1);
     }
 }
