@@ -153,7 +153,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             currentMap = Instantiate(listMap[listMap.Length-1], transform);
         }
-        currentMap.transform.SetSiblingIndex(7);
+        currentMap.transform.SetSiblingIndex(6);
 
         switch (currentLevel)
         {
