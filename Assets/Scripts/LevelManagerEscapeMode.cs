@@ -85,26 +85,26 @@ public class LevelManagerEscapeMode : MonoBehaviour
     }
     private void TimeRemainingController()
     {
-       /* if(isPauseGame)
+        if (isPauseGame)
         {
-            TimePanel.SetActive(false);
+            /*TimePanel.SetActive(false);
             listCellEscapeController.gameObject.SetActive(false);
             if (FunctionPanel)
             {
                 FunctionPanel.SetActive(false);
-            }
+            }*/
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
+           /* TimePanel.SetActive(true);
             if (FunctionPanel)
             {
                 FunctionPanel.SetActive(true);
             }
-            listCellEscapeController.gameObject.SetActive(true);
+            listCellEscapeController.gameObject.SetActive(true);*/
 
-        }*/
+        }
 
         if (timeRemaining >= 0 )
         {

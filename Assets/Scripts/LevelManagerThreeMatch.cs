@@ -432,14 +432,14 @@ public class LevelManagerThreeMatch : MonoBehaviour
     private void TurnOffToNotifyEndGame()
     {
         isPauseGame = true;
-        TimePanel.SetActive(false);
+        /*TimePanel.SetActive(false);
         listChooseCellGameObject.SetActive(false);
         helpPanel.SetActive(false);
         currentMap.SetActive(false);
         if (pointGameObject.active)
         {
             pointGameObject.SetActive(false);
-        }
+        }*/
     }
     private void TurnOnAgain()
     {
