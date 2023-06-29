@@ -39,6 +39,8 @@ public class ShadowModeLevelManager : MonoBehaviour
     private bool isPauseGame;
     private string currentMode;
 
+    public LoadSceneManager loadSceneManager;
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -248,14 +250,15 @@ public class ShadowModeLevelManager : MonoBehaviour
     public void ReturnHomeScene()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void PlayNewGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
+        Debug.Log("new Game");
         SetNewGameFuncionalRemaining();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void SetNewGameFuncionalRemaining()
@@ -452,7 +455,7 @@ public class ShadowModeLevelManager : MonoBehaviour
     public void NextLevel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     private void SetDefaultSlider()
     {

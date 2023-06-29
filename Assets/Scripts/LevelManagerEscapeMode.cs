@@ -26,6 +26,9 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public TMP_Text limitMoveTurnTxt, levelTitle;
     private bool isPauseGame;
 
+    public LoadSceneManager loadSceneManager;
+
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -53,7 +56,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
         listCellEscapeController = listCell;
 
-        currentMap.transform.SetSiblingIndex(6);
+        currentMap.transform.SetSiblingIndex(3);
     }
 
     private void Start()
@@ -82,7 +85,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
     }
     private void TimeRemainingController()
     {
-        if(isPauseGame)
+       /* if(isPauseGame)
         {
             TimePanel.SetActive(false);
             listCellEscapeController.gameObject.SetActive(false);
@@ -101,7 +104,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
             }
             listCellEscapeController.gameObject.SetActive(true);
 
-        }
+        }*/
 
         if (timeRemaining >= 0 )
         {
@@ -126,14 +129,14 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public void ReturnHomeScene()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void PlayNewGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetInt("currentLevelEscapeMode", 1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
    /* private void SetNewGameFuncionalRemaining()
@@ -176,10 +179,10 @@ public class LevelManagerEscapeMode : MonoBehaviour
         AudioManager.Instance.PlaySFX("win");
         isPauseGame = true;
         
-        TimePanel.SetActive(false);
+ /*       TimePanel.SetActive(false);
         FunctionPanel.SetActive(false);
         currentMap.SetActive(false);
-        rabbit.SetActive(false);
+        rabbit.SetActive(false);*/
         winLevelPanel.SetActive(true);
         currentLevel++;
         PlayerPrefs.SetInt("currentLevelEscapeMode", currentLevel);
@@ -193,13 +196,13 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
         isPauseGame = true;
         loseGamePanel.SetActive(true);
-        rabbit.SetActive(false);
+        //rabbit.SetActive(false);
     }
 
     public void NextLevel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void SetDefaultSlider()

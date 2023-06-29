@@ -27,6 +27,8 @@ public class LevelManagerEndless : MonoBehaviour
     private bool isPauseGame;
 
     public List<GameObject> listGameObjectDeActive;
+    public LoadSceneManager loadSceneManager;
+
     private void Awake()
     {
         if(PlayerPrefs.GetString("PlayeMode")!= "EndlessMode")
@@ -148,13 +150,13 @@ public class LevelManagerEndless : MonoBehaviour
     public void ReturnHomeScene()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void PlayNewGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 

@@ -33,6 +33,7 @@ public class LevelManager : MonoBehaviour
     private int currentScore;
     private bool isPauseGame;
 
+    public LoadSceneManager loadSceneManager;
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -143,20 +144,11 @@ public class LevelManager : MonoBehaviour
     {
         if(isPauseGame)
         {
-            listCellController.gameObject.SetActive(false);
-            if (DetailPanel)
-            {
-                DetailPanel.SetActive(false);
-            }
+
             return;
         }
         else
         {
-            if (DetailPanel)
-            {
-                DetailPanel.SetActive(true);
-            }
-            listCellController.gameObject.SetActive(true);
 
         }
 
@@ -265,7 +257,6 @@ public class LevelManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PausePanel.SetActive(true);
-        DetailPanel.SetActive(false);
         SetDefaultSlider();
         isPauseGame = true;
     }
@@ -273,14 +264,14 @@ public class LevelManager : MonoBehaviour
     public void ReturnHomeScene()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void PlayNewGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
         SetNewGameFuncionalRemaining();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void SetNewGameFuncionalRemaining()
@@ -313,7 +304,6 @@ public class LevelManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
         PausePanel.SetActive(false);
-        DetailPanel.SetActive(true);   
         isPauseGame = false;
     }
 
@@ -419,7 +409,7 @@ public class LevelManager : MonoBehaviour
     public void NextLevel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void SetDefaultSlider()

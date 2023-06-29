@@ -31,6 +31,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     private int currentScore;
     private bool isPauseGame;
     public List<GameObject> listGameObjectDeActive;
+    public LoadSceneManager loadSceneManager;
 
     private void Awake()
     {
@@ -183,14 +184,14 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     public void ReturnHomeScene()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void PlayNewGame()
     {
         AudioManager.Instance.PlaySFX("click_button");
         SetNewGameFuncionalRemaining();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void SetNewGameFuncionalRemaining()
@@ -297,7 +298,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     public void NextLevel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        loadSceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     private void SetDefaultSlider()
     {

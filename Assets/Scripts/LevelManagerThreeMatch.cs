@@ -80,6 +80,9 @@ public class LevelManagerThreeMatch : MonoBehaviour
     private bool isDoneTutorial;
     public GameObject treasurePanel;
     private bool isHandleStar;
+
+    public LoadSceneManager loadSceneManager;
+
     private void Awake()
     {
         starSlider.value = PlayerPrefs.GetInt("currentStarThreeMatchMode", 0);
@@ -153,7 +156,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         {
             currentMap = Instantiate(listMap[listMap.Length-1], transform);
         }
-        currentMap.transform.SetSiblingIndex(6);
+        currentMap.transform.SetSiblingIndex(5);
 
         switch (currentLevel)
         {
@@ -785,13 +788,13 @@ public class LevelManagerThreeMatch : MonoBehaviour
     public void ReturnHomeScene()
     {
         //AudioManager.Instance.PlaySFX("click_button");
-        SceneManager.LoadScene("HomeScene");
+        loadSceneManager.LoadScene("HomeScene");
     }
 
     public void NextLevel()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        loadSceneManager.LoadScene(currentScene.name);
     }
 
     public void ReplayGame()
@@ -800,7 +803,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         PlayerPrefs.SetInt("findRemainingThreeMatchMode", 5);
         PlayerPrefs.SetInt("shuffleRemainingThreeMatchMode", 5);
         Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        loadSceneManager.LoadScene(currentScene.name);
 
     }
 
