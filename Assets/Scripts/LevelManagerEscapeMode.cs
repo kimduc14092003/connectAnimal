@@ -53,7 +53,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
         listCellEscapeController = listCell;
 
-        currentMap.transform.SetSiblingIndex(7);
+        currentMap.transform.SetSiblingIndex(6);
     }
 
     private void Start()
@@ -61,7 +61,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
         if (FunctionPanel)
         {
             FunctionPanel.SetActive(true);
-            levelTitle.text = "Màn " + currentLevel;
+            levelTitle.text = "Level " + currentLevel;
         }
         timeSlider.maxValue = limitTimeOfLevel;
         timeRemaining = limitTimeOfLevel;

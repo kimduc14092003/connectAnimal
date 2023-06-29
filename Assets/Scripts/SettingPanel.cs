@@ -78,13 +78,13 @@ public class SettingPanel : MonoBehaviour
 
     public void PlayGame()
     {
-        SetDifficultLevel();
         SceneManager.LoadScene("PlayScene");
     }
 
     private void SetDifficultLevel()
     {
         Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
+        if (toggle == null) return;
         switch (toggle.name)
         {
             case "Easy":
@@ -108,12 +108,12 @@ public class SettingPanel : MonoBehaviour
     public void CloseSettingPanel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        SetDifficultLevel();
         gameObject.SetActive(false);
     }
 
     public void EffectClickChangeDifficult()
     {
         AudioManager.Instance.PlaySFX("click_button");
+        SetDifficultLevel();
     }
 }
