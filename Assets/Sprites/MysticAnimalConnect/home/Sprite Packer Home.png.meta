@@ -110,7 +110,7 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: 47
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -136,10 +136,31 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Topic
+      name: k
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 1058
+        height: 602
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a4ad1bffffffff0800000000000000
+      internalID: -1311094176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Topic
+      rect:
+        serializedVersion: 2
+        x: 1059
         y: 0
         width: 561
         height: 607
@@ -160,8 +181,8 @@ TextureImporter:
       name: seting
       rect:
         serializedVersion: 2
-        x: 562
-        y: 0
+        x: 0
+        y: 603
         width: 448
         height: 424
       alignment: 9
@@ -181,8 +202,8 @@ TextureImporter:
       name: Oher Game
       rect:
         serializedVersion: 2
-        x: 562
-        y: 425
+        x: 449
+        y: 603
         width: 443
         height: 417
       alignment: 9
@@ -199,11 +220,242 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button
+      name: something
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 0
+        width: 309
+        height: 278
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b871e96cffffffff0800000000000000
+      internalID: -962717813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pruit
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 279
+        width: 309
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fff6f0000000000800000000000000
+      internalID: 258998166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 557
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18bb4f3000000000800000000000000
+      internalID: 1061926943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animail
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 608
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a844f1bffffffff0800000000000000
+      internalID: -1309390682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Korea
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 608
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc813972000000000800000000000000
+      internalID: 663951565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 834
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbacf555000000000800000000000000
+      internalID: 1432341179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: travel
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 885
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd94a19ffffffff0800000000000000
+      internalID: -1851482674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flower
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 885
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f4d700000000000800000000000000
+      internalID: 8212275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candy_0
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1021
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec3a341000000000800000000000000
+      internalID: 339360994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japan
       rect:
         serializedVersion: 2
         x: 0
-        y: 843
+        y: 1028
+        width: 308
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba3bb15000000000800000000000000
+      internalID: 1371224760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insect
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1111
+        width: 308
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1911548dffffffff0800000000000000
+      internalID: -666562159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1162
         width: 436
         height: 133
       alignment: 9
@@ -220,10 +472,73 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: button - Copy
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1162
+        width: 260
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666f6771000000000800000000000000
+      internalID: 393672294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exit
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1021
+        width: 125
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fa9bf5000000000800000000000000
+      internalID: 1606004555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1028
+        width: 117
+        height: 126
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79367d5000000000800000000000000
+      internalID: 1568029054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: advertising ban
       rect:
         serializedVersion: 2
-        x: 437
+        x: 1513
         y: 608
         width: 96
         height: 107
@@ -240,6 +555,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: button sound,music
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 716
+        width: 94
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8827fa14000000000800000000000000
+      internalID: 1102017160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1155
+        width: 79
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7a5c92000000000800000000000000
+      internalID: 700819453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mui ten
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1230
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfae76cffffffff0800000000000000
+      internalID: -964775990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chon
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1230
+        width: 64
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e9b68cffffffff0800000000000000
+      internalID: -932471220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thanh duoi
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1155
+        width: 43
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 6, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0522a181000000000800000000000000
+      internalID: 404365904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STICK
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1296
+        width: 59
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805a9b24000000000800000000000000
+      internalID: 1119462664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "thanh k\xE9o"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1297
+        width: 30
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3949970cffffffff0800000000000000
+      internalID: -1065773933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -251,11 +713,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      1: 700819453
+      Animail: -1309390682
+      Flower: 8212275
+      Insect: -666562159
+      Japan: 1371224760
+      Korea: 663951565
       Oher Game: 1534979973
+      Pokemon: 1432341179
+      STICK: 1119462664
       Topic: -73106240
       advertising ban: 1388925953
       button: -1249707662
+      button - Copy: 393672294
+      button sound,music: 1102017160
+      candy_0: 339360994
+      chon: -932471220
+      exit: 1606004555
+      food: 1061926943
+      k: -1311094176
+      mui ten: -964775990
+      pause: 1568029054
+      pruit: 258998166
       seting: -723950168
+      something: -962717813
+      thanh duoi: 404365904
+      "thanh k\xE9o": -1065773933
+      travel: -1851482674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
