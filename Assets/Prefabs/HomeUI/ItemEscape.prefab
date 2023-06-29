@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: EscapeMode
   modeName: EscapeMode
+  loadSceneManager: {fileID: 0}
 --- !u!1 &6555937895042249080
 GameObject:
   m_ObjectHideFlags: 0

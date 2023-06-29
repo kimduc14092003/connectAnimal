@@ -284,3 +284,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: RelaxMode
   modeName: RelaxMode
+  loadSceneManager: {fileID: 0}

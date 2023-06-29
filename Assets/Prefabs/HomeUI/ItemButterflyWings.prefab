@@ -284,3 +284,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: PlayScene
   modeName: ButterflyMode
+  loadSceneManager: {fileID: 0}

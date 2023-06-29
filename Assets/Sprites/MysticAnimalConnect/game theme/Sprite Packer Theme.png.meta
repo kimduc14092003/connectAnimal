@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c44cc83cbb110174f9ef8ac0a249afb8
+guid: cabfeeb77d8d7794ca1ef4e7980bbd09
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 1
+    aniso: 4
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -69,14 +69,14 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -108,27 +108,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 50
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 1
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -149,295 +136,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_0"
+      name: something
       rect:
         serializedVersion: 2
-        x: 367
-        y: 1044
-        width: 1276
-        height: 673
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 309
+        height: 278
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: df6b9706c010a494aa6c8fa159d7c342
-      internalID: -395392214
+      spriteID: 2e99da75000000000800000000000000
+      internalID: 1470994914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_2"
+      name: pruit
       rect:
         serializedVersion: 2
-        x: 360
-        y: 1294
-        width: 6
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 279
+        width: 309
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8eac250006ede81488d3cb522491c155
-      internalID: -476900542
+      spriteID: 10f13388ffffffff0800000000000000
+      internalID: -2009915647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_3"
+      name: Animail
       rect:
         serializedVersion: 2
-        x: 387
-        y: 305
-        width: 1245
-        height: 673
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 557
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bddec39eee4b9ca4bb888f16a6514d96
-      internalID: 850646948
+      spriteID: 80856895000000000800000000000000
+      internalID: 1501976584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_5"
+      name: candy_0
       rect:
         serializedVersion: 2
-        x: 1656
-        y: 561
-        width: 7
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 310
+        y: 0
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a060769f7bb1e5243b52517620da7ab3
-      internalID: 1850140568
+      spriteID: 79af54a6000000000800000000000000
+      internalID: 1782971031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_6"
+      name: Flower
       rect:
         serializedVersion: 2
-        x: 1650
-        y: 536
-        width: 6
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 310
+        y: 277
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6b892e16d3c37ce4795fd62966408fca
-      internalID: 573696278
+      spriteID: 9c28607affffffff0800000000000000
+      internalID: -1492745527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_7"
+      name: food
       rect:
         serializedVersion: 2
-        x: 1644
-        y: 517
-        width: 6
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 310
+        y: 554
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6787633c32a5c414ba12f5f9869f2256
-      internalID: 1391764354
+      spriteID: e9f36da5000000000800000000000000
+      internalID: 1523990430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_8"
+      name: Korea
       rect:
         serializedVersion: 2
-        x: 1632
-        y: 488
-        width: 12
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 620
+        y: 0
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 51bcbaea2e2171b4da740e1d66605e01
-      internalID: -1050715692
+      spriteID: 5d39999effffffff0800000000000000
+      internalID: -375811115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_9"
+      name: Pokemon
       rect:
         serializedVersion: 2
-        x: 390
-        y: 295
-        width: 234
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 620
+        y: 277
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aef95a0a339018a46b363faf8add42fc
-      internalID: -1850342009
+      spriteID: 3b7cde29ffffffff0800000000000000
+      internalID: -1829910605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_10"
+      name: travel
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 300
-        width: 192
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 620
+        y: 554
+        width: 309
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: db427743ed82e8b48a914882cf8b9e41
-      internalID: 1148735467
+      spriteID: 4624b20bffffffff0800000000000000
+      internalID: -1339342236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_11"
+      name: Insect
       rect:
         serializedVersion: 2
-        x: 627
-        y: 289
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 930
+        y: 0
+        width: 308
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 63e29e70b678c214badde2a9776e3b77
-      internalID: -1118651707
+      spriteID: 695413ccffffffff0800000000000000
+      internalID: -869186154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_12"
+      name: Japan
       rect:
         serializedVersion: 2
-        x: 1386
-        y: 283
-        width: 52
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1239
+        y: 0
+        width: 308
+        height: 276
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87b347979fac7b94a9eb8fb92eb5c2df
-      internalID: 1821915753
+      spriteID: 7919228effffffff0800000000000000
+      internalID: -400387689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_13"
+      name: mui ten
       rect:
         serializedVersion: 2
-        x: 645
-        y: 282
-        width: 21
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 310
+        y: 831
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b63e971092fab4d4985285013e9d7b2e
-      internalID: 132423096
+      spriteID: 0e9f26f7000000000800000000000000
+      internalID: 2137192928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_14"
+      name: chon
       rect:
         serializedVersion: 2
-        x: 668
-        y: 274
-        width: 676
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 834
+        width: 64
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9b2b1b7e41fec4843b8f54200e96bc74
-      internalID: 2097656918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u2014Pngtree\u2014off and on button switch_8351322_15"
-      rect:
-        serializedVersion: 2
-        x: 1350
-        y: 276
-        width: 32
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6109b65635125914c835f127c83f8a97
-      internalID: 1147064237
+      spriteID: 9a908c92000000000800000000000000
+      internalID: 700975529
       vertices: []
       indices: 
       edges: []
@@ -453,22 +419,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u2014Pngtree\u2014off and on button switch_8351322_0": -395392214
-      "\u2014Pngtree\u2014off and on button switch_8351322_1": 781729111
-      "\u2014Pngtree\u2014off and on button switch_8351322_10": 1148735467
-      "\u2014Pngtree\u2014off and on button switch_8351322_11": -1118651707
-      "\u2014Pngtree\u2014off and on button switch_8351322_12": 1821915753
-      "\u2014Pngtree\u2014off and on button switch_8351322_13": 132423096
-      "\u2014Pngtree\u2014off and on button switch_8351322_14": 2097656918
-      "\u2014Pngtree\u2014off and on button switch_8351322_15": 1147064237
-      "\u2014Pngtree\u2014off and on button switch_8351322_2": -476900542
-      "\u2014Pngtree\u2014off and on button switch_8351322_3": 850646948
-      "\u2014Pngtree\u2014off and on button switch_8351322_4": -1912056299
-      "\u2014Pngtree\u2014off and on button switch_8351322_5": 1850140568
-      "\u2014Pngtree\u2014off and on button switch_8351322_6": 573696278
-      "\u2014Pngtree\u2014off and on button switch_8351322_7": 1391764354
-      "\u2014Pngtree\u2014off and on button switch_8351322_8": -1050715692
-      "\u2014Pngtree\u2014off and on button switch_8351322_9": -1850342009
+      Animail: 1501976584
+      Flower: -1492745527
+      Insect: -869186154
+      Japan: -400387689
+      Korea: -375811115
+      Pokemon: -1829910605
+      candy_0: 1782971031
+      chon: 700975529
+      food: 1523990430
+      mui ten: 2137192928
+      pruit: -2009915647
+      something: 1470994914
+      travel: -1339342236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

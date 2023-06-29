@@ -284,3 +284,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: ThreeMatchModeScene
   modeName: ThreeMatchMode
+  loadSceneManager: {fileID: 0}

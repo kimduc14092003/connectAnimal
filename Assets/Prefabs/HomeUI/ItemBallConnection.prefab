@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: PlayScene
   modeName: ShadowMode
+  loadSceneManager: {fileID: 0}
 --- !u!1 &9001179516493547384
 GameObject:
   m_ObjectHideFlags: 0

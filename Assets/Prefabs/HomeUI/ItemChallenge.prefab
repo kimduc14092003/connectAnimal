@@ -284,3 +284,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameSceneToLoad: PlayScene
   modeName: ChallengeMode
+  loadSceneManager: {fileID: 0}
