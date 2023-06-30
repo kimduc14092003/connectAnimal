@@ -10,6 +10,7 @@ public class PlayModeManager : MonoBehaviour
 
     void Awake()
     {
+         Application.targetFrameRate = 144;
         string currentGameMode = PlayerPrefs.GetString("PlayeMode");
 
         switch (currentGameMode)

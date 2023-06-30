@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     public LoadSceneManager loadSceneManager;
     private void Awake()
     {
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
         string playerMode = PlayerPrefs.GetString("PlayeMode");
         if (playerMode != "ClassicMode" && playerMode!= "RelaxRandomMode" && playerMode != "ChallengeMode")
         {
@@ -390,7 +390,7 @@ public class LevelManager : MonoBehaviour
         // Số điểm khi thua = tổng số điểm đã tích trước đó + số điểm hiện tại
         int totalScore = PlayerPrefs.GetInt("totalScore" + currentDifficultLevel, 0) + currentScore;
 
-        loseTotalScoreTxt.text = "Total score " + totalScore;
+        loseTotalScoreTxt.text = "Total score : " + totalScore;
 
         int highScoreTotal = PlayerPrefs.GetInt("highScoreTotal" + currentDifficultLevel, totalScore);
         if (totalScore >= highScoreTotal)

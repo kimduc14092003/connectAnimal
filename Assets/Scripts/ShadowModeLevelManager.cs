@@ -43,7 +43,7 @@ public class ShadowModeLevelManager : MonoBehaviour
 
     private void Awake()
     {
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 1;
 
         if (PlayerPrefs.GetString("PlayeMode") != "ShadowMode"&& PlayerPrefs.GetString("PlayeMode") != "ButterflyMode")
         {
@@ -147,17 +147,17 @@ public class ShadowModeLevelManager : MonoBehaviour
     {
         if (isPauseGame)
         {
-            DetailPanel.SetActive(false);
+           /* DetailPanel.SetActive(false);
             shadowModeController.gameObject.SetActive(false);
-
+*/
             return;
         }
         else
         {
-            DetailPanel.SetActive(true);
+           /* DetailPanel.SetActive(true);
             
             shadowModeController.gameObject.SetActive(true);
-
+*/
         }
         if (timeRemaining >= 0)
         {

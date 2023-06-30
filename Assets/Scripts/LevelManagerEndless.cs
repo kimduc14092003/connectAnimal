@@ -36,7 +36,7 @@ public class LevelManagerEndless : MonoBehaviour
             GetComponent<LevelManagerEndless>().enabled = false;
             return;
         }
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
         float coefficient= Mathf.Pow(0.667f, currentLevel/9);
         limitTimeOfLevel = StaticData.limitTimeInEndless*coefficient ;
         DeActiveListGameObject();
@@ -87,14 +87,14 @@ public class LevelManagerEndless : MonoBehaviour
     {
         if(isPauseGame)
         {
-            DetailPanel.SetActive(false);
-            endlessModeController.gameObject.SetActive(false);
+           /* DetailPanel.SetActive(false);
+            endlessModeController.gameObject.SetActive(false);*/
             return;
         }
         else
         {
-            DetailPanel.SetActive(true);
-            endlessModeController.gameObject.SetActive(true);
+           /* DetailPanel.SetActive(true);
+            endlessModeController.gameObject.SetActive(true);*/
         }
 
         if (timeRemaining >= 0 )

@@ -40,7 +40,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
             GetComponent<RelaxPuzzleLevelManager>().enabled = false;
             return;
         }
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
         currentLevel = PlayerPrefs.GetInt("currentLevelRelaxPuzzleMode", 1);
        puzzleModeController = listMatrixPuzzleModeController[currentLevel-1];
         GameObject panel= Instantiate(puzzleModeController.gameObject,transform);
@@ -114,15 +114,15 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     {
         if (isPauseGame)
         {
-            DetailPanel.SetActive(false);
-            puzzleModeController.gameObject.SetActive(false);
+           /* DetailPanel.SetActive(false);
+            puzzleModeController.gameObject.SetActive(false);*/
             return;
         }
         else
         {
-            DetailPanel.SetActive(true);
+          /*  DetailPanel.SetActive(true);
             puzzleModeController.gameObject.SetActive(true);
-
+*/
         }
     }
 

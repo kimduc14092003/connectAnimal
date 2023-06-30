@@ -22,7 +22,7 @@ public class HomePanel : MonoBehaviour
 
     private void Awake()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 144;
         SetDefaulValuePlayerPrefs();
         StaticData.SetDefaultValueThemeColor();
     }
@@ -118,7 +118,7 @@ public class HomePanel : MonoBehaviour
         PlayerPrefs.SetInt("bgSpriteIndex", bgSpriteIndex);
         StaticData.SetDefaultValueThemeColor();
     }
-    public void PlayGame()
+    public void PlayGameClassicMode()
     {
         AudioManager.Instance.PlaySFX("click_button");
         PlayerPrefs.SetString("PlayeMode", "ClassicMode");

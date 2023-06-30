@@ -92,7 +92,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
         timeOfCombo = 3;
         currentLevel = PlayerPrefs.GetInt("currentLevelThreeMatchMode", 1);
 
-        Application.targetFrameRate = 60;
+       // Application.targetFrameRate = 60;
         /* float coefficient= Mathf.Pow(0.667f, currentLevel/9);
          limitTimeOfLevel = StaticData.limitTimeInEndless*coefficient ;
  */
