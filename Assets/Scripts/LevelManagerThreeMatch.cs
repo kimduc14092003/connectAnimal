@@ -417,6 +417,16 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void LoseGame()
     {
+        // Hiện quảng cáo
+        MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
+        if (mG_Interface != null)
+        {
+            mG_Interface.Interstitial_Show();
+        }
+        else
+        {
+            Debug.Log("Cant find MG_Interface!");
+        }
         print("Ban thua roi!");
         AudioManager.Instance.StopMusic();
 
@@ -459,6 +469,16 @@ public class LevelManagerThreeMatch : MonoBehaviour
 
     public void WinLevelNotification()
     {
+        // Hiện quảng cáo
+        MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
+        if (mG_Interface != null)
+        {
+            mG_Interface.Interstitial_Show();
+        }
+        else
+        {
+            Debug.Log("Cant find MG_Interface!");
+        }
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();
 

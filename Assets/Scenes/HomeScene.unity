@@ -2742,7 +2742,7 @@ GameObject:
   - component: {fileID: 619659749}
   - component: {fileID: 619659748}
   m_Layer: 5
-  m_Name: ButtonPlay
+  m_Name: ButtonComfirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2812,19 +2812,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619659749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1791137260}
-        m_TargetAssemblyTypeName: HomePanel, Assembly-CSharp
-        m_MethodName: PlayGameClassicMode
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &619659749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3135,7 +3123,6 @@ GameObject:
   - component: {fileID: 723459388}
   - component: {fileID: 723459391}
   - component: {fileID: 723459390}
-  - component: {fileID: 723459389}
   m_Layer: 5
   m_Name: RemoveAdsPanel
   m_TagString: Untagged
@@ -3164,21 +3151,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &723459389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723459387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29bde790d9799f94da7a18103b74c3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggleGroup: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
 --- !u!114 &723459390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3798,10 +3770,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 723459389}
-        m_TargetAssemblyTypeName: SettingPanel, Assembly-CSharp
-        m_MethodName: CloseSettingPanel
-        m_Mode: 1
+      - m_Target: {fileID: 1791137260}
+        m_TargetAssemblyTypeName: HomePanel, Assembly-CSharp
+        m_MethodName: StateRemoveAdsPanelButton
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6331,15 +6303,15 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1791137260}
         m_TargetAssemblyTypeName: HomePanel, Assembly-CSharp
-        m_MethodName: NoAdsButton
-        m_Mode: 1
+        m_MethodName: StateRemoveAdsPanelButton
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1272973025
 MonoBehaviour:
@@ -6609,7 +6581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75543755, y: 0.062444445}
   m_AnchorMax: {x: 0.99156255, y: 0.19962965}
-  m_AnchoredPosition: {x: -20.89801, y: 2.1799927}
+  m_AnchoredPosition: {x: -20.89795, y: 2.1799316}
   m_SizeDelta: {x: -11.01, y: 12.536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363977098
@@ -7875,6 +7847,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603813188}
   m_CullTransparentMesh: 1
+--- !u!114 &1605628477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6792903516704746666, guid: 090a4488b030f364d95275638d2f1af1, type: 3}
+  m_PrefabInstance: {fileID: 1830349397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e67d409e09d24e79b0f5bdbf06f41c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1617398521
 GameObject:
   m_ObjectHideFlags: 0
@@ -8747,7 +8730,6 @@ GameObject:
   - component: {fileID: 1791137257}
   - component: {fileID: 1791137256}
   - component: {fileID: 1791137255}
-  - component: {fileID: 1791137259}
   - component: {fileID: 1791137260}
   - component: {fileID: 1791137261}
   - component: {fileID: 1791137262}
@@ -8849,19 +8831,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1791137259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791137254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 961200a0b349d1e448c890e55a7c7d64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deltaTime: 0
 --- !u!114 &1791137260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8888,6 +8857,8 @@ MonoBehaviour:
   homePanel: {fileID: 819687709}
   moreGamePanel: {fileID: 941540670}
   relaxModePanel: {fileID: 676012309}
+  removeAdsPanel: {fileID: 723459387}
+  mG_Interface: {fileID: 1605628477}
   SettingPanel: {fileID: 807633792}
 --- !u!114 &1791137261
 MonoBehaviour:
@@ -9440,6 +9411,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6792903516704746666, guid: 090a4488b030f364d95275638d2f1af1, type: 3}
+      propertyPath: devMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6792903516704746676, guid: 090a4488b030f364d95275638d2f1af1, type: 3}
       propertyPath: m_RootOrder
       value: 5

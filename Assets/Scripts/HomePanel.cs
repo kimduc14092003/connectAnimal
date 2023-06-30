@@ -15,7 +15,8 @@ public class HomePanel : MonoBehaviour
 
     public List<BackgroundSprite> listSpriteBg;
     public LoadSceneManager loadSceneManager;
-    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel;
+    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel,removeAdsPanel;
+    public MG_Interface mG_Interface;
     [SerializeField]
     private GameObject SettingPanel;
     private int bgSpriteIndex;
@@ -204,10 +205,17 @@ public class HomePanel : MonoBehaviour
         ChangeBackgroundToBackgroundName("bgHome");
     }
 
-    public void NoAdsButton()
+    public void StateRemoveAdsPanelButton(bool isOpen)
     {
         AudioManager.Instance.PlaySFX("click_button");
-        Debug.Log("No Ads!");
+        if(isOpen)
+        {
+            removeAdsPanel.SetActive(true);
+        }
+        else
+        {
+            removeAdsPanel.SetActive(false);
+        }
     }
 }
 [System.Serializable]
