@@ -30,14 +30,14 @@ public class ProductIPAData
 public static class MG_ProductData
 {
     public static ProductIPAData NoAds_Pack = new ProductIPAData("Remove_Ads", "gm.removeads", "1.99", "USD");
-    public static ProductIPAData Gem_1_Pack = new ProductIPAData("Gem_1", "gm.g100", "0.99", "USD");
+/*    public static ProductIPAData Gem_1_Pack = new ProductIPAData("Gem_1", "gm.g100", "0.99", "USD");
     public static ProductIPAData Gem_2_Pack = new ProductIPAData("Gem_2", "gm.g250", "2.99", "USD");
-    public static ProductIPAData Gem_3_Pack = new ProductIPAData("Gem_3", "gm.g600", "4.99", "USD");
+    public static ProductIPAData Gem_3_Pack = new ProductIPAData("Gem_3", "gm.g600", "4.99", "USD");*/
 
     public static MG_RewardProduct NoAdsReward = new MG_RewardProduct(MG_ProductType.NoAds, 0, 20);
-    public static MG_RewardProduct Gem_1_Reward = new MG_RewardProduct(MG_ProductType.Gem, 100);
+   /* public static MG_RewardProduct Gem_1_Reward = new MG_RewardProduct(MG_ProductType.Gem, 100);
     public static MG_RewardProduct Gem_2_Reward = new MG_RewardProduct(MG_ProductType.Gem, 350);
-    public static MG_RewardProduct Gem_3_Reward = new MG_RewardProduct(MG_ProductType.Gem, 600);
+    public static MG_RewardProduct Gem_3_Reward = new MG_RewardProduct(MG_ProductType.Gem, 600);*/
     
 }
 

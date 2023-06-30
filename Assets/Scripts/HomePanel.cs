@@ -15,7 +15,7 @@ public class HomePanel : MonoBehaviour
 
     public List<BackgroundSprite> listSpriteBg;
     public LoadSceneManager loadSceneManager;
-    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel,removeAdsPanel;
+    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel, removeAdsPanel,removeAdsButton,notificationPanel;
     public MG_Interface mG_Interface;
     [SerializeField]
     private GameObject SettingPanel;
@@ -23,7 +23,6 @@ public class HomePanel : MonoBehaviour
 
     private void Awake()
     {
-        Application.targetFrameRate = 144;
         SetDefaulValuePlayerPrefs();
         StaticData.SetDefaultValueThemeColor();
     }
@@ -66,6 +65,10 @@ public class HomePanel : MonoBehaviour
         ChangeBackgroundToBackgroundName("bgHome");
         AudioManager.Instance.PlayMusic("HomeTheme");
         AudioManager.Instance.GetRandomMusicToList();
+        if (mG_Interface.removeAds)
+        {
+            removeAdsButton.SetActive(false);
+        }
     }
 
     private void ChangeBackgroundToBackgroundName(string bgName)
@@ -156,14 +159,14 @@ public class HomePanel : MonoBehaviour
     public void OpenRelaxModePanel()
     {
         AudioManager.Instance.PlaySFX("click_button");
-        moreGamePanel.SetActive(false );
+        moreGamePanel.SetActive(false);
         relaxModePanel.SetActive(true);
     }
     public void CloseRelaxModePanel()
     {
         AudioManager.Instance.PlaySFX("click_button");
         relaxModePanel.SetActive(false);
-        moreGamePanel.SetActive(true );
+        moreGamePanel.SetActive(true);
     }
     public void OpenShadowMode()
     {
@@ -204,17 +207,46 @@ public class HomePanel : MonoBehaviour
         themePanel.SetActive(false);
         ChangeBackgroundToBackgroundName("bgHome");
     }
+    public void StateNotificationPanel(bool isOpen)
+    {
+        AudioManager.Instance.PlaySFX("click_button");
+        if (isOpen)
+        {
+            notificationPanel.SetActive(true);
+        }
+        else
+        {
+            notificationPanel.SetActive(false);
+        }
+    }
 
     public void StateRemoveAdsPanelButton(bool isOpen)
     {
         AudioManager.Instance.PlaySFX("click_button");
-        if(isOpen)
+        if (isOpen)
         {
             removeAdsPanel.SetActive(true);
         }
         else
         {
             removeAdsPanel.SetActive(false);
+        }
+    }
+
+    public void ConfirmBuyRemoveAds()
+    {
+        mG_Interface.Purchase_Item(MG_ProductData.NoAds_Pack.productId, HandleBuyRemoveAds);
+    }
+
+    private void HandleBuyRemoveAds(bool result,bool onIAP,string productID)
+    {
+        if(result)
+        {
+            MG_PlayerPrefs.SetBool("RemoveAds", true);
+            mG_Interface.removeAds = true;
+            StateRemoveAdsPanelButton(false);
+            removeAdsButton.SetActive(false);
+            StateNotificationPanel(true);
         }
     }
 }

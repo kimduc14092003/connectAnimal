@@ -31,7 +31,6 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
     private void Awake()
     {
-        //Application.targetFrameRate = 60;
         GetInforOfGame();
         /*HandleLevelStart();
         HandlePlayeMode();*/
@@ -177,13 +176,13 @@ public class LevelManagerEscapeMode : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX("win");
@@ -202,13 +201,13 @@ public class LevelManagerEscapeMode : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX("lose");

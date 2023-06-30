@@ -43,7 +43,6 @@ public class ShadowModeLevelManager : MonoBehaviour
 
     private void Awake()
     {
-        //Application.targetFrameRate = 1;
 
         if (PlayerPrefs.GetString("PlayeMode") != "ShadowMode"&& PlayerPrefs.GetString("PlayeMode") != "ButterflyMode")
         {
@@ -292,13 +291,13 @@ public class ShadowModeLevelManager : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();
@@ -418,13 +417,13 @@ public class ShadowModeLevelManager : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.PlaySFX("lose");
         AudioManager.Instance.StopMusic();

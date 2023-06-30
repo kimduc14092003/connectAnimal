@@ -36,7 +36,6 @@ public class LevelManager : MonoBehaviour
     public LoadSceneManager loadSceneManager;
     private void Awake()
     {
-        //Application.targetFrameRate = 60;
         string playerMode = PlayerPrefs.GetString("PlayeMode");
         if (playerMode != "ClassicMode" && playerMode!= "RelaxRandomMode" && playerMode != "ChallengeMode")
         {
@@ -311,13 +310,13 @@ public class LevelManager : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null&&!mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No Ads!");
         }
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();
@@ -393,13 +392,14 @@ public class LevelManager : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        Debug.Log(mG_Interface.removeAds);
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
 
         AudioManager.Instance.PlaySFX("lose");

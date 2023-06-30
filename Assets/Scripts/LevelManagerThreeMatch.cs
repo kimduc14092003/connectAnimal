@@ -92,7 +92,6 @@ public class LevelManagerThreeMatch : MonoBehaviour
         timeOfCombo = 3;
         currentLevel = PlayerPrefs.GetInt("currentLevelThreeMatchMode", 1);
 
-       // Application.targetFrameRate = 60;
         /* float coefficient= Mathf.Pow(0.667f, currentLevel/9);
          limitTimeOfLevel = StaticData.limitTimeInEndless*coefficient ;
  */
@@ -419,15 +418,14 @@ public class LevelManagerThreeMatch : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
-        print("Ban thua roi!");
         AudioManager.Instance.StopMusic();
 
         AudioManager.Instance.PlaySFX("lose");
@@ -471,13 +469,13 @@ public class LevelManagerThreeMatch : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();

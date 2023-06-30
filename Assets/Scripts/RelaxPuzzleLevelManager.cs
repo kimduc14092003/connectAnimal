@@ -40,7 +40,6 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
             GetComponent<RelaxPuzzleLevelManager>().enabled = false;
             return;
         }
-        //Application.targetFrameRate = 60;
         currentLevel = PlayerPrefs.GetInt("currentLevelRelaxPuzzleMode", 1);
        puzzleModeController = listMatrixPuzzleModeController[currentLevel-1];
         GameObject panel= Instantiate(puzzleModeController.gameObject,transform);
@@ -220,7 +219,7 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.StopMusic();
@@ -282,13 +281,13 @@ public class RelaxPuzzleLevelManager : MonoBehaviour
     {
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
-        if (mG_Interface != null)
+        if (mG_Interface != null && !mG_Interface.removeAds)
         {
             mG_Interface.Interstitial_Show();
         }
         else
         {
-            Debug.Log("Cant find MG_Interface!");
+            Debug.Log("No ads!");
         }
         AudioManager.Instance.PlaySFX("lose");
         AudioManager.Instance.StopMusic();
