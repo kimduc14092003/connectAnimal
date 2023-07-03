@@ -22,7 +22,7 @@ public class ListCellEscapeController : MonoBehaviour
 
     public LevelManagerEscapeMode levelManager;
 
-    public int limitCellAdjacent;
+    public int limitCellAdjacent,limitMoveTurn;
     public float timeToMove;
     private bool isMoving;
     public bool isWin;

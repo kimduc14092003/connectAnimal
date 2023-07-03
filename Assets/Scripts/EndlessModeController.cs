@@ -21,6 +21,8 @@ public class EndlessModeController : MonoBehaviour
 
     public int limitCellAdjacent;
 
+    public GameObject cellAnim1, cellAnim2;
+
     [SerializeField]
     private List<CellController> spawnDefaultCell;
     [SerializeField]
@@ -691,8 +693,7 @@ public class EndlessModeController : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySFX("connect");
                     cellRemain -= 2;
-                    StartCoroutine(DeleteCell(CellSelected1));
-                    StartCoroutine(DeleteCell(CellSelected2));
+                    
 
                     // Cộng điểm khi ăn được ô
                     levelManager.AddCurrentScore(10);
@@ -719,6 +720,8 @@ public class EndlessModeController : MonoBehaviour
                     }
                     // Kiểm tra xem còn ô nào có thể ăn được nữa không
                     //Invoke("HandleCantPlayWhenScored", delayTimeToDeleteCell + 0.1f);
+                    StartCoroutine(DeleteCell(CellSelected1, true));
+                    StartCoroutine(DeleteCell(CellSelected2, false));
 
                 }
                 else
@@ -770,21 +773,27 @@ public class EndlessModeController : MonoBehaviour
         cellController2.SetHintColor();
     }
 
-    IEnumerator DeleteCell(GameObject cell)
+    IEnumerator DeleteCell(GameObject cell, bool isCell1)
     {
 
         CellController cellController = cell.GetComponent<CellController>();
         cellController.CellID = "0";
-        cellController.ConnectSuccess(delayTimeToDeleteCell);
+        //cellController.ConnectSuccess(delayTimeToDeleteCell);
         Matrix[cellController.posX, cellController.posY] = "0";
-        yield return new WaitForSeconds(delayTimeToDeleteCell);
-
         if (cell) {
             cell.GetComponent<CanvasGroup>().alpha = 0;
         }
         if (cell)
         {
             cell.GetComponent<Button>().interactable = false;
+        }
+        if (isCell1)
+        {
+            StartCoroutine(TestDeleteCell1(cellAnim1, cell));
+        }
+        else
+        {
+            StartCoroutine(TestDeleteCell1(cellAnim2, cell));
         }
 
         GameObject nothingGameObject = Instantiate(wallCell,transform);
@@ -796,6 +805,21 @@ public class EndlessModeController : MonoBehaviour
 
         listCell[cellController.posY][cellController.posX] = nothingGameObject;
         Destroy(cell);
+        yield return new WaitForSeconds(delayTimeToDeleteCell);
+
+    }
+    IEnumerator TestDeleteCell1(GameObject cellAnim, GameObject cellTarget)
+    {
+        cellAnim.transform.localScale = Vector3.one;
+        cellAnim.GetComponent<CanvasGroup>().alpha = 1.0f;
+        cellAnim.transform.position = cellTarget.transform.position;
+
+        cellAnim.transform.GetChild(0).GetComponent<Image>().sprite = cellTarget.transform.GetChild(0).GetComponent<Image>().sprite;
+        cellAnim.SetActive(true);
+        cellAnim.GetComponent<CellController>().ConnectSuccess(delayTimeToDeleteCell);
+        yield return new WaitForSeconds(delayTimeToDeleteCell);
+        cellAnim.SetActive(false);
+
     }
 
 

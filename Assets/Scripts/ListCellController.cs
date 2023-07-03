@@ -13,6 +13,9 @@ public class ListCellController : MonoBehaviour
     public LineController lineController;
     public string[,] Matrix;
     public List<GameObject> listCell;
+    
+    public GameObject animationCell1, animationCell2;
+
     public int colPlay, rowPlay, col, row;
 
     public int numOfDifferentCell;
@@ -204,8 +207,8 @@ public class ListCellController : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySFX("connect");
                     cellRemain -= 2;
-                    StartCoroutine(DeleteCell(CellSelected1));
-                    StartCoroutine(DeleteCell(CellSelected2));
+                    StartCoroutine(DeleteCell(CellSelected1,true));
+                    StartCoroutine(DeleteCell(CellSelected2,false));
                     StartCoroutine(CheckWinLevel(0.25f));
 
                     // Cộng điểm khi ăn được ô
@@ -294,6 +297,13 @@ public class ListCellController : MonoBehaviour
     // Chức năng xáo trộn các ô còn lại 
     public void ShuffleAllCell(float delayToAnim)
     {
+        countCellAdjacent = 0;
+        limitCellAdjacent = cellRemain / 18;
+        if (limitCellAdjacent < 3)
+        {
+            limitCellAdjacent = 3;
+        }
+
         if (cellRemain <= 0) return;
         //tắt grid layout để thay đổi vị trí các gameobject con vào trung tâm
          gameObject.GetComponent<GridLayoutGroup>().enabled = false;
@@ -323,6 +333,24 @@ public class ListCellController : MonoBehaviour
             {
                 int RandomNumber = Random.Range(0, listCellTemp.Count);
                 listCell[i] = listCellTemp[RandomNumber];
+
+                //Kiểm tra ô gần nhau
+                // Debug.Log(i+ listCell[i].ToString());
+
+                if (listCell[i].GetComponent<CellController>().CellID == listCell[i - 1].GetComponent<CellController>().CellID || listCell[i].GetComponent<CellController>().CellID == listCell[i - col].GetComponent<CellController>().CellID)
+                {
+                    if (countCellAdjacent >= limitCellAdjacent)
+                    {
+                        Debug.Log("Limit" + i + cellController.CellID + listCell[i - 1].GetComponent<CellController>().CellID + listCell[i - col].GetComponent<CellController>().CellID);
+                        i--;
+                        continue;
+                    }
+                    else
+                    {
+                        countCellAdjacent++;
+                    }
+                }
+
                 listCellTemp.RemoveAt(RandomNumber);
             }
 
@@ -421,19 +449,28 @@ public class ListCellController : MonoBehaviour
         cellController2.SetHintColor();
     }
 
-    IEnumerator DeleteCell(GameObject cell)
+    IEnumerator DeleteCell(GameObject cell,bool isCell1)
     {
 
         CellController cellController = cell.GetComponent<CellController>();
         cellController.CellID = "0";
         Matrix[cellController.posX, cellController.posY] = "0";
-        cellController.ConnectSuccess(delayTimeToDeleteCell);
-        yield return new WaitForSeconds(delayTimeToDeleteCell);
-
-        cell.GetComponent<CanvasGroup>().alpha = 0;
         cell.GetComponent<Button>().interactable = false;
+        //cellController.ConnectSuccess(delayTimeToDeleteCell);
+
+        if (isCell1)
+        {
+            StartCoroutine(TestDeleteCell1(animationCell1, cell));
+        }
+        else
+        {
+            StartCoroutine(TestDeleteCell1(animationCell2, cell));
+        }
+        cell.GetComponent<CanvasGroup>().alpha = 0;
         StartCoroutine(HandleMovementCell(cell,0));
         StartCoroutine(HandleMovementCell(cell, 0.02f));
+        yield return new WaitForSeconds(delayTimeToDeleteCell);
+
     }
 
     IEnumerator HandleMovementCell(GameObject cell,float delay)
@@ -637,6 +674,20 @@ public class ListCellController : MonoBehaviour
         {
             levelManager.WinLevelNotification();
         }
+    }
+
+    IEnumerator TestDeleteCell1(GameObject cellAnim,GameObject cellTarget)
+    {
+        cellAnim.transform.localScale = Vector3.one;
+        cellAnim.GetComponent<CanvasGroup>().alpha = 1.0f;
+        cellAnim.transform.position = cellTarget.transform.position;
+
+        cellAnim.transform.GetChild(0).GetComponent<Image>().sprite = cellTarget.transform.GetChild(0).GetComponent<Image>().sprite;
+        cellAnim.SetActive(true);
+        cellAnim.GetComponent<CellController>().ConnectSuccess(delayTimeToDeleteCell);
+        yield return new WaitForSeconds(delayTimeToDeleteCell);
+        cellAnim.SetActive(false);
+
     }
 
     public void DevModeUpdateDataMatrix()

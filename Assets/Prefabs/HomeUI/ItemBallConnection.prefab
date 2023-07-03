@@ -216,7 +216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ball Connection
+  m_text: Shadow
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3892245f4c3e41a41b078e552d99f8c2, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 7c8b582dd286eb2418cba93cec2ed943, type: 2}

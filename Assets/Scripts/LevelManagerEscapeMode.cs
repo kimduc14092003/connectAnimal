@@ -23,7 +23,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public LineController lineController;
     public float timeRemaining;
     public int limitMoveTurn;
-    public TMP_Text limitMoveTurnTxt, levelTitle;
+    public TMP_Text limitMoveTurnTxt, levelTitle,winScoreTxt,winHighScoreTxt,winTotalScoreTxt,loseTotalScoreTxt,loseHighScoreTxt;
     private bool isPauseGame;
 
     public LoadSceneManager loadSceneManager;
@@ -56,6 +56,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
         listCellEscapeController = listCell;
 
         currentMap.transform.SetSiblingIndex(3);
+        limitMoveTurn=listCell.limitMoveTurn;
     }
 
     private void Start()
@@ -69,6 +70,7 @@ public class LevelManagerEscapeMode : MonoBehaviour
         timeRemaining = limitTimeOfLevel;
         timeSlider.value = timeRemaining;
         AudioManager.Instance.PlayRandomMusic();
+        limitMoveTurnTxt.text = limitMoveTurn + "";
     }
 
     private void FixedUpdate()
@@ -187,11 +189,33 @@ public class LevelManagerEscapeMode : MonoBehaviour
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX("win");
         isPauseGame = true;
-        
- /*       TimePanel.SetActive(false);
-        FunctionPanel.SetActive(false);
-        currentMap.SetActive(false);
-        rabbit.SetActive(false);*/
+
+        /*       TimePanel.SetActive(false);
+               FunctionPanel.SetActive(false);
+               currentMap.SetActive(false);
+               rabbit.SetActive(false);*/
+
+        int levelScore =  (int)timeRemaining;
+        winScoreTxt.text = "Score : " + levelScore;
+
+        //Set giá trị cho high score nếu điểm của người chơi > điểm high score trước
+        int highScore = PlayerPrefs.GetInt("highScoreLevel" + currentLevel + "EscapeMode", levelScore);
+        if (levelScore >= highScore)
+        {
+            PlayerPrefs.SetInt("highScoreLevel" + currentLevel + "EscapeMode", levelScore);
+            winHighScoreTxt.text = "Record : " + levelScore;
+        }
+        else
+        {
+            winHighScoreTxt.text = "Record " + highScore;
+        }
+
+        //Set tổng điểm qua các level của player
+        int totalScore = PlayerPrefs.GetInt("totalScore" + "EscapeMode", 0) + levelScore;
+        PlayerPrefs.SetInt("totalScore" + "EscapeMode", totalScore);
+
+        winTotalScoreTxt.text = "Total score : " + totalScore;
+
         winLevelPanel.SetActive(true);
         currentLevel++;
         PlayerPrefs.SetInt("currentLevelEscapeMode", currentLevel);
@@ -199,6 +223,10 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
     public void LoseGameNotification()
     {
+        if (loseGamePanel.activeSelf)
+        {
+            return;
+        }
         // Hiện quảng cáo
         MG_Interface mG_Interface = GameObject.Find("MG").GetComponent<MG_Interface>();
         if (mG_Interface != null && !mG_Interface.removeAds)
@@ -214,8 +242,27 @@ public class LevelManagerEscapeMode : MonoBehaviour
         PlayerPrefs.SetInt("currentLevelEscapeMode", 1);
 
         isPauseGame = true;
-        loseGamePanel.SetActive(true);
         //rabbit.SetActive(false);
+
+        // Số điểm khi thua = tổng số điểm đã tích trước đó + số điểm hiện tại
+        int totalScore = PlayerPrefs.GetInt("totalScore" + "EscapeMode", 0) ;
+
+        loseTotalScoreTxt.text = "Total score : " + totalScore;
+
+        int highScoreTotal = PlayerPrefs.GetInt("highScoreTotal" + "EscapeMode", totalScore);
+        if (totalScore >= highScoreTotal)
+        {
+            PlayerPrefs.SetInt("highScoreTotal" + "EscapeMode", highScoreTotal);
+            loseHighScoreTxt.text = "Record : " + totalScore;
+        }
+        else
+        {
+            loseHighScoreTxt.text = "Record : " + highScoreTotal;
+        }
+        PlayerPrefs.SetInt("totalScore" + "EscapeMode", 0);
+        Debug.Log("run lose");
+        loseGamePanel.SetActive(true);
+
     }
 
     public void NextLevel()

@@ -2563,6 +2563,7 @@ MonoBehaviour:
   delayTimeToDeleteCell: 0.25
   levelManager: {fileID: 0}
   limitCellAdjacent: 0
+  limitMoveTurn: 8
   timeToMove: 1
   isWin: 0
   cells:

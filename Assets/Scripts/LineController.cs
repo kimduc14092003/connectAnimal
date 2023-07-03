@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LineController : MonoBehaviour
 {
-    private float delayTime;
+    public float delayTime;
 
     public GameObject panel;
     private LineRenderer lineRenderer;
@@ -13,7 +13,10 @@ public class LineController : MonoBehaviour
     private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        delayTime = 0.15f;
+        if (delayTime <= 0)
+        {
+            delayTime = 0.15f;
+        }
         if (panel.GetComponent<ListCellController>())
         {
             maxLengthX = panel.GetComponent<ListCellController>().col;

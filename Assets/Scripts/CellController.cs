@@ -117,7 +117,7 @@ public class CellController : MonoBehaviour
     }
     public void ConnectSuccess(float delayTime)
     {
-        transform.DOScale(new Vector3(0f, 0f, 1), delayTime);
+        transform.DOScale(new Vector3(0.5f, 0.5f, 1), delayTime);
         Instantiate(starEffect, transform.position, Quaternion.EulerAngles(Vector3.zero));
 
         CanvasGroup canvasGroup =GetComponent<CanvasGroup>();

@@ -14036,6 +14036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c841f04f6e7f92408edd55488abe8ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 0
   panel: {fileID: 2000068339}
 --- !u!120 &1279105836
 LineRenderer:
@@ -16545,6 +16546,11 @@ MonoBehaviour:
   limitMoveTurn: 8
   limitMoveTurnTxt: {fileID: 2094308392}
   levelTitle: {fileID: 586235689}
+  winScoreTxt: {fileID: 1946773717}
+  winHighScoreTxt: {fileID: 1681345403}
+  winTotalScoreTxt: {fileID: 1051331491}
+  loseTotalScoreTxt: {fileID: 1301066879}
+  loseHighScoreTxt: {fileID: 1170808406}
   loadSceneManager: {fileID: 2000068347}
 --- !u!114 &2000068347
 MonoBehaviour:

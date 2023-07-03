@@ -29,6 +29,8 @@ public class LevelManagerEndless : MonoBehaviour
     public List<GameObject> listGameObjectDeActive;
     public LoadSceneManager loadSceneManager;
 
+    public GameObject cellAnim1, cellAnim2;
+
     private void Awake()
     {
         if(PlayerPrefs.GetString("PlayeMode")!= "EndlessMode")
@@ -68,6 +70,8 @@ public class LevelManagerEndless : MonoBehaviour
         endlessModeController = matrix.GetComponent<EndlessModeController>();
         lineController.panel = matrix;
         currentMatrix = matrix.name;
+        endlessModeController.cellAnim1 = cellAnim1;
+        endlessModeController.cellAnim2 = cellAnim2;
         matrix.transform.SetSiblingIndex(2);
     }
 
