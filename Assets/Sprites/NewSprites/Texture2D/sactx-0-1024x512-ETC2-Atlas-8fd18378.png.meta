@@ -299,10 +299,10 @@ TextureImporter:
       name: sactx-0-1024x512-ETC2-Atlas-8fd18378_14
       rect:
         serializedVersion: 2
-        x: 791
+        x: 788
         y: 299
-        width: 102
-        height: 91
+        width: 105
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: sactx-0-1024x512-ETC2-Atlas-8fd18378_18
       rect:
         serializedVersion: 2
-        x: 101
-        y: 249
-        width: 94
-        height: 98
+        x: 97
+        y: 244
+        width: 104
+        height: 107
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,9 +384,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 301
-        y: 204
+        y: 206
         width: 95
-        height: 108
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,9 +530,9 @@ TextureImporter:
       name: sactx-0-1024x512-ETC2-Atlas-8fd18378_37
       rect:
         serializedVersion: 2
-        x: 444
-        y: 103
-        width: 108
+        x: 448
+        y: 99
+        width: 105
         height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -677,10 +677,10 @@ TextureImporter:
       name: sactx-0-1024x512-ETC2-Atlas-8fd18378_51
       rect:
         serializedVersion: 2
-        x: 851
-        y: 2
-        width: 97
-        height: 90
+        x: 848
+        y: 0
+        width: 99
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

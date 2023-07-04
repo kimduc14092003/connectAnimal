@@ -24,7 +24,7 @@ public class ListCellController : MonoBehaviour
 
     public LevelManager levelManager;
 
-    public int limitCellAdjacent;
+    public int limitCellAdjacent, ratioCellAdjacent;
     private int countCellAdjacent=0;
 
     [SerializeField]
@@ -207,6 +207,7 @@ public class ListCellController : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySFX("connect");
                     cellRemain -= 2;
+                   
                     StartCoroutine(DeleteCell(CellSelected1,true));
                     StartCoroutine(DeleteCell(CellSelected2,false));
                     StartCoroutine(CheckWinLevel(0.25f));
@@ -284,6 +285,8 @@ public class ListCellController : MonoBehaviour
         {
             print("trừ HP!");
             levelManager.HandleMinusHP();
+            AudioManager.Instance.PlaySFX("nomove");
+
             Invoke("ShuffleAllCell", 1f);
         }
     }
@@ -298,10 +301,10 @@ public class ListCellController : MonoBehaviour
     public void ShuffleAllCell(float delayToAnim)
     {
         countCellAdjacent = 0;
-        limitCellAdjacent = cellRemain / 18;
-        if (limitCellAdjacent < 3)
+        limitCellAdjacent = cellRemain / ratioCellAdjacent;
+        if (limitCellAdjacent < 2)
         {
-            limitCellAdjacent = 3;
+            limitCellAdjacent = 2;
         }
 
         if (cellRemain <= 0) return;

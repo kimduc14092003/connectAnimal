@@ -1,0 +1,14 @@
+play.png
+size:332,453
+filter:Linear,Linear
+pma:true
+Light
+bounds:192,2,81,78
+offsets:11,0,92,78
+as
+bounds:2,34,417,188
+offsets:3,3,423,194
+rotate:90
+buton
+bounds:192,82,369,138
+rotate:90

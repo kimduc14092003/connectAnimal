@@ -220,11 +220,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: something
+      name: asn
       rect:
         serializedVersion: 2
         x: 1621
         y: 0
+        width: 363
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad20cfb2000000000800000000000000
+      internalID: 737936090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asn2
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 473
+        width: 363
+        height: 471
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fff9101000000000800000000000000
+      internalID: 270139377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: something
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 608
         width: 309
         height: 278
       alignment: 9
@@ -244,8 +286,8 @@ TextureImporter:
       name: pruit
       rect:
         serializedVersion: 2
-        x: 1621
-        y: 279
+        x: 1203
+        y: 608
         width: 309
         height: 277
       alignment: 9
@@ -265,8 +307,8 @@ TextureImporter:
       name: food
       rect:
         serializedVersion: 2
-        x: 1621
-        y: 557
+        x: 1203
+        y: 886
         width: 309
         height: 276
       alignment: 9
@@ -287,7 +329,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 893
-        y: 608
+        y: 887
         width: 309
         height: 276
       alignment: 9
@@ -307,8 +349,8 @@ TextureImporter:
       name: Korea
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 608
+        x: 449
+        y: 1021
         width: 309
         height: 276
       alignment: 9
@@ -328,8 +370,8 @@ TextureImporter:
       name: Pokemon
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 834
+        x: 0
+        y: 1028
         width: 309
         height: 276
       alignment: 9
@@ -349,8 +391,8 @@ TextureImporter:
       name: travel
       rect:
         serializedVersion: 2
-        x: 893
-        y: 885
+        x: 1513
+        y: 945
         width: 309
         height: 276
       alignment: 9
@@ -371,7 +413,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1203
-        y: 885
+        y: 1163
         width: 309
         height: 276
       alignment: 9
@@ -391,8 +433,8 @@ TextureImporter:
       name: candy_0
       rect:
         serializedVersion: 2
-        x: 449
-        y: 1021
+        x: 759
+        y: 1164
         width: 309
         height: 276
       alignment: 9
@@ -412,8 +454,8 @@ TextureImporter:
       name: Japan
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1028
+        x: 310
+        y: 1298
         width: 308
         height: 276
       alignment: 9
@@ -433,8 +475,8 @@ TextureImporter:
       name: Insect
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 1111
+        x: 0
+        y: 1305
         width: 308
         height: 276
       alignment: 9
@@ -454,8 +496,8 @@ TextureImporter:
       name: button
       rect:
         serializedVersion: 2
-        x: 759
-        y: 1162
+        x: 1513
+        y: 1222
         width: 436
         height: 133
       alignment: 9
@@ -475,8 +517,8 @@ TextureImporter:
       name: button - Copy
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 1162
+        x: 1513
+        y: 1356
         width: 260
         height: 91
       alignment: 9
@@ -488,6 +530,27 @@ TextureImporter:
       bones: []
       spriteID: 666f6771000000000800000000000000
       internalID: 393672294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: advertising ban
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1028
+        width: 137
+        height: 153
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10459c25000000000800000000000000
+      internalID: 1388925953
       vertices: []
       indices: 
       edges: []
@@ -517,8 +580,8 @@ TextureImporter:
       name: pause
       rect:
         serializedVersion: 2
-        x: 309
-        y: 1028
+        x: 1823
+        y: 945
         width: 117
         height: 126
       alignment: 9
@@ -535,32 +598,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: advertising ban
-      rect:
-        serializedVersion: 2
-        x: 1513
-        y: 608
-        width: 96
-        height: 107
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10459c25000000000800000000000000
-      internalID: 1388925953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: button sound,music
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 716
+        x: 310
+        y: 1182
         width: 94
         height: 86
       alignment: 9
@@ -580,8 +622,8 @@ TextureImporter:
       name: 1
       rect:
         serializedVersion: 2
-        x: 309
-        y: 1155
+        x: 1941
+        y: 945
         width: 79
         height: 74
       alignment: 9
@@ -601,8 +643,8 @@ TextureImporter:
       name: mui ten
       rect:
         serializedVersion: 2
-        x: 309
-        y: 1230
+        x: 1941
+        y: 1020
         width: 65
         height: 66
       alignment: 9
@@ -622,8 +664,8 @@ TextureImporter:
       name: chon
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1230
+        x: 1823
+        y: 1072
         width: 64
         height: 65
       alignment: 9
@@ -643,8 +685,8 @@ TextureImporter:
       name: thanh duoi
       rect:
         serializedVersion: 2
-        x: 389
-        y: 1155
+        x: 405
+        y: 1182
         width: 43
         height: 66
       alignment: 9
@@ -664,8 +706,8 @@ TextureImporter:
       name: STICK
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1296
+        x: 1823
+        y: 1138
         width: 59
         height: 47
       alignment: 9
@@ -685,8 +727,8 @@ TextureImporter:
       name: "thanh k\xE9o"
       rect:
         serializedVersion: 2
-        x: 309
-        y: 1297
+        x: 1888
+        y: 1072
         width: 30
         height: 54
       alignment: 9
@@ -698,6 +740,48 @@ TextureImporter:
       bones: []
       spriteID: 3949970cffffffff0800000000000000
       internalID: -1065773933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: t
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1249
+        width: 30
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a462ba1bffffffff0800000000000000
+      internalID: -1314183606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1269
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06aad55000000000800000000000000
+      internalID: 1440392717
       vertices: []
       indices: 
       edges: []
@@ -724,6 +808,8 @@ TextureImporter:
       STICK: 1119462664
       Topic: -73106240
       advertising ban: 1388925953
+      asn: 737936090
+      asn2: 270139377
       button: -1249707662
       button - Copy: 393672294
       button sound,music: 1102017160
@@ -737,9 +823,11 @@ TextureImporter:
       pruit: 258998166
       seting: -723950168
       something: -962717813
+      t: -1314183606
       thanh duoi: 404365904
       "thanh k\xE9o": -1065773933
       travel: -1851482674
+      x: 1440392717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
