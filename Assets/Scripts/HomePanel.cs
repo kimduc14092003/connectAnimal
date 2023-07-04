@@ -1,3 +1,4 @@
+﻿using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
@@ -20,6 +21,8 @@ public class HomePanel : MonoBehaviour
     [SerializeField]
     private GameObject SettingPanel;
     private int bgSpriteIndex;
+
+    [SerializeField] private SkeletonGraphic skeletonGraphic;
 
     private void Awake()
     {
@@ -68,6 +71,24 @@ public class HomePanel : MonoBehaviour
         if (mG_Interface.removeAds)
         {
             removeAdsButton.SetActive(false);
+        }
+
+        skeletonGraphic = GetComponent<SkeletonGraphic>();
+    }
+
+    void OnRectTransformDimensionsChange()
+    {
+        // Lấy kích thước màn hình hiện tại
+        Vector2 screenSize = new Vector2(Screen.width, Screen.height);
+
+        // Áp dụng tỷ lệ zoom cho SkeletonGraphic
+        try
+        {
+            skeletonGraphic.transform.localScale = new Vector3((screenSize.x*9)/(screenSize.y*16), 1f, 1f);
+        }
+        catch
+        {
+            Debug.Log("Change size Button Play fail!");
         }
     }
 

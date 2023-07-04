@@ -1321,6 +1321,8 @@ MonoBehaviour:
   delayTimeToDeleteCell: 0.25
   levelManager: {fileID: 0}
   limitCellAdjacent: 0
+  cellAnim1: {fileID: 0}
+  cellAnim2: {fileID: 0}
   spawnDefaultCell:
   - {fileID: 7160847222356214466}
   - {fileID: 7160847222346776076}
