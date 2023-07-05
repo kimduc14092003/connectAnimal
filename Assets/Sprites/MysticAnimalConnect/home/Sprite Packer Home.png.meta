@@ -451,7 +451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Japan
+      name: Insect
       rect:
         serializedVersion: 2
         x: 310
@@ -465,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ba3bb15000000000800000000000000
-      internalID: 1371224760
+      spriteID: 1911548dffffffff0800000000000000
+      internalID: -666562159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Insect
+      name: Japan
       rect:
         serializedVersion: 2
         x: 0
@@ -486,8 +486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1911548dffffffff0800000000000000
-      internalID: -666562159
+      spriteID: 8ba3bb15000000000800000000000000
+      internalID: 1371224760
       vertices: []
       indices: 
       edges: []
@@ -514,11 +514,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button - Copy
+      name: m (2)
       rect:
         serializedVersion: 2
         x: 1513
         y: 1356
+        width: 373
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beeaedd6000000000800000000000000
+      internalID: 1843310315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button - Copy
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1440
         width: 260
         height: 91
       alignment: 9
@@ -580,8 +601,8 @@ TextureImporter:
       name: pause
       rect:
         serializedVersion: 2
-        x: 1823
-        y: 945
+        x: 1069
+        y: 1164
         width: 117
         height: 126
       alignment: 9
@@ -622,8 +643,8 @@ TextureImporter:
       name: 1
       rect:
         serializedVersion: 2
-        x: 1941
-        y: 945
+        x: 1069
+        y: 1291
         width: 79
         height: 74
       alignment: 9
@@ -643,8 +664,8 @@ TextureImporter:
       name: mui ten
       rect:
         serializedVersion: 2
-        x: 1941
-        y: 1020
+        x: 1069
+        y: 1366
         width: 65
         height: 66
       alignment: 9
@@ -664,8 +685,8 @@ TextureImporter:
       name: chon
       rect:
         serializedVersion: 2
-        x: 1823
-        y: 1072
+        x: 1135
+        y: 1366
         width: 64
         height: 65
       alignment: 9
@@ -685,8 +706,8 @@ TextureImporter:
       name: thanh duoi
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1182
+        x: 1149
+        y: 1291
         width: 43
         height: 66
       alignment: 9
@@ -706,8 +727,8 @@ TextureImporter:
       name: STICK
       rect:
         serializedVersion: 2
-        x: 1823
-        y: 1138
+        x: 1513
+        y: 608
         width: 59
         height: 47
       alignment: 9
@@ -727,8 +748,8 @@ TextureImporter:
       name: "thanh k\xE9o"
       rect:
         serializedVersion: 2
-        x: 1888
-        y: 1072
+        x: 405
+        y: 1182
         width: 30
         height: 54
       alignment: 9
@@ -749,7 +770,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 405
-        y: 1249
+        y: 1237
         width: 30
         height: 27
       alignment: 9
@@ -769,8 +790,8 @@ TextureImporter:
       name: x
       rect:
         serializedVersion: 2
-        x: 310
-        y: 1269
+        x: 405
+        y: 1265
         width: 17
         height: 17
       alignment: 9
@@ -818,6 +839,7 @@ TextureImporter:
       exit: 1606004555
       food: 1061926943
       k: -1311094176
+      m (2): 1843310315
       mui ten: -964775990
       pause: 1568029054
       pruit: 258998166

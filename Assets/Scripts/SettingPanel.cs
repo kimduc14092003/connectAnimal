@@ -108,7 +108,7 @@ public class SettingPanel : MonoBehaviour
 
     public void EffectClickChangeDifficult()
     {
-        AudioManager.Instance.PlaySFX("click_button");
+        //AudioManager.Instance.PlaySFX("click_button");
         SetDifficultLevel();
     }
 }

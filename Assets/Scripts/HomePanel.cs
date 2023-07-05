@@ -81,7 +81,7 @@ public class HomePanel : MonoBehaviour
         // Lấy kích thước màn hình hiện tại
         Vector2 screenSize = new Vector2(Screen.width, Screen.height);
 
-        // Áp dụng tỷ lệ zoom cho SkeletonGraphic
+       /* // Áp dụng tỷ lệ zoom cho SkeletonGraphic
         try
         {
             skeletonGraphic.transform.localScale = new Vector3((screenSize.x*9)/(screenSize.y*16), 1f, 1f);
@@ -89,7 +89,7 @@ public class HomePanel : MonoBehaviour
         catch
         {
             Debug.Log("Change size Button Play fail!");
-        }
+        }*/
     }
 
     private void ChangeBackgroundToBackgroundName(string bgName)

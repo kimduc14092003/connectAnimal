@@ -177,7 +177,7 @@ public class LevelManager : MonoBehaviour
                     listCellController.numOfDifferentCell = 18;
                     listCellController.limitCellAdjacent = 4;
                     GridLayoutGroup gridLayoutGroup= listCellController.gameObject.GetComponent<GridLayoutGroup>();
-                    gridLayoutGroup.cellSize = new Vector2(110 , 137.5f);
+                    gridLayoutGroup.cellSize = new Vector2(110 , 137.5f);//0.8
                     currentLevel = PlayerPrefs.GetInt("currentLevelEasy");
                     break;
                 }
@@ -188,7 +188,7 @@ public class LevelManager : MonoBehaviour
                     listCellController.numOfDifferentCell = 22;
                     listCellController.limitCellAdjacent = 6;
                     GridLayoutGroup gridLayoutGroup = listCellController.gameObject.GetComponent<GridLayoutGroup>();
-                    gridLayoutGroup.cellSize = new Vector2(100, 125);
+                    gridLayoutGroup.cellSize = new Vector2(100, 125);//0.8
                     currentLevel = PlayerPrefs.GetInt("currentLevelMedium");
                     break;
                 }
@@ -199,7 +199,7 @@ public class LevelManager : MonoBehaviour
                     listCellController.numOfDifferentCell = 26;
                     listCellController.limitCellAdjacent = 8;
                     GridLayoutGroup gridLayoutGroup = listCellController.gameObject.GetComponent<GridLayoutGroup>();
-                    gridLayoutGroup.cellSize = new Vector2(85, 100);
+                    gridLayoutGroup.cellSize = new Vector2(80, 100);//
                     currentLevel = PlayerPrefs.GetInt("currentLevelHard");
                     break;
                 }
