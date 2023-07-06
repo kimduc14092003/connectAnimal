@@ -57,6 +57,8 @@ MonoBehaviour:
     targetSprite: {fileID: -1249707662, guid: 4fec130e3ef1a374b928019e55bd6486, type: 3}
   - source: {fileID: 21300000, guid: 3a5df167f4bb95f4eb1943eed715ca0d, type: 3}
     targetSprite: {fileID: 1843310315, guid: 4fec130e3ef1a374b928019e55bd6486, type: 3}
+  - source: {fileID: 21300000, guid: bba24902999eda04294819608b93e06d, type: 3}
+    targetSprite: {fileID: 613728596, guid: 4fec130e3ef1a374b928019e55bd6486, type: 3}
   - source: {fileID: 21300000, guid: 255a8eb06313466428e27e7fb5e4e6d5, type: 3}
     targetSprite: {fileID: 393672294, guid: 4fec130e3ef1a374b928019e55bd6486, type: 3}
   - source: {fileID: 21300000, guid: a9e781adddb833d41b5520f9847d144d, type: 3}

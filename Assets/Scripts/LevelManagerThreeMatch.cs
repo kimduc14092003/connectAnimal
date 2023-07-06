@@ -43,7 +43,7 @@ public class LevelManagerThreeMatch : MonoBehaviour
     public GameObject[] listMap;
     public GameObject currentMap;
     private int currentLevel;
-    public GameObject winGamePanel;
+    public GameObject winGamePanel,victoryPanel;
     public GameObject helpPanel;
     private float countStar;
     public GameObject[] listStars;
@@ -429,6 +429,8 @@ public class LevelManagerThreeMatch : MonoBehaviour
         AudioManager.Instance.StopMusic();
 
         AudioManager.Instance.PlaySFX("lose");
+        isPauseGame = true;
+
         loseTitleLevel.text = "Level " + currentLevel;
         PlayerPrefs.SetInt("currentLevelThreeMatchMode", 1);
         PlayerPrefs.SetInt("currentStarThreeMatchMode", 0);
@@ -481,19 +483,32 @@ public class LevelManagerThreeMatch : MonoBehaviour
         AudioManager.Instance.StopMusic();
 
         PlayerPrefs.SetInt("currentLevelThreeMatchMode", ++currentLevel);
-        int currentStar = PlayerPrefs.GetInt("currentStarThreeMatchMode", 0);
+        isPauseGame = true;
 
-        currentStar += (int)countStar;
-        PlayerPrefs.SetInt("currentStarThreeMatchMode", currentStar);
-        starText.text = currentStar + "/15";
-        winGamePanel.SetActive(true);
-        pointGameObject.SetActive(false);
-        TurnOffToNotifyEndGame();
-        for(int i=0;i<countStar; i++)
+        if (currentLevel >= listMap.Count())
         {
-            listStarEndGame[i].SetActive(true);
+            victoryPanel.SetActive(true);
+            currentLevel = 1;
+            PlayerPrefs.SetInt("currentLevelThreeMatchMode", 1);
+            PlayerPrefs.SetInt("currentStarThreeMatchMode", 0);
         }
-        isHandleStar = true;
+        else
+        {
+            int currentStar = PlayerPrefs.GetInt("currentStarThreeMatchMode", 0);
+
+            currentStar += (int)countStar;
+            PlayerPrefs.SetInt("currentStarThreeMatchMode", currentStar);
+            starText.text = currentStar + "/15";
+            winGamePanel.SetActive(true);
+            pointGameObject.SetActive(false);
+            TurnOffToNotifyEndGame();
+            for(int i=0;i<countStar; i++)
+            {
+                listStarEndGame[i].SetActive(true);
+            }
+            isHandleStar = true;
+        }
+
     }
 
 

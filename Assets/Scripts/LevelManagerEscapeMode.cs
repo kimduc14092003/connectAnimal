@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
@@ -23,7 +24,8 @@ public class LevelManagerEscapeMode : MonoBehaviour
     public LineController lineController;
     public float timeRemaining;
     public int limitMoveTurn;
-    public TMP_Text limitMoveTurnTxt, levelTitle,winScoreTxt,winHighScoreTxt,winTotalScoreTxt,loseTotalScoreTxt,loseHighScoreTxt;
+    public TMP_Text limitMoveTurnTxt, levelTitle,winScoreTxt,winHighScoreTxt,winTotalScoreTxt,
+            loseTotalScoreTxt,loseHighScoreTxt, victoryHighScoreTxt,victoryTotalScoreTxt;
     private bool isPauseGame;
 
     public LoadSceneManager loadSceneManager;
@@ -216,9 +218,32 @@ public class LevelManagerEscapeMode : MonoBehaviour
 
         winTotalScoreTxt.text = "Total score : " + totalScore;
 
-        winLevelPanel.SetActive(true);
         currentLevel++;
-        PlayerPrefs.SetInt("currentLevelEscapeMode", currentLevel);
+        if (currentLevel >= listMap.Count())
+        {
+            winGamePanel.SetActive(true);
+            PlayerPrefs.SetInt("currentLevelEscapeMode", 1);
+            victoryTotalScoreTxt.text = "Total score : " + totalScore;
+
+            int highScoreTotal = PlayerPrefs.GetInt("highScoreTotal" + "EscapeMode", totalScore);
+            if (totalScore >= highScoreTotal)
+            {
+                PlayerPrefs.SetInt("highScoreTotal" + "EscapeMode", highScoreTotal);
+                victoryHighScoreTxt.text = "Record : " + totalScore;
+            }
+            else
+            {
+                victoryHighScoreTxt.text = "Record : " + highScoreTotal;
+            }
+            PlayerPrefs.SetInt("totalScore" + "EscapeMode", 0);
+
+        }
+        else
+        {
+            winLevelPanel.SetActive(true);
+            PlayerPrefs.SetInt("currentLevelEscapeMode", currentLevel);
+
+        }
     }
 
     public void LoseGameNotification()

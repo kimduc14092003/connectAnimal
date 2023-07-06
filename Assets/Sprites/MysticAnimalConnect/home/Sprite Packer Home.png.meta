@@ -535,11 +535,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button - Copy
+      name: button vang
       rect:
         serializedVersion: 2
         x: 1069
         y: 1440
+        width: 261
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451c4942000000000800000000000000
+      internalID: 613728596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button - Copy
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1441
         width: 260
         height: 91
       alignment: 9
@@ -601,8 +622,8 @@ TextureImporter:
       name: pause
       rect:
         serializedVersion: 2
-        x: 1069
-        y: 1164
+        x: 619
+        y: 1298
         width: 117
         height: 126
       alignment: 9
@@ -643,8 +664,8 @@ TextureImporter:
       name: 1
       rect:
         serializedVersion: 2
-        x: 1069
-        y: 1291
+        x: 1513
+        y: 608
         width: 79
         height: 74
       alignment: 9
@@ -664,8 +685,8 @@ TextureImporter:
       name: mui ten
       rect:
         serializedVersion: 2
-        x: 1069
-        y: 1366
+        x: 1513
+        y: 683
         width: 65
         height: 66
       alignment: 9
@@ -685,8 +706,8 @@ TextureImporter:
       name: chon
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 1366
+        x: 1513
+        y: 750
         width: 64
         height: 65
       alignment: 9
@@ -706,8 +727,8 @@ TextureImporter:
       name: thanh duoi
       rect:
         serializedVersion: 2
-        x: 1149
-        y: 1291
+        x: 405
+        y: 1182
         width: 43
         height: 66
       alignment: 9
@@ -728,7 +749,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1513
-        y: 608
+        y: 816
         width: 59
         height: 47
       alignment: 9
@@ -748,8 +769,8 @@ TextureImporter:
       name: "thanh k\xE9o"
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1182
+        x: 1573
+        y: 816
         width: 30
         height: 54
       alignment: 9
@@ -770,7 +791,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 405
-        y: 1237
+        y: 1249
         width: 30
         height: 27
       alignment: 9
@@ -790,8 +811,8 @@ TextureImporter:
       name: x
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1265
+        x: 310
+        y: 1269
         width: 17
         height: 17
       alignment: 9
@@ -834,6 +855,7 @@ TextureImporter:
       button: -1249707662
       button - Copy: 393672294
       button sound,music: 1102017160
+      button vang: 613728596
       candy_0: 339360994
       chon: -932471220
       exit: 1606004555

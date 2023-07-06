@@ -16,7 +16,7 @@ public class HomePanel : MonoBehaviour
 
     public List<BackgroundSprite> listSpriteBg;
     public LoadSceneManager loadSceneManager;
-    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel, removeAdsPanel,removeAdsButton,notificationPanel;
+    public GameObject themePanel, homePanel, moreGamePanel, relaxModePanel, removeAdsPanel,removeAdsButton,notificationSuccessPanel, notificationFailPanel;
     public MG_Interface mG_Interface;
     [SerializeField]
     private GameObject SettingPanel;
@@ -34,7 +34,7 @@ public class HomePanel : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("currentDifficultLevel"))
         {
-            PlayerPrefs.SetString("currentDifficultLevel", "Easy");
+            PlayerPrefs.SetString("currentDifficultLevel", "Hard");
         }
         if (!PlayerPrefs.HasKey("remainingHP"))
         {
@@ -229,16 +229,29 @@ public class HomePanel : MonoBehaviour
         themePanel.SetActive(false);
         ChangeBackgroundToBackgroundName("bgHome");
     }
-    public void StateNotificationPanel(bool isOpen)
+    public void StateNotificationSuccessPanel(bool isOpen)
     {
         AudioManager.Instance.PlaySFX("click_button");
         if (isOpen)
         {
-            notificationPanel.SetActive(true);
+            notificationSuccessPanel.SetActive(true);
         }
         else
         {
-            notificationPanel.SetActive(false);
+            notificationSuccessPanel.SetActive(false);
+        }
+    }
+
+    public void StateNotificationFailPanel(bool isOpen)
+    {
+        AudioManager.Instance.PlaySFX("click_button");
+        if (isOpen)
+        {
+            notificationFailPanel.SetActive(true);
+        }
+        else
+        {
+            notificationFailPanel.SetActive(false);
         }
     }
 
@@ -268,7 +281,11 @@ public class HomePanel : MonoBehaviour
             mG_Interface.removeAds = true;
             StateRemoveAdsPanelButton(false);
             removeAdsButton.SetActive(false);
-            StateNotificationPanel(true);
+            StateNotificationSuccessPanel(true);
+        }
+        else
+        {
+            StateNotificationFailPanel(true);
         }
     }
 }

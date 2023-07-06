@@ -51,9 +51,9 @@ public class ThemePanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("click_button");
 
-        if (index >= 1)
+        if (index >= 2)
         {
-            index = 1;
+            index = 2;
             Debug.Log("?");
             return;
         }
