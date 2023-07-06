@@ -4523,10 +4523,10 @@ RectTransform:
   - {fileID: 1277641423}
   - {fileID: 209812499}
   - {fileID: 1808046259}
+  - {fileID: 1617446928}
   - {fileID: 482330615}
   - {fileID: 624620229}
   - {fileID: 1770011545}
-  - {fileID: 1617446928}
   - {fileID: 9453525}
   - {fileID: 605755760}
   m_Father: {fileID: 0}
@@ -4931,6 +4931,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2000068348}
+    - target: {fileID: 7790749685146691259, guid: ead0707eabc322f409c18b32a063e2a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1514169137, guid: 64f2a3e4aaae494459d3e60376f09ed7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4952,6 +4956,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743832009615463669, guid: 02f26a4e11d09dd46bd8feae99243b07, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1514169137, guid: 64f2a3e4aaae494459d3e60376f09ed7, type: 3}
     - target: {fileID: 4459777233352712886, guid: 02f26a4e11d09dd46bd8feae99243b07, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

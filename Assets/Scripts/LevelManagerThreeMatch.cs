@@ -452,11 +452,11 @@ public class LevelManagerThreeMatch : MonoBehaviour
         }*/
     }
     private void TurnOnAgain()
-    {
+    {/*
         TimePanel.SetActive(true);
         listChooseCellGameObject.SetActive(true);
         helpPanel.SetActive(true);
-        currentMap.SetActive(true);
+        currentMap.SetActive(true);*/
     }
 
     private void CheckWinLevel()
@@ -928,13 +928,11 @@ public class LevelManagerThreeMatch : MonoBehaviour
     {
         if (isPauseGame)
         {
-            TimePanel.SetActive(false);
             //endlessModeController.gameObject.SetActive(false);
             return;
         }
         else
         {
-            TimePanel.SetActive(true);
            // endlessModeController.gameObject.SetActive(true);
         }
 

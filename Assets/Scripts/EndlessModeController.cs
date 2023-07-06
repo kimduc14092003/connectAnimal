@@ -73,7 +73,7 @@ public class EndlessModeController : MonoBehaviour
         float ratioWidthHeight=panelWidth/panelHeight;
         if (ratioWidthHeight > 2)
         {
-            layoutGroup.cellSize =new Vector2( panelWidth / col, (panelWidth / col) * 1.25f);
+            layoutGroup.cellSize =new Vector2( panelWidth / col, (panelWidth / col) * 1.2f);
         }
         else
         {

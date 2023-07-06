@@ -130,8 +130,8 @@ public class ThemePanel : MonoBehaviour
             itemThemes[i].transform.Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0,0,0,0);
         }
 
-        target.transform.GetChild(0).gameObject.SetActive(true);
-        target.transform.Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0, 0, 0, 70);
+        target.transform.Find("Selected").gameObject.SetActive(true);
+        target.transform.Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0, 0, 0, 120);
 
     }
     
