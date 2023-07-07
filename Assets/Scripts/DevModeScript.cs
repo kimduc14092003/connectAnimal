@@ -214,7 +214,7 @@ public class DevModeScript : MonoBehaviour
 
         if (!PlayerPrefs.HasKey("currentDifficultLevel"))
         {
-            PlayerPrefs.SetString("currentDifficultLevel", "Easy");
+            PlayerPrefs.SetString("currentDifficultLevel", "Hard");
         }
         if (!PlayerPrefs.HasKey("remainingHP"))
         {
