@@ -126,13 +126,16 @@ public class ThemePanel : MonoBehaviour
     {
         for(int i = 0; i < itemThemes.Count; i++)
         {
-            itemThemes[i].transform.Find("Selected").gameObject.SetActive(false);
-            itemThemes[i].transform.Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0,0,0,0);
+            itemThemes[i].transform.GetChild(0).Find("Selected").gameObject.SetActive(false);
+            itemThemes[i].transform.GetChild(0).Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0,0,0,0);
+            itemThemes[i].GetComponent<UnityEngine.UI.Image>().enabled = false;
         }
 
-        target.transform.Find("Selected").gameObject.SetActive(true);
-        target.transform.Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0, 0, 0, 120);
+        target.transform.GetChild(0).Find("Selected").gameObject.SetActive(true);
+        target.transform.GetChild(0).Find("Faded").gameObject.GetComponent<UnityEngine.UI.Image>().color = new Color32(0, 0, 0, 150);
+        target.GetComponent<UnityEngine.UI.Image>().enabled = true;
+
 
     }
-    
+
 }
